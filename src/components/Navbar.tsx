@@ -117,7 +117,7 @@ export const Navbar: React.FC = () => {
         id: 'martfury',
         name: 'Martfury Yellow',
         desc: 'Envato signature marketplace',
-        preview: 'bg-[#fcb800]',
+        preview: 'bg-[#3b82f6]',
       },
       {
         id: 'obsidian',
@@ -184,13 +184,13 @@ export const Navbar: React.FC = () => {
 
   return (
     <header
-      className={`sticky top-0 z-40 w-full backdrop-blur-xl bg-[#0b1120]/95 border-b border-slate-800 shadow-xl transition-all duration-300 ${
+      className={`sticky top-0 z-40 w-full backdrop-blur-xl bg-[#0f172a]/95 border-b border-slate-800 shadow-xl transition-all duration-300 ${
         isScrolled ? 'shadow-2xl shadow-black/40' : ''
       }`}
     >
       {/* 1. Top micro-announcement bar — collapses on scroll */}
       <div
-        className={`w-full bg-[#070b14] border-b border-slate-800/80 px-3 sm:px-4 text-xs text-slate-300 overflow-hidden transition-all duration-300 ${
+        className={`w-full bg-[#020617] border-b border-slate-800/80 px-3 sm:px-4 text-xs text-slate-300 overflow-hidden transition-all duration-300 ${
           isScrolled ? 'max-h-0 py-0 opacity-0' : 'max-h-12 py-1.5 opacity-100'
         }`}
       >
@@ -203,7 +203,7 @@ export const Navbar: React.FC = () => {
               <span className="hidden md:inline text-slate-500">•</span>
               <span className="hidden md:inline text-slate-400 ml-1">
                 Coupon{' '}
-                <code className="px-1.5 py-0.5 rounded bg-yellow-400/10 text-[#fcb800] font-mono font-bold border border-yellow-400/20">
+                <code className="px-1.5 py-0.5 rounded bg-blue-400/10 text-[#3b82f6] font-mono font-bold border border-blue-400/20">
                   PLAYBEAT20
                 </code>{' '}
                 for 20% OFF
@@ -291,14 +291,14 @@ export const Navbar: React.FC = () => {
                 className="flex items-center gap-1 hover:text-white transition-colors cursor-pointer py-0.5"
                 aria-label="Select currency"
               >
-                <span className="font-mono font-bold text-[#fcb800]">
+                <span className="font-mono font-bold text-[#3b82f6]">
                   {currency}
                 </span>
                 <ChevronDown className="w-3 h-3 text-slate-400" />
               </button>
 
               {isCurrencyMenuOpen && (
-                <div className="absolute right-0 mt-1 w-44 bg-[#070b14] border border-slate-800 rounded-xl shadow-xl z-50 p-1 space-y-0.5">
+                <div className="absolute right-0 mt-1 w-44 bg-[#020617] border border-slate-800 rounded-xl shadow-xl z-50 p-1 space-y-0.5">
                   {currencies.map((c) => (
                     <button
                       key={c.code}
@@ -325,14 +325,14 @@ export const Navbar: React.FC = () => {
                 className="flex items-center gap-1 hover:text-white transition-colors cursor-pointer py-0.5 text-slate-400 hover:text-slate-200"
                 aria-label="Select theme"
               >
-                <Palette className="w-3 h-3 text-[#fcb800]" />
+                <Palette className="w-3 h-3 text-[#3b82f6]" />
                 <span className="capitalize hidden sm:inline">
                   {themePreset}
                 </span>
               </button>
 
               {isThemeMenuOpen && (
-                <div className="absolute right-0 mt-1 w-52 bg-[#070b14] border border-slate-800 rounded-xl shadow-xl z-50 p-1 space-y-0.5">
+                <div className="absolute right-0 mt-1 w-52 bg-[#020617] border border-slate-800 rounded-xl shadow-xl z-50 p-1 space-y-0.5">
                   {themes.map((t) => (
                     <button
                       key={t.id}
@@ -372,17 +372,17 @@ export const Navbar: React.FC = () => {
           >
             <div className="relative">
               {/* Glow ring */}
-              <div className="absolute inset-0 rounded-2xl bg-[#fcb800] blur-md opacity-40 group-hover:opacity-70 transition-opacity" />
-              <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-gradient-to-tr from-[#fcb800] via-yellow-300 to-amber-200 text-slate-950 flex items-center justify-center font-black text-base sm:text-lg shadow-lg shadow-yellow-500/30 group-hover:scale-105 transition-transform ring-1 ring-yellow-400/50">
+              <div className="absolute inset-0 rounded-2xl bg-[#3b82f6] blur-md opacity-40 group-hover:opacity-70 transition-opacity" />
+              <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-gradient-to-tr from-[#3b82f6] via-blue-300 to-blue-200 text-slate-950 flex items-center justify-center font-black text-base sm:text-lg shadow-lg shadow-blue-500/30 group-hover:scale-105 transition-transform ring-1 ring-blue-400/50">
                 PB
               </div>
             </div>
             <div className="hidden sm:block">
               <div className="flex items-center gap-1.5">
-                <span className="font-black text-base sm:text-lg tracking-tight text-white group-hover:text-[#fcb800] transition-colors">
+                <span className="font-black text-base sm:text-lg tracking-tight text-white group-hover:text-[#3b82f6] transition-colors">
                   PlayBeat
                 </span>
-                <span className="px-1.5 py-0.2 rounded bg-yellow-400/10 text-[#fcb800] text-[10px] font-black uppercase border border-yellow-400/30">
+                <span className="px-1.5 py-0.2 rounded bg-blue-400/10 text-[#3b82f6] text-[10px] font-black uppercase border border-blue-400/30">
                   Digital
                 </span>
               </div>
@@ -398,7 +398,7 @@ export const Navbar: React.FC = () => {
           className="flex-1 max-w-xl relative hidden md:block"
           ref={searchRef}
         >
-          <div className="relative flex items-center bg-[#070b14] rounded-2xl border border-slate-700/80 focus-within:border-[#fcb800] focus-within:ring-2 focus-within:ring-yellow-500/20 transition-all overflow-hidden">
+          <div className="relative flex items-center bg-[#020617] rounded-2xl border border-slate-700/80 focus-within:border-[#3b82f6] focus-within:ring-2 focus-within:ring-blue-500/20 transition-all overflow-hidden">
             <Search className="w-4 h-4 text-slate-400 ml-3.5 shrink-0" />
             <input
               ref={searchInputRef}
@@ -429,7 +429,7 @@ export const Navbar: React.FC = () => {
 
           {/* Autocomplete Dropdown */}
           {isSearchOpen && searchQuery.trim() && (
-            <div className="absolute top-full left-0 w-full mt-1.5 bg-[#070b14] border border-slate-800 rounded-2xl shadow-2xl z-50 p-2 space-y-1">
+            <div className="absolute top-full left-0 w-full mt-1.5 bg-[#020617] border border-slate-800 rounded-2xl shadow-2xl z-50 p-2 space-y-1">
               <div className="px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-slate-500">
                 Matching Products ({filteredSearchProducts.length})
               </div>
@@ -456,7 +456,7 @@ export const Navbar: React.FC = () => {
                             className="w-full h-full object-cover"
                           />
                         ) : (
-                          <Sparkles className="w-4 h-4 text-[#fcb800]" />
+                          <Sparkles className="w-4 h-4 text-[#3b82f6]" />
                         )}
                       </div>
                       <div className="min-w-0">
@@ -468,7 +468,7 @@ export const Navbar: React.FC = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="font-mono font-bold text-xs text-[#fcb800] shrink-0 ml-2">
+                    <div className="font-mono font-bold text-xs text-[#3b82f6] shrink-0 ml-2">
                       {formatPKR(p.discountPrice || p.price)}
                     </div>
                   </button>
@@ -494,7 +494,7 @@ export const Navbar: React.FC = () => {
             onClick={() => setIsOrderLookupOpen(true)}
             className="hidden md:flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs font-bold border border-slate-800 transition-colors cursor-pointer"
           >
-            <ShoppingBag className="w-3.5 h-3.5 text-[#fcb800]" />
+            <ShoppingBag className="w-3.5 h-3.5 text-[#3b82f6]" />
             <span>Track Order</span>
           </button>
 
@@ -510,7 +510,7 @@ export const Navbar: React.FC = () => {
             className="flex items-center gap-2 px-2.5 sm:px-3 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-xs font-bold text-slate-200 cursor-pointer transition-colors"
             aria-label={isCustomerLoggedIn ? user.name : 'Sign in'}
           >
-            <UserIcon className="w-4 h-4 text-[#fcb800]" />
+            <UserIcon className="w-4 h-4 text-[#3b82f6]" />
             <span className="hidden lg:inline truncate max-w-[120px]">
               {isCustomerLoggedIn ? user.name.split(' ')[0] : 'Sign In'}
             </span>
@@ -534,13 +534,13 @@ export const Navbar: React.FC = () => {
           {/* Cart Drawer Trigger — prominent with pulse when items present */}
           <button
             onClick={() => setIsCartOpen(true)}
-            className={`relative flex items-center gap-2 px-3 sm:px-3.5 py-2 rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-slate-950 font-black text-xs cursor-pointer shadow-lg shadow-yellow-500/30 transition-transform active:scale-95 ${
-              cartTotalCount > 0 ? 'ring-2 ring-yellow-300/50' : ''
+            className={`relative flex items-center gap-2 px-3 sm:px-3.5 py-2 rounded-xl bg-[#3b82f6] hover:bg-[#2563eb] text-slate-950 font-black text-xs cursor-pointer shadow-lg shadow-blue-500/30 transition-transform active:scale-95 ${
+              cartTotalCount > 0 ? 'ring-2 ring-blue-300/50' : ''
             }`}
             aria-label={`Cart with ${cartTotalCount} items`}
           >
             {cartTotalCount > 0 && (
-              <span className="absolute -inset-0.5 rounded-xl bg-yellow-400/40 blur-sm -z-10 animate-pulse" />
+              <span className="absolute -inset-0.5 rounded-xl bg-blue-400/40 blur-sm -z-10 animate-pulse" />
             )}
             <ShoppingCart className="w-4 h-4" />
             <span className="font-mono">{cartTotalCount}</span>
@@ -558,14 +558,14 @@ export const Navbar: React.FC = () => {
       </div>
 
       {/* 3. Secondary Navigation & Mega Menu Bar with Trust Badges */}
-      <div className="w-full bg-[#070b14] border-t border-slate-800/80 px-3 sm:px-4 py-2 relative hidden lg:block">
+      <div className="w-full bg-[#020617] border-t border-slate-800/80 px-3 sm:px-4 py-2 relative hidden lg:block">
         <div className="max-w-7xl mx-auto flex items-center justify-between text-xs gap-4">
           <div className="flex items-center gap-4 sm:gap-6 overflow-x-auto no-scrollbar py-1">
             {/* Mega Menu Toggle — gradient pill */}
             <button
               onClick={() => setIsMegaMenuOpen(!isMegaMenuOpen)}
               onMouseEnter={() => setIsMegaMenuOpen(true)}
-              className="flex items-center gap-2 font-black text-slate-950 bg-gradient-to-r from-[#fcb800] to-yellow-300 hover:from-[#e5a700] hover:to-yellow-200 transition-all cursor-pointer shrink-0 px-3 py-1.5 rounded-lg shadow-md shadow-yellow-500/20"
+              className="flex items-center gap-2 font-black text-slate-950 bg-gradient-to-r from-[#3b82f6] to-blue-300 hover:from-[#2563eb] hover:to-blue-200 transition-all cursor-pointer shrink-0 px-3 py-1.5 rounded-lg shadow-md shadow-blue-500/20"
             >
               <Menu className="w-4 h-4" />
               <span className="uppercase tracking-wider">All Categories</span>
@@ -592,7 +592,7 @@ export const Navbar: React.FC = () => {
                 }}
                 className={`flex items-center gap-1.5 font-bold transition-colors cursor-pointer shrink-0 ${
                   selectedCategory === item.slug
-                    ? 'text-[#fcb800]'
+                    ? 'text-[#3b82f6]'
                     : 'text-slate-300 hover:text-white'
                 }`}
               >
@@ -607,11 +607,11 @@ export const Navbar: React.FC = () => {
               <span>TCS Nationwide</span>
             </span>
             <span className="hidden xl:flex items-center gap-1.5 text-slate-400 font-semibold shrink-0">
-              <ShieldCheck className="w-3.5 h-3.5 text-[#fcb800]" />
+              <ShieldCheck className="w-3.5 h-3.5 text-[#3b82f6]" />
               <span>1-Yr Warranty</span>
             </span>
             <span className="hidden xl:flex items-center gap-1.5 text-slate-400 font-semibold shrink-0">
-              <Award className="w-3.5 h-3.5 text-amber-400" />
+              <Award className="w-3.5 h-3.5 text-blue-400" />
               <span>Verified ZeroByte</span>
             </span>
           </div>
@@ -623,7 +623,7 @@ export const Navbar: React.FC = () => {
               }}
               className={`text-xs font-bold transition-colors cursor-pointer ${
                 activeView === 'storefront'
-                  ? 'text-[#fcb800]'
+                  ? 'text-[#3b82f6]'
                   : 'text-slate-400 hover:text-white'
               }`}
             >
@@ -636,11 +636,11 @@ export const Navbar: React.FC = () => {
               }}
               className={`flex items-center gap-1 text-xs font-bold transition-colors cursor-pointer px-2 py-0.5 rounded-lg border ${
                 activeView === 'admin'
-                  ? 'bg-yellow-400/20 text-[#fcb800] border-yellow-400/40'
+                  ? 'bg-blue-400/20 text-[#3b82f6] border-blue-400/40'
                   : 'bg-slate-900 text-slate-400 hover:text-white border-slate-800'
               }`}
             >
-              <ShieldCheck className="w-3.5 h-3.5 text-[#fcb800]" />
+              <ShieldCheck className="w-3.5 h-3.5 text-[#3b82f6]" />
               <span>Admin Panel</span>
             </button>
             <span className="text-slate-700">|</span>
@@ -648,7 +648,7 @@ export const Navbar: React.FC = () => {
               onClick={() => setIsSupportOpen(true)}
               className="flex items-center gap-1.5 text-xs text-slate-400 hover:text-white cursor-pointer"
             >
-              <Headphones className="w-3.5 h-3.5 text-[#fcb800]" />
+              <Headphones className="w-3.5 h-3.5 text-[#3b82f6]" />
               <span>Live Support</span>
             </button>
           </div>
@@ -660,7 +660,7 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Search Overlay */}
       {isMobileSearchOpen && (
-        <div className="md:hidden fixed inset-0 z-50 bg-[#0b1120] flex flex-col">
+        <div className="md:hidden fixed inset-0 z-50 bg-[#0f172a] flex flex-col">
           <div className="flex items-center gap-2 p-3 border-b border-slate-800">
             <button
               onClick={() => setIsMobileSearchOpen(false)}
@@ -669,7 +669,7 @@ export const Navbar: React.FC = () => {
             >
               <ArrowRight className="w-4 h-4 rotate-180" />
             </button>
-            <form onSubmit={handleSearchSubmit} className="flex-1 flex items-center bg-[#070b14] rounded-2xl border border-slate-700 focus-within:border-[#fcb800] overflow-hidden">
+            <form onSubmit={handleSearchSubmit} className="flex-1 flex items-center bg-[#020617] rounded-2xl border border-slate-700 focus-within:border-[#3b82f6] overflow-hidden">
               <Search className="w-4 h-4 text-slate-400 ml-3 shrink-0" />
               <input
                 ref={mobileSearchInputRef}
@@ -705,14 +705,14 @@ export const Navbar: React.FC = () => {
                       setSelectedProduct(p);
                       setIsMobileSearchOpen(false);
                     }}
-                    className="w-full flex items-center justify-between p-3 rounded-xl bg-[#070b14] hover:bg-slate-800 text-left transition-colors cursor-pointer border border-slate-800"
+                    className="w-full flex items-center justify-between p-3 rounded-xl bg-[#020617] hover:bg-slate-800 text-left transition-colors cursor-pointer border border-slate-800"
                   >
                     <div className="flex items-center gap-3 min-w-0">
                       <div className="w-10 h-10 rounded-lg bg-slate-900 overflow-hidden shrink-0 border border-slate-700 flex items-center justify-center">
                         {p.cover?.image ? (
                           <img src={p.cover.image} alt={p.title} className="w-full h-full object-cover" />
                         ) : (
-                          <Sparkles className="w-5 h-5 text-[#fcb800]" />
+                          <Sparkles className="w-5 h-5 text-[#3b82f6]" />
                         )}
                       </div>
                       <div className="min-w-0">
@@ -720,7 +720,7 @@ export const Navbar: React.FC = () => {
                         <div className="text-xs text-slate-400">{p.category?.name}</div>
                       </div>
                     </div>
-                    <div className="font-mono font-bold text-sm text-[#fcb800] shrink-0 ml-2">
+                    <div className="font-mono font-bold text-sm text-[#3b82f6] shrink-0 ml-2">
                       {formatPKR(p.discountPrice || p.price)}
                     </div>
                   </button>
@@ -744,24 +744,24 @@ export const Navbar: React.FC = () => {
           onClick={() => setIsMobileMenuOpen(false)}
         >
           <div
-            className="absolute inset-y-0 left-0 w-[85vw] max-w-sm bg-[#0b1120] border-r border-slate-800 flex flex-col shadow-2xl animate-in slide-in-from-left duration-200"
+            className="absolute inset-y-0 left-0 w-[85vw] max-w-sm bg-[#0f172a] border-r border-slate-800 flex flex-col shadow-2xl animate-in slide-in-from-left duration-200"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header with gradient logo + glow */}
-            <div className="relative p-4 border-b border-slate-800 bg-gradient-to-br from-[#0b1120] via-[#0b1120] to-yellow-950/20 overflow-hidden">
+            <div className="relative p-4 border-b border-slate-800 bg-gradient-to-br from-[#0f172a] via-[#0f172a] to-blue-950/20 overflow-hidden">
               {/* Decorative glow */}
-              <div className="absolute -top-8 -right-8 w-32 h-32 bg-[#fcb800]/10 rounded-full blur-2xl pointer-events-none" />
+              <div className="absolute -top-8 -right-8 w-32 h-32 bg-[#3b82f6]/10 rounded-full blur-2xl pointer-events-none" />
               <div className="relative flex items-center justify-between">
                 <div className="flex items-center gap-2.5">
                   <div className="relative">
-                    <div className="absolute inset-0 rounded-2xl bg-[#fcb800] blur-md opacity-50" />
-                    <div className="relative w-10 h-10 rounded-2xl bg-gradient-to-tr from-[#fcb800] via-yellow-300 to-amber-200 text-slate-950 flex items-center justify-center font-black text-base shadow-lg shadow-yellow-500/30 ring-1 ring-yellow-400/50">
+                    <div className="absolute inset-0 rounded-2xl bg-[#3b82f6] blur-md opacity-50" />
+                    <div className="relative w-10 h-10 rounded-2xl bg-gradient-to-tr from-[#3b82f6] via-blue-300 to-blue-200 text-slate-950 flex items-center justify-center font-black text-base shadow-lg shadow-blue-500/30 ring-1 ring-blue-400/50">
                       PB
                     </div>
                   </div>
                   <div>
                     <div className="font-black text-base text-white">
-                      PlayBeat <span className="text-[#fcb800]">Digital</span>
+                      PlayBeat <span className="text-[#3b82f6]">Digital</span>
                     </div>
                     <p className="text-[10px] text-slate-400 font-mono">
                       playbeat.digital
@@ -783,11 +783,11 @@ export const Navbar: React.FC = () => {
                   <Truck className="w-3 h-3" />
                   <span>TCS Nationwide</span>
                 </span>
-                <span className="flex items-center gap-1 px-2 py-0.5 rounded-md bg-yellow-950/40 border border-yellow-500/30 text-[#fcb800] font-semibold">
+                <span className="flex items-center gap-1 px-2 py-0.5 rounded-md bg-blue-950/40 border border-blue-500/30 text-[#3b82f6] font-semibold">
                   <ShieldCheck className="w-3 h-3" />
                   <span>1-Yr Warranty</span>
                 </span>
-                <span className="flex items-center gap-1 px-2 py-0.5 rounded-md bg-amber-950/40 border border-amber-500/30 text-amber-400 font-semibold">
+                <span className="flex items-center gap-1 px-2 py-0.5 rounded-md bg-blue-950/40 border border-blue-500/30 text-blue-400 font-semibold">
                   <Award className="w-3 h-3" />
                   <span>Verified ZeroByte</span>
                 </span>
@@ -804,7 +804,7 @@ export const Navbar: React.FC = () => {
                 }}
                 className="w-full flex items-center gap-3 p-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-sm font-bold cursor-pointer"
               >
-                <ShoppingBag className="w-4 h-4 text-[#fcb800]" />
+                <ShoppingBag className="w-4 h-4 text-[#3b82f6]" />
                 <span>Storefront</span>
               </button>
 
@@ -815,7 +815,7 @@ export const Navbar: React.FC = () => {
                 }}
                 className="w-full flex items-center gap-3 p-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-sm font-bold cursor-pointer"
               >
-                <ShoppingBag className="w-4 h-4 text-[#fcb800]" />
+                <ShoppingBag className="w-4 h-4 text-[#3b82f6]" />
                 <span>Track Order</span>
               </button>
 
@@ -826,7 +826,7 @@ export const Navbar: React.FC = () => {
                 }}
                 className="w-full flex items-center gap-3 p-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-sm font-bold cursor-pointer"
               >
-                <Headphones className="w-4 h-4 text-[#fcb800]" />
+                <Headphones className="w-4 h-4 text-[#3b82f6]" />
                 <span>Live Support</span>
               </button>
 
@@ -847,7 +847,7 @@ export const Navbar: React.FC = () => {
                     }}
                     className={`w-full flex items-center gap-3 p-3 rounded-xl text-sm font-bold cursor-pointer transition-colors ${
                       selectedCategory === item.slug
-                        ? 'bg-yellow-400/10 text-[#fcb800] border border-yellow-400/30'
+                        ? 'bg-blue-400/10 text-[#3b82f6] border border-blue-400/30'
                         : 'text-slate-300 hover:bg-slate-900 hover:text-white'
                     }`}
                   >
@@ -868,17 +868,17 @@ export const Navbar: React.FC = () => {
                 }}
                 className={`w-full flex items-center gap-3 p-3 rounded-xl text-sm font-bold cursor-pointer transition-colors ${
                   activeView === 'admin'
-                    ? 'bg-yellow-400/20 text-[#fcb800] border border-yellow-400/40'
+                    ? 'bg-blue-400/20 text-[#3b82f6] border border-blue-400/40'
                     : 'bg-slate-900 text-slate-300 hover:text-white'
                 }`}
               >
-                <ShieldCheck className="w-4 h-4 text-[#fcb800]" />
+                <ShieldCheck className="w-4 h-4 text-[#3b82f6]" />
                 <span>Admin Panel</span>
               </button>
             </div>
 
             {/* Footer of Mobile Menu — multi-channel contact */}
-            <div className="p-3 border-t border-slate-800 bg-[#070b14] space-y-2">
+            <div className="p-3 border-t border-slate-800 bg-[#020617] space-y-2">
               <div className="text-[10px] font-black uppercase tracking-wider text-slate-500 px-1">
                 Contact Us
               </div>

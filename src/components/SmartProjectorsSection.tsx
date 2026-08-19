@@ -56,8 +56,8 @@ export const SmartProjectorsSection: React.FC = () => {
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6 pb-4 border-b border-slate-800/80">
         <div>
           <div className="flex items-center gap-2 mb-1.5">
-            <span className="px-2.5 py-0.5 rounded-full bg-yellow-500/10 text-yellow-400 border border-yellow-500/30 text-[11px] font-bold flex items-center gap-1">
-              <Projector className="w-3 h-3 text-[#fcb800]" />
+            <span className="px-2.5 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/30 text-[11px] font-bold flex items-center gap-1">
+              <Projector className="w-3 h-3 text-[#3b82f6]" />
               ZeroByte Official Projector Lineup
             </span>
             <span className="hidden sm:inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[11px] font-medium">
@@ -103,7 +103,7 @@ export const SmartProjectorsSection: React.FC = () => {
               onClick={() => setActiveFilter(tab.id as any)}
               className={`px-3.5 py-1.5 rounded-xl text-xs font-bold shrink-0 transition-all cursor-pointer border ${
                 activeFilter === tab.id
-                  ? 'bg-[#fcb800] text-black border-[#fcb800] shadow-md shadow-yellow-500/20'
+                  ? 'bg-[#3b82f6] text-black border-[#3b82f6] shadow-md shadow-blue-500/20'
                   : 'bg-[#0f172a] hover:bg-slate-800 text-slate-300 border-slate-800'
               }`}
             >
@@ -127,11 +127,11 @@ export const SmartProjectorsSection: React.FC = () => {
           return (
             <div
               key={prod.id}
-              className="group relative bg-[#0f172a] rounded-2xl border border-slate-800/80 hover:border-yellow-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-black/60 flex flex-col justify-between overflow-hidden"
+              className="group relative bg-[#0f172a] rounded-2xl border border-slate-800/80 hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-black/60 flex flex-col justify-between overflow-hidden"
             >
               {/* Badges */}
               <div className="absolute top-3 left-3 z-20 flex flex-col gap-1.5">
-                <span className="px-2 py-0.5 rounded-md bg-black/85 backdrop-blur-md text-yellow-400 text-[10px] font-black tracking-wider uppercase border border-yellow-500/30 shadow">
+                <span className="px-2 py-0.5 rounded-md bg-black/85 backdrop-blur-md text-blue-400 text-[10px] font-black tracking-wider uppercase border border-blue-500/30 shadow">
                   {lumens}
                 </span>
                 {isBattery && (
@@ -176,11 +176,11 @@ export const SmartProjectorsSection: React.FC = () => {
                 
                 {/* Rating badge */}
                 <div className="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-[11px] font-bold text-slate-300 font-mono">
-                  <span className="bg-slate-900/90 px-2 py-0.5 rounded-md border border-slate-700/60 truncate max-w-[160px] text-yellow-400">
+                  <span className="bg-slate-900/90 px-2 py-0.5 rounded-md border border-slate-700/60 truncate max-w-[160px] text-blue-400">
                     {prod.specs?.['Model'] || 'ZeroByte Edition'}
                   </span>
-                  <span className="flex items-center gap-1 text-amber-400 bg-slate-900/90 px-1.5 py-0.5 rounded-md border border-slate-700/60">
-                    <Star className="w-3 h-3 fill-amber-400" />
+                  <span className="flex items-center gap-1 text-blue-400 bg-slate-900/90 px-1.5 py-0.5 rounded-md border border-slate-700/60">
+                    <Star className="w-3 h-3 fill-blue-400" />
                     {prod.rating}
                   </span>
                 </div>
@@ -190,7 +190,7 @@ export const SmartProjectorsSection: React.FC = () => {
               <div className="p-2.5 sm:p-4 flex-1 flex flex-col justify-between space-y-2 sm:space-y-3">
                 <div className="space-y-1 sm:space-y-1.5">
                   <div className="flex items-center justify-between text-[10px] sm:text-[11px]">
-                    <span className="text-yellow-400 font-bold uppercase tracking-wider truncate">
+                    <span className="text-blue-400 font-bold uppercase tracking-wider truncate">
                       ZeroByte Official
                     </span>
                     {prod.sourceUrl && (
@@ -209,7 +209,7 @@ export const SmartProjectorsSection: React.FC = () => {
 
                   <h3 
                     onClick={() => setSelectedProduct(prod)}
-                    className="text-xs sm:text-sm font-bold text-white group-hover:text-yellow-400 transition-colors line-clamp-2 cursor-pointer min-h-[2.25rem] sm:min-h-[2.5rem]"
+                    className="text-xs sm:text-sm font-bold text-white group-hover:text-blue-400 transition-colors line-clamp-2 cursor-pointer min-h-[2.25rem] sm:min-h-[2.5rem]"
                   >
                     {prod.title}
                   </h3>
@@ -233,7 +233,7 @@ export const SmartProjectorsSection: React.FC = () => {
                 <div className="pt-1.5 sm:pt-2 border-t border-slate-800 flex items-center justify-between gap-1.5 sm:gap-2">
                   <div className="min-w-0">
                     <div className="text-[9px] sm:text-[10px] text-slate-400">Price (PKR)</div>
-                    <div className="text-xs sm:text-base font-black text-[#fcb800] font-mono truncate">
+                    <div className="text-xs sm:text-base font-black text-[#3b82f6] font-mono truncate">
                       {formatPKR(prod.price)}
                     </div>
                   </div>
@@ -261,7 +261,7 @@ export const SmartProjectorsSection: React.FC = () => {
                     
                     <button
                       onClick={() => addToCart(prod, 1)}
-                      className="px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-black text-[10px] sm:text-xs font-black flex items-center gap-1 shadow-md shadow-yellow-500/20 transition-all cursor-pointer active:scale-95"
+                      className="px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-[#3b82f6] hover:bg-[#2563eb] text-black text-[10px] sm:text-xs font-black flex items-center gap-1 shadow-md shadow-blue-500/20 transition-all cursor-pointer active:scale-95"
                     >
                       <ShoppingCart className="w-3 sm:w-3.5 h-3 sm:h-3.5 stroke-[2.5]" />
                       <span>Order</span>
@@ -280,7 +280,7 @@ export const SmartProjectorsSection: React.FC = () => {
           <div className="bg-[#0f172a] border border-slate-700 rounded-3xl max-w-xl w-full p-6 space-y-5 shadow-2xl relative max-h-[90vh] overflow-y-auto">
             <div className="flex items-start justify-between">
               <div>
-                <span className="px-2.5 py-0.5 rounded-full bg-yellow-500/10 text-yellow-400 border border-yellow-500/30 text-[10px] font-mono font-bold">
+                <span className="px-2.5 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/30 text-[10px] font-mono font-bold">
                   ZEROBYTE PAKISTAN HARDWARE SPECIFICATIONS
                 </span>
                 <h3 className="text-lg font-black text-white mt-1">{comparingProduct.title}</h3>
@@ -291,7 +291,7 @@ export const SmartProjectorsSection: React.FC = () => {
                       href={comparingProduct.sourceUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-yellow-400 hover:underline flex items-center gap-1"
+                      className="text-blue-400 hover:underline flex items-center gap-1"
                     >
                       <span>View on zerobyte.store</span>
                       <ExternalLink className="w-3 h-3" />
@@ -309,10 +309,10 @@ export const SmartProjectorsSection: React.FC = () => {
             </div>
 
             {/* Price banner */}
-            <div className="p-3.5 rounded-2xl bg-slate-950 border border-yellow-500/30 flex items-center justify-between">
+            <div className="p-3.5 rounded-2xl bg-slate-950 border border-blue-500/30 flex items-center justify-between">
               <div>
                 <div className="text-xs text-slate-400 font-medium">Selling Price</div>
-                <div className="text-xl font-black text-[#fcb800] font-mono">{formatPKR(comparingProduct.price)}</div>
+                <div className="text-xl font-black text-[#3b82f6] font-mono">{formatPKR(comparingProduct.price)}</div>
               </div>
               <div className="text-right text-xs">
                 <div className="text-emerald-400 font-bold flex items-center gap-1 justify-end">
@@ -326,7 +326,7 @@ export const SmartProjectorsSection: React.FC = () => {
             {/* Specs Table */}
             <div className="space-y-2">
               <h4 className="text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
-                <SlidersHorizontal className="w-3.5 h-3.5 text-yellow-400" />
+                <SlidersHorizontal className="w-3.5 h-3.5 text-blue-400" />
                 Technical Specifications
               </h4>
               <div className="bg-slate-950 rounded-xl border border-slate-800 divide-y divide-slate-800/80 text-xs">
@@ -346,7 +346,7 @@ export const SmartProjectorsSection: React.FC = () => {
                 <div className="space-y-1.5">
                   {comparingProduct.features.map((feat, i) => (
                     <div key={i} className="flex items-center gap-2 text-xs text-slate-300">
-                      <div className="w-4 h-4 rounded-full bg-yellow-500/20 text-yellow-400 flex items-center justify-center shrink-0">
+                      <div className="w-4 h-4 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center shrink-0">
                         <Check className="w-2.5 h-2.5" />
                       </div>
                       <span>{feat}</span>
@@ -379,7 +379,7 @@ export const SmartProjectorsSection: React.FC = () => {
                     addToCart(comparingProduct, 1);
                     setComparingProduct(null);
                   }}
-                  className="px-5 py-2 rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-black text-xs font-black flex items-center gap-1.5 shadow-lg shadow-yellow-500/20 cursor-pointer"
+                  className="px-5 py-2 rounded-xl bg-[#3b82f6] hover:bg-[#2563eb] text-black text-xs font-black flex items-center gap-1.5 shadow-lg shadow-blue-500/20 cursor-pointer"
                 >
                   <ShoppingCart className="w-4 h-4 stroke-[2.5]" />
                   <span>Add to Cart</span>

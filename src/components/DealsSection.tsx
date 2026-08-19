@@ -56,10 +56,10 @@ export const DealsSection: React.FC = () => {
 
   return (
     <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
-      <div className="bg-gradient-to-r from-[#070b14] via-[#0f172a] to-[#070b14] border border-slate-800 rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 shadow-2xl relative overflow-hidden">
+      <div className="bg-gradient-to-r from-[#020617] via-[#0f172a] to-[#020617] border border-slate-800 rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 shadow-2xl relative overflow-hidden">
         
         {/* Background glow */}
-        <div className="absolute top-0 right-0 w-72 h-72 sm:w-96 sm:h-96 bg-yellow-500/5 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute top-0 right-0 w-72 h-72 sm:w-96 sm:h-96 bg-blue-500/5 rounded-full blur-3xl pointer-events-none" />
 
         {/* Section Header with Countdown Timer */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-5 sm:pb-6 mb-5 sm:mb-6">
@@ -78,19 +78,19 @@ export const DealsSection: React.FC = () => {
           </div>
 
           {/* Countdown Clock */}
-          <div className="flex items-center gap-2 bg-[#070b14] px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl sm:rounded-2xl border border-slate-800 shadow-inner self-start sm:self-auto">
-            <Clock className="w-4 h-4 text-[#fcb800] shrink-0" />
+          <div className="flex items-center gap-2 bg-[#020617] px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl sm:rounded-2xl border border-slate-800 shadow-inner self-start sm:self-auto">
+            <Clock className="w-4 h-4 text-[#3b82f6] shrink-0" />
             <span className="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-wider hidden sm:inline">Ends in:</span>
             <div className="flex items-center gap-1 font-mono font-black text-xs sm:text-sm text-white">
-              <span className="px-1.5 sm:px-2 py-1 rounded-md sm:rounded-lg bg-slate-900 border border-slate-800 text-[#fcb800]">
+              <span className="px-1.5 sm:px-2 py-1 rounded-md sm:rounded-lg bg-slate-900 border border-slate-800 text-[#3b82f6]">
                 {String(timeLeft.hours).padStart(2, '0')}h
               </span>
               <span>:</span>
-              <span className="px-1.5 sm:px-2 py-1 rounded-md sm:rounded-lg bg-slate-900 border border-slate-800 text-[#fcb800]">
+              <span className="px-1.5 sm:px-2 py-1 rounded-md sm:rounded-lg bg-slate-900 border border-slate-800 text-[#3b82f6]">
                 {String(timeLeft.minutes).padStart(2, '0')}m
               </span>
               <span>:</span>
-              <span className="px-1.5 sm:px-2 py-1 rounded-md sm:rounded-lg bg-slate-900 border border-slate-800 text-[#fcb800]">
+              <span className="px-1.5 sm:px-2 py-1 rounded-md sm:rounded-lg bg-slate-900 border border-slate-800 text-[#3b82f6]">
                 {String(timeLeft.seconds).padStart(2, '0')}s
               </span>
             </div>
@@ -108,7 +108,7 @@ export const DealsSection: React.FC = () => {
             return (
               <div
                 key={product.id}
-                className="bg-[#070b14] border border-slate-800/80 hover:border-[#fcb800]/50 rounded-xl sm:rounded-2xl p-3 sm:p-4 flex flex-col justify-between group transition-all duration-300 shadow-lg hover:shadow-yellow-500/5 relative"
+                className="bg-[#020617] border border-slate-800/80 hover:border-[#3b82f6]/50 rounded-xl sm:rounded-2xl p-3 sm:p-4 flex flex-col justify-between group transition-all duration-300 shadow-lg hover:shadow-blue-500/5 relative"
               >
                 {/* Discount Badge */}
                 <div className="absolute top-2 sm:top-3 left-2 sm:left-3 z-10">
@@ -142,13 +142,13 @@ export const DealsSection: React.FC = () => {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   ) : (
-                    <Sparkles className="w-6 sm:w-8 h-6 sm:h-8 text-[#fcb800]" />
+                    <Sparkles className="w-6 sm:w-8 h-6 sm:h-8 text-[#3b82f6]" />
                   )}
                 </div>
 
                 {/* Content */}
                 <div className="space-y-1.5 sm:space-y-2">
-                  <div className="flex items-center gap-1 text-[9px] sm:text-[10px] text-amber-400">
+                  <div className="flex items-center gap-1 text-[9px] sm:text-[10px] text-blue-400">
                     <Star className="w-3 h-3 fill-current" />
                     <span className="font-bold">{product.rating || 5.0}</span>
                     <span className="text-slate-500">({product.reviewCount || 12})</span>
@@ -156,14 +156,14 @@ export const DealsSection: React.FC = () => {
 
                   <h3
                     onClick={() => setSelectedProduct(product)}
-                    className="font-bold text-white text-[11px] sm:text-xs line-clamp-2 hover:text-[#fcb800] transition-colors cursor-pointer min-h-[2.5rem] sm:min-h-[2.75rem]"
+                    className="font-bold text-white text-[11px] sm:text-xs line-clamp-2 hover:text-[#3b82f6] transition-colors cursor-pointer min-h-[2.5rem] sm:min-h-[2.75rem]"
                   >
                     {product.title}
                   </h3>
 
                   {/* Pricing */}
                   <div className="pt-1 flex items-baseline gap-1.5 sm:gap-2 flex-wrap">
-                    <span className="text-sm sm:text-base font-black text-[#fcb800] font-mono">
+                    <span className="text-sm sm:text-base font-black text-[#3b82f6] font-mono">
                       {formatPKR(product.discountPrice || product.price)}
                     </span>
                     {hasDiscount && (
@@ -178,7 +178,7 @@ export const DealsSection: React.FC = () => {
                 <div className="pt-2 sm:pt-3 border-t border-slate-800/80 mt-2 sm:mt-3 flex items-center gap-1.5 sm:gap-2">
                   <button
                     onClick={() => addToCart(product, 1)}
-                    className="flex-1 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-slate-900 hover:bg-[#fcb800] text-slate-200 hover:text-slate-950 border border-slate-700 hover:border-[#fcb800] font-bold text-[10px] sm:text-xs flex items-center justify-center gap-1 sm:gap-1.5 transition-all cursor-pointer"
+                    className="flex-1 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-slate-900 hover:bg-[#3b82f6] text-slate-200 hover:text-slate-950 border border-slate-700 hover:border-[#3b82f6] font-bold text-[10px] sm:text-xs flex items-center justify-center gap-1 sm:gap-1.5 transition-all cursor-pointer"
                   >
                     <ShoppingCart className="w-3 sm:w-3.5 h-3 sm:h-3.5" />
                     <span>Add</span>

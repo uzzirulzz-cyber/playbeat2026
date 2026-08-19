@@ -111,7 +111,7 @@ export const WooCommerceView: React.FC = () => {
         {/* Webhook & IPN Listener */}
         <div className="bg-[#11192e]/90 border border-slate-800/80 p-5 rounded-2xl space-y-4">
           <h3 className="text-sm font-bold text-white flex items-center gap-2">
-            <Zap className="w-4 h-4 text-amber-400" />
+            <Zap className="w-4 h-4 text-blue-400" />
             <span>Automated Webhook Topics</span>
           </h3>
 

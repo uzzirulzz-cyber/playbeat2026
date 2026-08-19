@@ -85,24 +85,24 @@ export const AdminConsole: React.FC = () => {
   // If user is not authenticated, show Admin Login gate
   if (!isAdminAuthenticated) {
     return (
-      <div className="min-h-screen flex items-center justify-center p-4 bg-[#070b14] relative overflow-hidden">
+      <div className="min-h-screen flex items-center justify-center p-4 bg-[#020617] relative overflow-hidden">
         {/* Ambient background glow */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-yellow-500/5 rounded-full blur-3xl" />
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-indigo-500/5 rounded-full blur-3xl" />
         </div>
-        <div className="w-full max-w-md bg-[#0b1120]/80 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 shadow-2xl space-y-6 relative z-10 overflow-hidden">
+        <div className="w-full max-w-md bg-[#0f172a]/80 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 shadow-2xl space-y-6 relative z-10 overflow-hidden">
           
           {/* Top glow */}
-          <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-64 h-48 bg-yellow-500/10 blur-3xl pointer-events-none" />
+          <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-64 h-48 bg-blue-500/10 blur-3xl pointer-events-none" />
 
           {/* Header */}
           <div className="text-center space-y-2 relative">
-            <div className="w-14 h-14 rounded-2xl bg-transparent border-2 border-[#fcb800]/60 text-[#fcb800] font-black mx-auto flex items-center justify-center shadow-lg shadow-yellow-500/10 text-2xl">
+            <div className="w-14 h-14 rounded-2xl bg-transparent border-2 border-[#3b82f6]/60 text-[#3b82f6] font-black mx-auto flex items-center justify-center shadow-lg shadow-blue-500/10 text-2xl">
               PB
             </div>
             <h1 className="text-2xl font-black tracking-tight text-white pt-2">
-              PlayBeat <span className="text-[#fcb800]">Digital</span>
+              PlayBeat <span className="text-[#3b82f6]">Digital</span>
               <span className="text-xs text-slate-400 font-mono block mt-0.5">playbeat.digital/admin</span>
             </h1>
             <p className="text-xs text-slate-400">
@@ -128,7 +128,7 @@ export const AdminConsole: React.FC = () => {
                 placeholder="Enter administrator username or email"
                 value={usernameInput}
                 onChange={(e) => setUsernameInput(e.target.value)}
-                className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-[#fcb800] transition-colors font-mono"
+                className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-[#3b82f6] transition-colors font-mono"
               />
             </div>
 
@@ -142,7 +142,7 @@ export const AdminConsole: React.FC = () => {
                   placeholder="Enter administrator master password"
                   value={passwordInput}
                   onChange={(e) => setPasswordInput(e.target.value)}
-                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-[#fcb800] transition-colors font-mono"
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-[#3b82f6] transition-colors font-mono"
                 />
                 <button
                   type="button"
@@ -156,7 +156,7 @@ export const AdminConsole: React.FC = () => {
 
             <button
               type="submit"
-              className="w-full py-3 rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-slate-950 font-black transition-all shadow-lg shadow-yellow-500/20 cursor-pointer flex items-center justify-center gap-2"
+              className="w-full py-3 rounded-xl bg-[#3b82f6] hover:bg-[#2563eb] text-slate-950 font-black transition-all shadow-lg shadow-blue-500/20 cursor-pointer flex items-center justify-center gap-2"
             >
               <Lock className="w-4 h-4" />
               <span>Log in to Admin Panel</span>
@@ -178,10 +178,10 @@ export const AdminConsole: React.FC = () => {
 
   // Authenticated Admin View
   return (
-    <div className="min-h-screen bg-[#070b14] text-slate-100 flex flex-col">
+    <div className="min-h-screen bg-[#020617] text-slate-100 flex flex-col">
       {/* Toast */}
       {resetToast && (
-        <div className="fixed bottom-6 right-6 z-50 bg-[#fcb800] text-slate-950 px-4 py-3 rounded-2xl shadow-2xl flex items-center gap-3 text-xs font-black animate-in fade-in">
+        <div className="fixed bottom-6 right-6 z-50 bg-[#3b82f6] text-slate-950 px-4 py-3 rounded-2xl shadow-2xl flex items-center gap-3 text-xs font-black animate-in fade-in">
           <RotateCcw className="w-4 h-4 animate-spin" />
           <span>Filters reset to default Dashboard view.</span>
         </div>
@@ -206,7 +206,7 @@ export const AdminConsole: React.FC = () => {
           />
 
           {/* View Container */}
-          <main className="flex-1 p-6 overflow-y-auto max-h-[calc(100vh-65px)] bg-[#070b14]">
+          <main className="flex-1 p-6 overflow-y-auto max-h-[calc(100vh-65px)] bg-[#020617]">
             {activeTab === 'dashboard' && <DashboardView />}
             {activeTab === 'builder' && <WebsiteBuilderView />}
             {activeTab === 'analytics' && <AnalyticsView />}

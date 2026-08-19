@@ -57,16 +57,16 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="w-full border-t border-slate-800 bg-[#0c0e14] text-slate-400 text-xs mt-16 transition-colors">
+    <footer className="w-full border-t border-slate-800 bg-[#0f172a] text-slate-400 text-xs mt-16 transition-colors">
       
       {/* Top Value / App Download Banner */}
-      <div className="border-b border-slate-800/80 py-8 px-4 sm:px-6 bg-[#11141e]">
+      <div className="border-b border-slate-800/80 py-8 px-4 sm:px-6 bg-[#1e293b]">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
           {/* Brand & 24/7 Delivery badge */}
           <div className="lg:col-span-6 space-y-3">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-[#fcb800] p-0.5 flex items-center justify-center shadow-lg shadow-[#fcb800]/20">
+              <div className="w-10 h-10 rounded-xl bg-[#3b82f6] p-0.5 flex items-center justify-center shadow-lg shadow-[#3b82f6]/20">
                 <Zap className="w-5 h-5 text-slate-950 fill-slate-950" />
               </div>
               <div>
@@ -87,7 +87,7 @@ export const Footer: React.FC = () => {
           {/* Download Our App Box */}
           <div className="lg:col-span-6 p-4 rounded-2xl bg-gradient-to-r from-slate-900 to-slate-900/90 border border-slate-700/80 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3 text-left">
-              <div className="w-11 h-11 rounded-xl bg-[#fcb800]/15 border border-[#fcb800]/30 flex items-center justify-center text-[#fcb800] shrink-0">
+              <div className="w-11 h-11 rounded-xl bg-[#3b82f6]/15 border border-[#3b82f6]/30 flex items-center justify-center text-[#3b82f6] shrink-0">
                 <Smartphone className="w-6 h-6" />
               </div>
               <div>
@@ -103,7 +103,7 @@ export const Footer: React.FC = () => {
             <button
               onClick={handleDownloadApp}
               disabled={appDownloading}
-              className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-[#fcb800] hover:bg-[#e0a400] text-slate-950 font-black text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-amber-400/20 transition-all cursor-pointer shrink-0"
+              className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-[#3b82f6] hover:bg-[#e0a400] text-slate-950 font-black text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-blue-400/20 transition-all cursor-pointer shrink-0"
             >
               <Download className="w-3.5 h-3.5" />
               <span>{appDownloading ? 'Installing...' : 'Download Now'}</span>
@@ -121,7 +121,7 @@ export const Footer: React.FC = () => {
           <div className="space-y-2">
             <div className="flex items-center gap-2">
               <span className="text-xl font-black text-white">PLAYBEAT</span>
-              <span className="text-xl font-black text-[#fcb800]">.digital</span>
+              <span className="text-xl font-black text-[#3b82f6]">.digital</span>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed">
               Pakistan's premier digital marketplace for game keys, software licenses, AI tools, and gift cards. Instant delivery. Trusted by thousands.
@@ -198,11 +198,11 @@ export const Footer: React.FC = () => {
             {/* Email addresses */}
             <div className="space-y-1 text-slate-300 text-xs pt-2 border-t border-slate-800/60">
               <div className="flex items-center gap-2">
-                <Mail className="w-3.5 h-3.5 text-[#fcb800]" />
+                <Mail className="w-3.5 h-3.5 text-[#3b82f6]" />
                 <span><strong className="text-white font-mono">info@playbeat.digital</strong> <span className="text-slate-500 text-[11px]">(General)</span></span>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="w-3.5 h-3.5 text-yellow-400" />
+                <Mail className="w-3.5 h-3.5 text-blue-400" />
                 <span><strong className="text-white font-mono">support@playbeat.digital</strong> <span className="text-slate-500 text-[11px]">(Support)</span></span>
               </div>
               <div className="flex items-center gap-2">
@@ -214,7 +214,7 @@ export const Footer: React.FC = () => {
             {/* Location & Delivery */}
             <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-[11px] text-slate-400 pt-1">
               <div className="flex items-center gap-1.5">
-                <MapPin className="w-3.5 h-3.5 text-amber-400" />
+                <MapPin className="w-3.5 h-3.5 text-blue-400" />
                 <span className="font-semibold text-slate-200">Pakistan</span>
               </div>
               <div className="flex items-center gap-1.5">
@@ -234,7 +234,7 @@ export const Footer: React.FC = () => {
             <li>
               <button
                 onClick={() => handleQuickLink('storefront', 'all')}
-                className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full"
+                className="hover:text-[#3b82f6] transition-colors cursor-pointer text-left w-full"
               >
                 Home
               </button>
@@ -242,7 +242,7 @@ export const Footer: React.FC = () => {
             <li>
               <button
                 onClick={() => handleQuickLink('storefront', 'smart-projectors', 'HARDWARE')}
-                className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full"
+                className="hover:text-[#3b82f6] transition-colors cursor-pointer text-left w-full"
               >
                 Smart Projectors
               </button>
@@ -250,7 +250,7 @@ export const Footer: React.FC = () => {
             <li>
               <button
                 onClick={() => handleQuickLink('storefront', 'smart-projectors', 'HARDWARE')}
-                className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full text-amber-300 font-semibold"
+                className="hover:text-[#3b82f6] transition-colors cursor-pointer text-left w-full text-blue-300 font-semibold"
               >
                 Best Value
               </button>
@@ -258,7 +258,7 @@ export const Footer: React.FC = () => {
             <li>
               <button
                 onClick={() => handleQuickLink('storefront', 'all')}
-                className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full text-pink-400 font-semibold"
+                className="hover:text-[#3b82f6] transition-colors cursor-pointer text-left w-full text-pink-400 font-semibold"
               >
                 Trending
               </button>
@@ -275,7 +275,7 @@ export const Footer: React.FC = () => {
             <li>
               <button
                 onClick={() => handleQuickLink('storefront', 'smart-projectors')}
-                className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full"
+                className="hover:text-[#3b82f6] transition-colors cursor-pointer text-left w-full"
               >
                 Smart Projectors
               </button>
@@ -283,7 +283,7 @@ export const Footer: React.FC = () => {
             <li>
               <button
                 onClick={() => handleQuickLink('storefront', 'smart-projectors')}
-                className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full text-emerald-400 font-semibold"
+                className="hover:text-[#3b82f6] transition-colors cursor-pointer text-left w-full text-emerald-400 font-semibold"
               >
                 All Verified Catalog
               </button>
@@ -296,7 +296,7 @@ export const Footer: React.FC = () => {
           <div className="space-y-2">
             <h4 className="font-extrabold text-sm text-white uppercase tracking-wider border-b border-slate-800 pb-2 flex items-center justify-between">
               <span>Subscribe to Newsletter</span>
-              <Sparkles className="w-3.5 h-3.5 text-[#fcb800]" />
+              <Sparkles className="w-3.5 h-3.5 text-[#3b82f6]" />
             </h4>
             <p className="text-xs text-slate-400 leading-snug">
               Get flash sale alerts, free software keys, and instant digital discount vouchers.
@@ -314,12 +314,12 @@ export const Footer: React.FC = () => {
                   value={newsletterEmail}
                   onChange={(e) => setNewsletterEmail(e.target.value)}
                   placeholder="Your email"
-                  className="w-full h-9 pl-8 pr-3 rounded-lg bg-slate-900 border border-slate-700 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#fcb800]"
+                  className="w-full h-9 pl-8 pr-3 rounded-lg bg-slate-900 border border-slate-700 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#3b82f6]"
                 />
               </div>
               <button
                 type="submit"
-                className="h-9 px-4 rounded-lg bg-[#fcb800] hover:bg-[#e5a700] text-slate-950 font-black text-xs transition-all flex items-center gap-1.5 cursor-pointer shrink-0"
+                className="h-9 px-4 rounded-lg bg-[#3b82f6] hover:bg-[#2563eb] text-slate-950 font-black text-xs transition-all flex items-center gap-1.5 cursor-pointer shrink-0"
               >
                 <span>Subscribe</span>
                 <Send className="w-3 h-3" />
@@ -338,7 +338,7 @@ export const Footer: React.FC = () => {
       </div>
 
       {/* Clean Copyright Bar (NO admin links on storefront) */}
-      <div className="border-t border-slate-800/80 py-5 px-4 sm:px-6 text-center text-[11px] text-slate-400 bg-[#080a0e]">
+      <div className="border-t border-slate-800/80 py-5 px-4 sm:px-6 text-center text-[11px] text-slate-400 bg-[#020617]">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
           <div>
             © {new Date().getFullYear()} <strong className="text-white">PLAYBEAT.digital</strong>. All rights reserved. Pakistan's Premier Digital Goods Marketplace.

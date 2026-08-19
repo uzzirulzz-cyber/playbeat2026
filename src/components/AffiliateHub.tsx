@@ -60,7 +60,7 @@ export const AffiliateHub: React.FC = () => {
 
         <div className="flex items-center gap-2">
           <span className="text-xs text-slate-400">Tier Status:</span>
-          <span className="px-3 py-1 rounded-xl bg-amber-500/20 border border-amber-500/30 text-amber-400 text-xs font-bold flex items-center gap-1">
+          <span className="px-3 py-1 rounded-xl bg-blue-500/20 border border-blue-500/30 text-blue-400 text-xs font-bold flex items-center gap-1">
             <Award className="w-3.5 h-3.5" /> Platinum Ambassador
           </span>
         </div>
@@ -95,7 +95,7 @@ export const AffiliateHub: React.FC = () => {
           </span>
           <span>•</span>
           <span className="flex items-center gap-1">
-            <Zap className="w-3.5 h-3.5 text-amber-400" /> Instant attribution on key delivery
+            <Zap className="w-3.5 h-3.5 text-blue-400" /> Instant attribution on key delivery
           </span>
           <span>•</span>
           <span className="flex items-center gap-1">
@@ -138,9 +138,9 @@ export const AffiliateHub: React.FC = () => {
         <div className="p-4 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-1">
           <div className="text-xs text-slate-400 flex items-center justify-between">
             <span>Next Automated Payout</span>
-            <Zap className="w-4 h-4 text-amber-400" />
+            <Zap className="w-4 h-4 text-blue-400" />
           </div>
-          <div className="text-2xl font-black text-amber-400">
+          <div className="text-2xl font-black text-blue-400">
             {formatCurrency(19200, currency)}
           </div>
           <div className="text-[10px] text-slate-400">Scheduled in 3 days (JazzCash)</div>

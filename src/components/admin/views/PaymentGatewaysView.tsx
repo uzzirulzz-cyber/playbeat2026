@@ -111,7 +111,7 @@ export const PaymentGatewaysView: React.FC = () => {
                 <button
                   onClick={() => toggleMode(gw.id)}
                   className={`px-2 py-0.5 rounded-md text-[10px] font-mono font-bold cursor-pointer transition-colors ${
-                    gw.mode === 'LIVE' ? 'bg-emerald-950 text-emerald-400 border border-emerald-500/30' : 'bg-amber-950 text-amber-400 border border-amber-500/30'
+                    gw.mode === 'LIVE' ? 'bg-emerald-950 text-emerald-400 border border-emerald-500/30' : 'bg-blue-950 text-blue-400 border border-blue-500/30'
                   }`}
                 >
                   {gw.mode}

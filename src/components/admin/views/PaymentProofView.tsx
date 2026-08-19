@@ -87,7 +87,7 @@ export const PaymentProofView: React.FC = () => {
           <p className="text-xs text-slate-400">Review uploaded JazzCash / EasyPaisa / Bank screenshots and approve instant key delivery</p>
         </div>
 
-        <div className="flex items-center gap-2 font-mono text-xs font-bold text-amber-400 bg-amber-950/40 px-3 py-1.5 rounded-xl border border-amber-500/30">
+        <div className="flex items-center gap-2 font-mono text-xs font-bold text-blue-400 bg-blue-950/40 px-3 py-1.5 rounded-xl border border-blue-500/30">
           <span>Pending Slips: <strong>{proofs.filter(p => p.status === 'PENDING').length}</strong></span>
         </div>
       </div>
@@ -105,7 +105,7 @@ export const PaymentProofView: React.FC = () => {
                 proof.status === 'APPROVED'
                   ? 'bg-emerald-950/50 text-emerald-400 border border-emerald-500/30'
                   : proof.status === 'PENDING'
-                  ? 'bg-amber-950/50 text-amber-400 border border-amber-500/30'
+                  ? 'bg-blue-950/50 text-blue-400 border border-blue-500/30'
                   : 'bg-red-950/50 text-red-400 border border-red-500/30'
               }`}>
                 {proof.status}
@@ -121,7 +121,7 @@ export const PaymentProofView: React.FC = () => {
 
               <div className="p-3 bg-slate-900/60 border border-slate-800 rounded-xl">
                 <div className="text-slate-400 text-[10px]">Amount & Method:</div>
-                <div className="font-bold text-[#fcb800] mt-0.5">Rs {proof.amountPKR.toLocaleString()}</div>
+                <div className="font-bold text-[#3b82f6] mt-0.5">Rs {proof.amountPKR.toLocaleString()}</div>
                 <div className="text-[10px] text-slate-400 font-mono">{proof.method}</div>
               </div>
             </div>

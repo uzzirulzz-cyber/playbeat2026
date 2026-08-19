@@ -117,9 +117,9 @@ export const WhatsAppFloatingButton: React.FC = () => {
           </div>
 
           {/* Channel list */}
-          <div className="p-3 space-y-2 bg-[#0a0f1d]">
+          <div className="p-3 space-y-2 bg-[#020617]">
             <div className="p-3 rounded-xl bg-slate-900 border border-slate-800 text-xs text-slate-300 leading-relaxed flex items-start gap-2">
-              <Zap className="w-3.5 h-3.5 text-[#fcb800] shrink-0 mt-0.5" />
+              <Zap className="w-3.5 h-3.5 text-[#3b82f6] shrink-0 mt-0.5" />
               <span>
                 Pick any channel below to reach the PlayBeat Digital team instantly. Average response time: under 5 minutes during business hours.
               </span>

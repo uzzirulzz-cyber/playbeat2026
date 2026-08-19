@@ -47,7 +47,7 @@ export const WebsiteBuilderView: React.FC = () => {
   const [heroHeading, setHeroHeading] = useState('Next-Gen Digital Goods & 4K Cinema Projectors');
   const [heroSubheading, setHeroSubheading] = useState('Buy official Windows 11 Pro, Office 2024, ChatGPT Plus, IPTV 4K passes, and ZeroByte Android 11 smart projectors with instant dispatch across Pakistan.');
   const [whatsappPhone, setWhatsappPhone] = useState('+923321029333');
-  const [customCss, setCustomCss] = useState('/* Custom Storefront CSS overrides */\n.theme-martfury { --primary: #fcb800; }');
+  const [customCss, setCustomCss] = useState('/* Custom Storefront CSS overrides */\n.theme-martfury { --primary: #3b82f6; }');
   const [saveSuccess, setSaveSuccess] = useState(false);
 
   // Load from local storage
@@ -81,13 +81,13 @@ export const WebsiteBuilderView: React.FC = () => {
       id: 'martfury',
       name: 'Martfury Yellow & Navy (Default)',
       desc: 'High-contrast e-commerce palette with rich navy slate canvas and bright yellow accents.',
-      colors: ['#070b14', '#0f172a', '#fcb800', '#10b981']
+      colors: ['#020617', '#0f172a', '#3b82f6', '#10b981']
     },
     {
       id: 'obsidian',
       name: 'Obsidian Royal Purple',
       desc: 'Sleek luxury dark theme with electric violet gradients and purple highlights.',
-      colors: ['#070b14', '#131127', '#a855f7', '#6366f1']
+      colors: ['#020617', '#131127', '#a855f7', '#6366f1']
     },
     {
       id: 'titanium',
@@ -121,7 +121,7 @@ export const WebsiteBuilderView: React.FC = () => {
             <span className="text-xs text-slate-400">Teamgress Figma-to-Webflow Engine</span>
           </div>
           <h2 className="text-lg font-black text-white flex items-center gap-2 mt-1">
-            <Layout className="w-5 h-5 text-[#fcb800]" />
+            <Layout className="w-5 h-5 text-[#3b82f6]" />
             <span>Storefront Website Builder & Layout Manager</span>
           </h2>
           <p className="text-xs text-slate-400">
@@ -140,7 +140,7 @@ export const WebsiteBuilderView: React.FC = () => {
 
           <button
             onClick={handleSaveConfig}
-            className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-slate-950 text-xs font-black transition-all shadow-lg shadow-yellow-500/20 cursor-pointer"
+            className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#3b82f6] hover:bg-[#2563eb] text-slate-950 text-xs font-black transition-all shadow-lg shadow-blue-500/20 cursor-pointer"
           >
             <Save className="w-3.5 h-3.5" />
             <span>Save & Publish</span>
@@ -164,7 +164,7 @@ export const WebsiteBuilderView: React.FC = () => {
             <div className="flex items-center justify-between border-b border-slate-800 pb-3">
               <div>
                 <h3 className="text-sm font-bold text-white flex items-center gap-2">
-                  <Sliders className="w-4 h-4 text-[#fcb800]" />
+                  <Sliders className="w-4 h-4 text-[#3b82f6]" />
                   <span>Homepage Modular Section Toggles</span>
                 </h3>
                 <p className="text-xs text-slate-400">Toggle or re-order sections displayed on the public storefront.</p>
@@ -196,7 +196,7 @@ export const WebsiteBuilderView: React.FC = () => {
                     className="cursor-pointer text-xl p-1 transition-transform active:scale-95"
                   >
                     {(sections as any)[sec.key] ? (
-                      <ToggleRight className="w-8 h-8 text-[#fcb800]" />
+                      <ToggleRight className="w-8 h-8 text-[#3b82f6]" />
                     ) : (
                       <ToggleLeft className="w-8 h-8 text-slate-600" />
                     )}
@@ -220,7 +220,7 @@ export const WebsiteBuilderView: React.FC = () => {
                   type="text"
                   value={announcementText}
                   onChange={(e) => setAnnouncementText(e.target.value)}
-                  className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-[#fcb800]"
+                  className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-[#3b82f6]"
                 />
               </div>
 
@@ -231,7 +231,7 @@ export const WebsiteBuilderView: React.FC = () => {
                     type="text"
                     value={promoCode}
                     onChange={(e) => setPromoCode(e.target.value)}
-                    className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-[#fcb800] font-mono font-bold focus:outline-none focus:border-[#fcb800]"
+                    className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-[#3b82f6] font-mono font-bold focus:outline-none focus:border-[#3b82f6]"
                   />
                 </div>
 
@@ -252,7 +252,7 @@ export const WebsiteBuilderView: React.FC = () => {
                   type="text"
                   value={heroHeading}
                   onChange={(e) => setHeroHeading(e.target.value)}
-                  className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-[#fcb800]"
+                  className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-[#3b82f6]"
                 />
               </div>
 
@@ -262,7 +262,7 @@ export const WebsiteBuilderView: React.FC = () => {
                   rows={2}
                   value={heroSubheading}
                   onChange={(e) => setHeroSubheading(e.target.value)}
-                  className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-[#fcb800]"
+                  className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-[#3b82f6]"
                 />
               </div>
             </div>
@@ -273,7 +273,7 @@ export const WebsiteBuilderView: React.FC = () => {
         <div className="lg:col-span-5 space-y-6">
           <div className="bg-[#11192e]/90 border border-slate-800/80 rounded-2xl p-5 space-y-4">
             <h3 className="text-sm font-bold text-white flex items-center gap-2 border-b border-slate-800 pb-3">
-              <Palette className="w-4 h-4 text-[#fcb800]" />
+              <Palette className="w-4 h-4 text-[#3b82f6]" />
               <span>Theme Archetype & Color Engine</span>
             </h3>
 
@@ -284,7 +284,7 @@ export const WebsiteBuilderView: React.FC = () => {
                   onClick={() => setThemePreset(th.id)}
                   className={`p-3.5 rounded-xl border transition-all cursor-pointer ${
                     themePreset === th.id
-                      ? 'bg-slate-900 border-[#fcb800] shadow-lg shadow-yellow-500/10'
+                      ? 'bg-slate-900 border-[#3b82f6] shadow-lg shadow-blue-500/10'
                       : 'bg-slate-900/50 border-slate-800 hover:border-slate-700 hover:bg-slate-900/80'
                   }`}
                 >
@@ -303,7 +303,7 @@ export const WebsiteBuilderView: React.FC = () => {
                     </div>
 
                     {themePreset === th.id && (
-                      <span className="px-2 py-0.5 rounded-md bg-[#fcb800] text-slate-950 text-[10px] font-black uppercase tracking-wider">
+                      <span className="px-2 py-0.5 rounded-md bg-[#3b82f6] text-slate-950 text-[10px] font-black uppercase tracking-wider">
                         Active
                       </span>
                     )}

@@ -203,16 +203,16 @@ export const VendorStudio: React.FC = () => {
             <div className="p-4 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-1">
               <div className="text-xs text-slate-400 flex items-center justify-between">
                 <span>Total Keys Dispatched</span>
-                <Zap className="w-4 h-4 text-amber-400" />
+                <Zap className="w-4 h-4 text-blue-400" />
               </div>
-              <div className="text-2xl font-black text-amber-400">842</div>
+              <div className="text-2xl font-black text-blue-400">842</div>
               <div className="text-[10px] text-slate-400">99.98% instant dispatch rate</div>
             </div>
 
             <div className="p-4 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-1">
               <div className="text-xs text-slate-400 flex items-center justify-between">
                 <span>Partner Rating</span>
-                <Star className="w-4 h-4 text-amber-400 fill-amber-400" />
+                <Star className="w-4 h-4 text-blue-400 fill-blue-400" />
               </div>
               <div className="text-2xl font-black text-white">4.95 / 5.0</div>
               <div className="text-[10px] text-slate-400">From 320+ customer reviews</div>

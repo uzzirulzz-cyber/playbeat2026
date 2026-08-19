@@ -40,7 +40,7 @@ export const JazzCashView: React.FC = () => {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-[#11192e]/90 border border-slate-800/80 p-4 rounded-2xl">
         <div>
           <h2 className="text-lg font-black text-white flex items-center gap-2">
-            <Wallet className="w-5 h-5 text-amber-400" />
+            <Wallet className="w-5 h-5 text-blue-400" />
             <span>JazzCash Merchant Direct Integration Portal</span>
           </h2>
           <p className="text-xs text-slate-400">Merchant API credentials, IPN callback handlers, HMAC integrity hashes & live transaction queries</p>
@@ -56,7 +56,7 @@ export const JazzCashView: React.FC = () => {
         {/* Credentials Form */}
         <div className="bg-[#11192e]/90 border border-slate-800/80 p-5 rounded-2xl space-y-4">
           <h3 className="text-sm font-bold text-white flex items-center gap-2">
-            <Lock className="w-4 h-4 text-amber-400" />
+            <Lock className="w-4 h-4 text-blue-400" />
             <span>Production Merchant API Credentials</span>
           </h3>
 
@@ -119,7 +119,7 @@ export const JazzCashView: React.FC = () => {
                 />
                 <button
                   type="submit"
-                  className="px-4 py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs rounded-xl flex items-center gap-1.5 transition-all shadow-md cursor-pointer"
+                  className="px-4 py-2 bg-blue-500 hover:bg-blue-400 text-slate-950 font-bold text-xs rounded-xl flex items-center gap-1.5 transition-all shadow-md cursor-pointer"
                 >
                   <Search className="w-3.5 h-3.5" />
                   <span>Query</span>
@@ -137,7 +137,7 @@ export const JazzCashView: React.FC = () => {
                 </span>
               </div>
               <div className="grid grid-cols-2 gap-2 text-[11px] pt-2 border-t border-slate-800 text-slate-300">
-                <div>Amount: <strong className="text-[#fcb800]">{queryResult.amount}</strong></div>
+                <div>Amount: <strong className="text-[#3b82f6]">{queryResult.amount}</strong></div>
                 <div>Response: <strong className="text-emerald-400">{queryResult.pp_ResponseMessage}</strong></div>
                 <div>Account: <span className="font-mono">{queryResult.settlementAccount}</span></div>
                 <div>Timestamp: <span className="font-mono">{queryResult.timestamp}</span></div>

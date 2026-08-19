@@ -104,7 +104,7 @@ export const ProductDetailModal: React.FC = () => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/85 backdrop-blur-md overflow-y-auto">
-      <div className="relative w-full max-w-4xl max-h-[92vh] overflow-y-auto rounded-3xl bg-[#0b1120] border border-slate-800 shadow-2xl p-5 sm:p-8 space-y-6 my-auto">
+      <div className="relative w-full max-w-4xl max-h-[92vh] overflow-y-auto rounded-3xl bg-[#0f172a] border border-slate-800 shadow-2xl p-5 sm:p-8 space-y-6 my-auto">
         
         {/* Close Button */}
         <button
@@ -128,7 +128,7 @@ export const ProductDetailModal: React.FC = () => {
                 />
               ) : (
                 <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-slate-900 to-slate-950">
-                  <Sparkles className="w-16 h-16 text-[#fcb800] mb-2" />
+                  <Sparkles className="w-16 h-16 text-[#3b82f6] mb-2" />
                   <span className="text-sm font-bold text-white uppercase tracking-wider">
                     {selectedProduct.type.replace('_', ' ')}
                   </span>
@@ -137,16 +137,16 @@ export const ProductDetailModal: React.FC = () => {
 
               {/* Status Badge */}
               <div className="absolute top-3 left-3">
-                <span className="px-2.5 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-black/70 backdrop-blur-md text-[#fcb800] border border-yellow-500/30">
+                <span className="px-2.5 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-black/70 backdrop-blur-md text-[#3b82f6] border border-blue-500/30">
                   {isHardware ? 'ZeroByte 4K Projector' : 'Instant Key Delivery'}
                 </span>
               </div>
             </div>
 
             {/* Trust Badges */}
-            <div className="grid grid-cols-2 gap-2 text-[11px] p-3 rounded-2xl bg-[#070b14] border border-slate-800">
+            <div className="grid grid-cols-2 gap-2 text-[11px] p-3 rounded-2xl bg-[#020617] border border-slate-800">
               <div className="flex items-center gap-2 text-slate-300">
-                <ShieldCheck className="w-4 h-4 text-[#fcb800] shrink-0" />
+                <ShieldCheck className="w-4 h-4 text-[#3b82f6] shrink-0" />
                 <span>100% Genuine Key</span>
               </div>
               <div className="flex items-center gap-2 text-slate-300">
@@ -171,7 +171,7 @@ export const ProductDetailModal: React.FC = () => {
 
               {/* Ratings */}
               <div className="flex items-center gap-2 mt-2">
-                <div className="flex items-center text-amber-400">
+                <div className="flex items-center text-blue-400">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className={`w-3.5 h-3.5 ${i < Math.floor(selectedProduct.rating) ? 'fill-current' : 'text-slate-600'}`} />
                   ))}
@@ -194,12 +194,12 @@ export const ProductDetailModal: React.FC = () => {
                     onClick={() => setSelectedVariant(v)}
                     className={`p-2.5 rounded-xl text-left border transition-all cursor-pointer ${
                       currentVariant.id === v.id
-                        ? 'bg-yellow-400/10 border-[#fcb800] text-white shadow-md'
-                        : 'bg-[#070b14] border-slate-800 text-slate-400 hover:border-slate-700'
+                        ? 'bg-blue-400/10 border-[#3b82f6] text-white shadow-md'
+                        : 'bg-[#020617] border-slate-800 text-slate-400 hover:border-slate-700'
                     }`}
                   >
                     <div className="text-xs font-bold truncate">{v.name}</div>
-                    <div className="text-xs font-mono font-black text-[#fcb800] mt-0.5">
+                    <div className="text-xs font-mono font-black text-[#3b82f6] mt-0.5">
                       Rs {(v.discountPrice || v.price).toLocaleString()}
                     </div>
                   </button>
@@ -208,10 +208,10 @@ export const ProductDetailModal: React.FC = () => {
             </div>
 
             {/* Pricing Section */}
-            <div className="p-4 rounded-2xl bg-[#070b14] border border-slate-800 flex items-baseline justify-between">
+            <div className="p-4 rounded-2xl bg-[#020617] border border-slate-800 flex items-baseline justify-between">
               <div>
                 <span className="text-[10px] uppercase font-bold text-slate-500">Total Price:</span>
-                <div className="text-2xl font-black text-[#fcb800] font-mono">
+                <div className="text-2xl font-black text-[#3b82f6] font-mono">
                   {formatPKR(totalPrice)}
                 </div>
               </div>
@@ -241,13 +241,13 @@ export const ProductDetailModal: React.FC = () => {
                   onClick={handleAddToCart}
                   className="flex-1 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs flex items-center justify-center gap-2 border border-slate-700 cursor-pointer transition-colors"
                 >
-                  <ShoppingCart className="w-4 h-4 text-[#fcb800]" />
+                  <ShoppingCart className="w-4 h-4 text-[#3b82f6]" />
                   <span>Add to Cart</span>
                 </button>
 
                 <button
                   onClick={handleInstantBuy}
-                  className="flex-1 py-3 rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-slate-950 font-black text-xs flex items-center justify-center gap-2 shadow-lg shadow-yellow-500/20 cursor-pointer transition-all active:scale-95"
+                  className="flex-1 py-3 rounded-xl bg-[#3b82f6] hover:bg-[#2563eb] text-slate-950 font-black text-xs flex items-center justify-center gap-2 shadow-lg shadow-blue-500/20 cursor-pointer transition-all active:scale-95"
                 >
                   <Zap className="w-4 h-4" />
                   <span>Buy Now (Instant Key)</span>
@@ -283,7 +283,7 @@ export const ProductDetailModal: React.FC = () => {
                 onClick={() => setActiveTab(tab.id)}
                 className={`px-3 py-1.5 rounded-xl transition-all cursor-pointer ${
                   activeTab === tab.id
-                    ? 'bg-[#fcb800] text-slate-950 font-black'
+                    ? 'bg-[#3b82f6] text-slate-950 font-black'
                     : 'text-slate-400 hover:text-white'
                 }`}
               >
@@ -305,8 +305,8 @@ export const ProductDetailModal: React.FC = () => {
                     <h4 className="font-bold text-white">Key Features:</h4>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                       {selectedProduct.features.map((feat, idx) => (
-                        <div key={idx} className="flex items-center gap-2 p-2 rounded-xl bg-[#070b14] border border-slate-800">
-                          <Check className="w-3.5 h-3.5 text-[#fcb800] shrink-0" />
+                        <div key={idx} className="flex items-center gap-2 p-2 rounded-xl bg-[#020617] border border-slate-800">
+                          <Check className="w-3.5 h-3.5 text-[#3b82f6] shrink-0" />
                           <span>{feat}</span>
                         </div>
                       ))}
@@ -353,9 +353,9 @@ export const ProductDetailModal: React.FC = () => {
                     a: 'All ZeroByte Smart Cinema Projectors come with an official 1-Year PlayBeat replacement warranty and free courier dispatch across all major cities in Pakistan.'
                   }
                 ].map((item, idx) => (
-                  <div key={idx} className="p-3.5 rounded-xl bg-[#070b14] border border-slate-800 space-y-1">
+                  <div key={idx} className="p-3.5 rounded-xl bg-[#020617] border border-slate-800 space-y-1">
                     <h5 className="font-bold text-white text-xs flex items-center gap-2">
-                      <HelpCircle className="w-3.5 h-3.5 text-[#fcb800]" />
+                      <HelpCircle className="w-3.5 h-3.5 text-[#3b82f6]" />
                       <span>{item.q}</span>
                     </h5>
                     <p className="text-slate-400 pl-5 leading-relaxed">{item.a}</p>
@@ -367,7 +367,7 @@ export const ProductDetailModal: React.FC = () => {
             {activeTab === 'reviews' && (
               <div className="space-y-6">
                 {/* Submit Review */}
-                <form onSubmit={handleSubmitReview} className="p-4 rounded-2xl bg-[#070b14] border border-slate-800 space-y-3">
+                <form onSubmit={handleSubmitReview} className="p-4 rounded-2xl bg-[#020617] border border-slate-800 space-y-3">
                   <h4 className="font-bold text-white text-xs">Write a Customer Review</h4>
                   {reviewSubmitted && (
                     <div className="p-2 rounded-xl bg-emerald-950/80 border border-emerald-500/30 text-emerald-300 text-xs">
@@ -405,7 +405,7 @@ export const ProductDetailModal: React.FC = () => {
                   />
                   <button
                     type="submit"
-                    className="px-4 py-2 rounded-xl bg-[#fcb800] text-slate-950 font-black text-xs cursor-pointer shadow-md"
+                    className="px-4 py-2 rounded-xl bg-[#3b82f6] text-slate-950 font-black text-xs cursor-pointer shadow-md"
                   >
                     Submit Review
                   </button>
@@ -414,10 +414,10 @@ export const ProductDetailModal: React.FC = () => {
                 {/* Existing Reviews List */}
                 <div className="space-y-3">
                   {(selectedProduct.reviews || []).map((rev) => (
-                    <div key={rev.id} className="p-3.5 rounded-xl bg-[#070b14] border border-slate-800 space-y-1">
+                    <div key={rev.id} className="p-3.5 rounded-xl bg-[#020617] border border-slate-800 space-y-1">
                       <div className="flex items-center justify-between text-[11px]">
                         <span className="font-bold text-white">{rev.authorName}</span>
-                        <div className="flex items-center text-amber-400">
+                        <div className="flex items-center text-blue-400">
                           {[...Array(rev.rating)].map((_, i) => (
                             <Star key={i} className="w-3 h-3 fill-current" />
                           ))}

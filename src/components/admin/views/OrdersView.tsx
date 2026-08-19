@@ -127,7 +127,7 @@ export const OrdersView: React.FC = () => {
                     </div>
                   </td>
                   <td className="py-3 px-4">
-                    <div className="font-bold text-[#fcb800]">
+                    <div className="font-bold text-[#3b82f6]">
                       Rs {(order.totalAmountPKR || order.total || 0).toLocaleString()}
                     </div>
                     <div className="text-[10px] text-emerald-400 font-semibold font-mono">PAID & VERIFIED</div>
@@ -143,7 +143,7 @@ export const OrdersView: React.FC = () => {
                         order.status === 'COMPLETED'
                           ? 'bg-emerald-950/50 text-emerald-400 border border-emerald-500/30'
                           : order.status === 'PENDING'
-                          ? 'bg-amber-950/50 text-amber-400 border border-amber-500/30'
+                          ? 'bg-blue-950/50 text-blue-400 border border-blue-500/30'
                           : 'bg-red-950/50 text-red-400 border border-red-500/30'
                       }`}
                     >

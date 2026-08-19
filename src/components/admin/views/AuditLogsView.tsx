@@ -55,13 +55,13 @@ export const AuditLogsView: React.FC = () => {
           onClick={handleExportCSV}
           className="px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 text-xs font-bold flex items-center gap-2 cursor-pointer"
         >
-          <Download className="w-4 h-4 text-[#fcb800]" />
+          <Download className="w-4 h-4 text-[#3b82f6]" />
           <span>Export Audit Log (CSV)</span>
         </button>
       </div>
 
       {/* Filter Bar */}
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-3 bg-[#070b14] p-3 rounded-2xl border border-slate-800 text-xs">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-3 bg-[#020617] p-3 rounded-2xl border border-slate-800 text-xs">
         <div className="flex items-center gap-2 w-full sm:w-80 bg-slate-900 px-3 py-2 rounded-xl border border-slate-700">
           <Search className="w-4 h-4 text-slate-400" />
           <input
@@ -80,7 +80,7 @@ export const AuditLogsView: React.FC = () => {
               onClick={() => setActionFilter(f)}
               className={`px-3 py-1.5 rounded-xl font-bold transition-all cursor-pointer ${
                 actionFilter === f
-                  ? 'bg-[#fcb800] text-slate-950 shadow-md'
+                  ? 'bg-[#3b82f6] text-slate-950 shadow-md'
                   : 'bg-slate-900 text-slate-400 hover:text-white border border-slate-800'
               }`}
             >
@@ -91,7 +91,7 @@ export const AuditLogsView: React.FC = () => {
       </div>
 
       {/* Logs Table */}
-      <div className="border border-slate-800 rounded-2xl overflow-hidden bg-[#070b14]">
+      <div className="border border-slate-800 rounded-2xl overflow-hidden bg-[#020617]">
         <table className="w-full text-left text-xs">
           <thead className="bg-slate-950 text-slate-400 font-bold border-b border-slate-800">
             <tr>
@@ -121,7 +121,7 @@ export const AuditLogsView: React.FC = () => {
                     <span className="text-[10px] text-slate-500 font-mono">{log.userRole}</span>
                   </td>
                   <td className="p-3.5">
-                    <span className="px-2 py-0.5 rounded-full text-[10px] font-mono font-bold bg-yellow-400/10 text-[#fcb800] border border-yellow-400/20">
+                    <span className="px-2 py-0.5 rounded-full text-[10px] font-mono font-bold bg-blue-400/10 text-[#3b82f6] border border-blue-400/20">
                       {log.action}
                     </span>
                   </td>

@@ -98,7 +98,7 @@ export const SupportView: React.FC = () => {
         </div>
 
         <div className="flex items-center gap-2 font-mono text-xs font-bold text-slate-300 bg-slate-900 px-3 py-1.5 rounded-xl border border-slate-800">
-          <span>Open Tickets: <strong className="text-amber-400">{tickets.filter(t => t.status === 'OPEN').length}</strong></span>
+          <span>Open Tickets: <strong className="text-blue-400">{tickets.filter(t => t.status === 'OPEN').length}</strong></span>
         </div>
       </div>
 
@@ -153,7 +153,7 @@ export const SupportView: React.FC = () => {
                     <span className={`text-[10px] px-2 py-0.5 rounded-full font-bold ${
                       activeTicket.status === 'RESOLVED' 
                         ? 'bg-emerald-950 text-emerald-400 border border-emerald-500/30' 
-                        : 'bg-amber-950 text-amber-400 border border-amber-500/30'
+                        : 'bg-blue-950 text-blue-400 border border-blue-500/30'
                     }`}>
                       {activeTicket.status}
                     </span>

@@ -117,17 +117,17 @@ export const AdminSidebar: React.FC<AdminSidebarProps> = ({
   ];
 
   return (
-    <aside className="w-64 shrink-0 bg-[#070b14] border-r border-slate-800 flex flex-col justify-between min-h-[calc(100vh-65px)] select-none">
+    <aside className="w-64 shrink-0 bg-[#020617] border-r border-slate-800 flex flex-col justify-between min-h-[calc(100vh-65px)] select-none">
       <div className="p-4 space-y-6 overflow-y-auto max-h-[calc(100vh-140px)] custom-scrollbar">
         {/* Logo */}
         <div className="flex items-center gap-2.5 px-2 py-1">
-          <div className="w-8 h-8 rounded-xl bg-[#fcb800] text-slate-950 font-black flex items-center justify-center shadow-lg shadow-yellow-500/20 text-sm">
+          <div className="w-8 h-8 rounded-xl bg-[#3b82f6] text-slate-950 font-black flex items-center justify-center shadow-lg shadow-blue-500/20 text-sm">
             PB
           </div>
           <div>
             <div className="text-base font-black tracking-tight text-white flex items-center gap-1">
               <span>PlayBeat</span>
-              <span className="text-[#fcb800] text-xs font-bold uppercase">Admin</span>
+              <span className="text-[#3b82f6] text-xs font-bold uppercase">Admin</span>
             </div>
             <div className="text-[10px] text-slate-400 font-mono">playbeat.digital</div>
           </div>
@@ -150,7 +150,7 @@ export const AdminSidebar: React.FC<AdminSidebarProps> = ({
                       onClick={() => setActiveTab(item.id)}
                       className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-bold transition-all duration-150 cursor-pointer ${
                         isActive
-                          ? 'bg-[#fcb800] text-slate-950 shadow-md font-black'
+                          ? 'bg-[#3b82f6] text-slate-950 shadow-md font-black'
                           : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900/60'
                       }`}
                     >

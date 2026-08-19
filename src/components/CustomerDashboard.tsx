@@ -136,10 +136,10 @@ export const CustomerDashboard: React.FC = () => {
 
   return (
     <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-2 sm:p-4 overflow-y-auto">
-      <div className="bg-[#0b1120] border border-slate-800 rounded-3xl w-full max-w-5xl overflow-hidden shadow-2xl flex flex-col md:flex-row max-h-[92vh]">
+      <div className="bg-[#0f172a] border border-slate-800 rounded-3xl w-full max-w-5xl overflow-hidden shadow-2xl flex flex-col md:flex-row max-h-[92vh]">
         
         {/* Left Navigation Bar */}
-        <aside className="w-full md:w-64 bg-[#070b14] border-r border-slate-800/80 p-5 flex flex-col justify-between shrink-0">
+        <aside className="w-full md:w-64 bg-[#020617] border-r border-slate-800/80 p-5 flex flex-col justify-between shrink-0">
           <div className="space-y-6">
             {/* User Profile Header */}
             <div className="flex items-center gap-3">
@@ -151,7 +151,7 @@ export const CustomerDashboard: React.FC = () => {
               <div className="min-w-0">
                 <h3 className="font-bold text-white text-sm truncate">{user.name}</h3>
                 <p className="text-xs text-slate-400 truncate">{user.email}</p>
-                <span className="inline-block mt-1 px-2 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wider bg-yellow-400/10 text-[#fcb800] border border-yellow-400/20">
+                <span className="inline-block mt-1 px-2 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wider bg-blue-400/10 text-[#3b82f6] border border-blue-400/20">
                   Verified Member
                 </span>
               </div>
@@ -160,7 +160,7 @@ export const CustomerDashboard: React.FC = () => {
             {/* Wallet Quick Balance */}
             <div className="p-3.5 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 space-y-1">
               <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider flex items-center gap-1.5">
-                <Wallet className="w-3 h-3 text-[#fcb800]" />
+                <Wallet className="w-3 h-3 text-[#3b82f6]" />
                 <span>Wallet Balance</span>
               </span>
               <div className="text-base font-black text-white font-mono">
@@ -190,7 +190,7 @@ export const CustomerDashboard: React.FC = () => {
                     }}
                     className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl font-bold transition-all cursor-pointer ${
                       isActive
-                        ? 'bg-[#fcb800] text-slate-950 shadow-md shadow-yellow-500/20'
+                        ? 'bg-[#3b82f6] text-slate-950 shadow-md shadow-blue-500/20'
                         : 'text-slate-300 hover:text-white hover:bg-slate-900/60'
                     }`}
                   >
@@ -200,7 +200,7 @@ export const CustomerDashboard: React.FC = () => {
                     </div>
                     {item.count !== undefined && item.count > 0 && (
                       <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold ${
-                        isActive ? 'bg-slate-950 text-[#fcb800]' : 'bg-slate-800 text-slate-300'
+                        isActive ? 'bg-slate-950 text-[#3b82f6]' : 'bg-slate-800 text-slate-300'
                       }`}>
                         {item.count}
                       </span>
@@ -257,34 +257,34 @@ export const CustomerDashboard: React.FC = () => {
             <div className="space-y-6">
               {/* Quick Metric Cards */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                <div className="p-4 rounded-2xl bg-[#070b14] border border-slate-800 space-y-1">
+                <div className="p-4 rounded-2xl bg-[#020617] border border-slate-800 space-y-1">
                   <span className="text-[10px] text-slate-400 uppercase tracking-wider font-bold">Total Orders</span>
                   <div className="text-xl font-black text-white font-mono">{myOrders.length}</div>
                 </div>
-                <div className="p-4 rounded-2xl bg-[#070b14] border border-slate-800 space-y-1">
+                <div className="p-4 rounded-2xl bg-[#020617] border border-slate-800 space-y-1">
                   <span className="text-[10px] text-slate-400 uppercase tracking-wider font-bold">Active Subscriptions</span>
                   <div className="text-xl font-black text-emerald-400 font-mono">{activeSubs.length}</div>
                 </div>
-                <div className="p-4 rounded-2xl bg-[#070b14] border border-slate-800 space-y-1">
+                <div className="p-4 rounded-2xl bg-[#020617] border border-slate-800 space-y-1">
                   <span className="text-[10px] text-slate-400 uppercase tracking-wider font-bold">Digital Keys Vault</span>
                   <div className="text-xl font-black text-purple-400 font-mono">{allVaultKeys.length}</div>
                 </div>
-                <div className="p-4 rounded-2xl bg-[#070b14] border border-slate-800 space-y-1">
+                <div className="p-4 rounded-2xl bg-[#020617] border border-slate-800 space-y-1">
                   <span className="text-[10px] text-slate-400 uppercase tracking-wider font-bold">Wallet Balance</span>
-                  <div className="text-xl font-black text-[#fcb800] font-mono">{formatPKR(user.balancePKR || 0)}</div>
+                  <div className="text-xl font-black text-[#3b82f6] font-mono">{formatPKR(user.balancePKR || 0)}</div>
                 </div>
               </div>
 
               {/* Recent Orders Spotlight */}
-              <div className="bg-[#070b14] border border-slate-800 rounded-2xl p-5 space-y-3">
+              <div className="bg-[#020617] border border-slate-800 rounded-2xl p-5 space-y-3">
                 <div className="flex items-center justify-between">
                   <h3 className="font-bold text-white text-sm flex items-center gap-2">
-                    <ShoppingBag className="w-4 h-4 text-[#fcb800]" />
+                    <ShoppingBag className="w-4 h-4 text-[#3b82f6]" />
                     <span>Recent Purchases</span>
                   </h3>
                   <button
                     onClick={() => setActiveTab('orders')}
-                    className="text-xs text-[#fcb800] font-bold hover:underline cursor-pointer"
+                    className="text-xs text-[#3b82f6] font-bold hover:underline cursor-pointer"
                   >
                     View all orders →
                   </button>
@@ -301,7 +301,7 @@ export const CustomerDashboard: React.FC = () => {
                           <div className="text-[11px] text-slate-400">{order.items.map(i => i.product.title).join(', ')}</div>
                         </div>
                         <div className="text-right">
-                          <div className="font-bold text-[#fcb800] font-mono">{formatPKR(order.totalAmountPKR)}</div>
+                          <div className="font-bold text-[#3b82f6] font-mono">{formatPKR(order.totalAmountPKR)}</div>
                           <span className="px-2 py-0.5 rounded-full text-[9px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
                             {order.status}
                           </span>
@@ -318,14 +318,14 @@ export const CustomerDashboard: React.FC = () => {
           {activeTab === 'orders' && (
             <div className="space-y-4">
               {myOrders.length === 0 ? (
-                <div className="p-12 text-center space-y-3 bg-[#070b14] rounded-2xl border border-slate-800">
+                <div className="p-12 text-center space-y-3 bg-[#020617] rounded-2xl border border-slate-800">
                   <ShoppingBag className="w-10 h-10 text-slate-600 mx-auto" />
                   <h4 className="font-bold text-white text-sm">No Orders Found</h4>
                   <p className="text-xs text-slate-400">Your completed purchases and dispatch tracking will appear here.</p>
                 </div>
               ) : (
                 myOrders.map(order => (
-                  <div key={order.id} className="bg-[#070b14] border border-slate-800 rounded-2xl p-4 sm:p-5 space-y-4">
+                  <div key={order.id} className="bg-[#020617] border border-slate-800 rounded-2xl p-4 sm:p-5 space-y-4">
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-3">
                       <div>
                         <div className="flex items-center gap-2">
@@ -345,7 +345,7 @@ export const CustomerDashboard: React.FC = () => {
                           }}
                           className="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold flex items-center gap-1.5 border border-slate-700 cursor-pointer"
                         >
-                          <FileText className="w-3.5 h-3.5 text-[#fcb800]" />
+                          <FileText className="w-3.5 h-3.5 text-[#3b82f6]" />
                           <span>View Invoice</span>
                         </button>
                       </div>
@@ -361,7 +361,7 @@ export const CustomerDashboard: React.FC = () => {
                             {item.licenseKeys && item.licenseKeys.length > 0 && (
                               <div className="pt-1 flex flex-wrap items-center gap-2">
                                 {item.licenseKeys.map((key, kidx) => (
-                                  <div key={kidx} className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-black/60 border border-yellow-500/30 text-yellow-300 font-mono text-[11px]">
+                                  <div key={kidx} className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-black/60 border border-blue-500/30 text-blue-300 font-mono text-[11px]">
                                     <span>{key}</span>
                                     <button
                                       onClick={() => handleCopy(key)}
@@ -375,7 +375,7 @@ export const CustomerDashboard: React.FC = () => {
                             )}
                           </div>
 
-                          <div className="font-bold text-[#fcb800] font-mono">
+                          <div className="font-bold text-[#3b82f6] font-mono">
                             Rs {((item.unitPrice || item.product.price) * item.quantity).toLocaleString()}
                           </div>
                         </div>
@@ -384,7 +384,7 @@ export const CustomerDashboard: React.FC = () => {
 
                     <div className="flex items-center justify-between pt-2 border-t border-slate-800 text-xs font-bold">
                       <span className="text-slate-400">Total Paid ({order.paymentMethod.toUpperCase()})</span>
-                      <span className="text-[#fcb800] font-mono text-sm">{formatPKR(order.totalAmountPKR)}</span>
+                      <span className="text-[#3b82f6] font-mono text-sm">{formatPKR(order.totalAmountPKR)}</span>
                     </div>
                   </div>
                 ))
@@ -406,21 +406,21 @@ export const CustomerDashboard: React.FC = () => {
               </div>
 
               {allVaultKeys.length === 0 ? (
-                <div className="p-12 text-center space-y-2 bg-[#070b14] rounded-2xl border border-slate-800">
+                <div className="p-12 text-center space-y-2 bg-[#020617] rounded-2xl border border-slate-800">
                   <Key className="w-8 h-8 text-slate-600 mx-auto" />
                   <p className="text-xs text-slate-400">No keys in vault yet. Purchase software or IPTV to populate your vault.</p>
                 </div>
               ) : (
                 <div className="space-y-3">
                   {allVaultKeys.map((item, idx) => (
-                    <div key={idx} className="p-4 rounded-2xl bg-[#070b14] border border-slate-800 space-y-2">
+                    <div key={idx} className="p-4 rounded-2xl bg-[#020617] border border-slate-800 space-y-2">
                       <div className="flex items-center justify-between text-xs">
                         <span className="font-bold text-white">{item.productTitle}</span>
                         <span className="text-slate-500 text-[10px] font-mono">Order {item.orderNumber}</span>
                       </div>
 
                       <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-950 border border-slate-800">
-                        <code className="text-yellow-400 font-mono font-bold text-xs">{item.key}</code>
+                        <code className="text-blue-400 font-mono font-bold text-xs">{item.key}</code>
                         <button
                           onClick={() => handleCopy(item.key)}
                           className="px-3 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold flex items-center gap-1.5 border border-slate-700 cursor-pointer"
@@ -432,7 +432,7 @@ export const CustomerDashboard: React.FC = () => {
                             </>
                           ) : (
                             <>
-                              <Copy className="w-3 h-3 text-[#fcb800]" />
+                              <Copy className="w-3 h-3 text-[#3b82f6]" />
                               <span>Copy Key</span>
                             </>
                           )}
@@ -451,14 +451,14 @@ export const CustomerDashboard: React.FC = () => {
           {activeTab === 'subscriptions' && (
             <div className="space-y-4">
               {activeSubs.length === 0 ? (
-                <div className="p-12 text-center space-y-2 bg-[#070b14] rounded-2xl border border-slate-800">
+                <div className="p-12 text-center space-y-2 bg-[#020617] rounded-2xl border border-slate-800">
                   <RefreshCw className="w-8 h-8 text-slate-600 mx-auto" />
                   <h4 className="font-bold text-white text-xs">No Active Subscriptions</h4>
                   <p className="text-xs text-slate-400">Subscribe to IPTV 4K passes or AI models for recurring automated renewals.</p>
                 </div>
               ) : (
                 activeSubs.map(sub => (
-                  <div key={sub.id} className="p-4 rounded-2xl bg-[#070b14] border border-slate-800 space-y-3">
+                  <div key={sub.id} className="p-4 rounded-2xl bg-[#020617] border border-slate-800 space-y-3">
                     <div className="flex items-center justify-between text-xs">
                       <div>
                         <h4 className="font-bold text-white text-sm">{sub.productTitle}</h4>
@@ -480,7 +480,7 @@ export const CustomerDashboard: React.FC = () => {
                       </div>
                       <div>
                         <span className="text-slate-500">Recurring Price:</span>
-                        <div className="font-bold text-[#fcb800] font-mono">Rs {sub.pricePKR.toLocaleString()}</div>
+                        <div className="font-bold text-[#3b82f6] font-mono">Rs {sub.pricePKR.toLocaleString()}</div>
                       </div>
                     </div>
 
@@ -503,10 +503,10 @@ export const CustomerDashboard: React.FC = () => {
           {/* 5. WALLET TAB */}
           {activeTab === 'wallet' && (
             <div className="space-y-6">
-              <div className="p-6 rounded-3xl bg-gradient-to-br from-slate-900 via-[#070b14] to-slate-950 border border-slate-800 space-y-4">
+              <div className="p-6 rounded-3xl bg-gradient-to-br from-slate-900 via-[#020617] to-slate-950 border border-slate-800 space-y-4">
                 <div className="flex items-center justify-between">
                   <span className="text-xs text-slate-400 font-bold uppercase tracking-wider">PlayBeat Store Balance</span>
-                  <Wallet className="w-5 h-5 text-[#fcb800]" />
+                  <Wallet className="w-5 h-5 text-[#3b82f6]" />
                 </div>
                 <div className="text-3xl font-black text-white font-mono">
                   {formatPKR(user.balancePKR || 0)}
@@ -523,7 +523,7 @@ export const CustomerDashboard: React.FC = () => {
                 </div>
               )}
 
-              <form onSubmit={handleTopup} className="p-5 rounded-2xl bg-[#070b14] border border-slate-800 space-y-4">
+              <form onSubmit={handleTopup} className="p-5 rounded-2xl bg-[#020617] border border-slate-800 space-y-4">
                 <h4 className="font-bold text-white text-xs">Top Up Wallet Credits</h4>
                 <div className="grid grid-cols-3 gap-2">
                   {[1000, 2000, 5000, 10000, 20000].map(amt => (
@@ -533,7 +533,7 @@ export const CustomerDashboard: React.FC = () => {
                       onClick={() => setTopupAmount(amt)}
                       className={`py-2 rounded-xl text-xs font-mono font-bold border transition-all cursor-pointer ${
                         topupAmount === amt
-                          ? 'bg-[#fcb800] text-slate-950 border-[#fcb800]'
+                          ? 'bg-[#3b82f6] text-slate-950 border-[#3b82f6]'
                           : 'bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-700'
                       }`}
                     >
@@ -547,11 +547,11 @@ export const CustomerDashboard: React.FC = () => {
                     type="number"
                     value={topupAmount}
                     onChange={(e) => setTopupAmount(Number(e.target.value))}
-                    className="flex-1 px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white font-mono text-xs focus:outline-none focus:border-[#fcb800]"
+                    className="flex-1 px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white font-mono text-xs focus:outline-none focus:border-[#3b82f6]"
                   />
                   <button
                     type="submit"
-                    className="px-5 py-2.5 rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-slate-950 font-black text-xs transition-all shadow-lg shadow-yellow-500/20 cursor-pointer"
+                    className="px-5 py-2.5 rounded-xl bg-[#3b82f6] hover:bg-[#2563eb] text-slate-950 font-black text-xs transition-all shadow-lg shadow-blue-500/20 cursor-pointer"
                   >
                     Top Up Now
                   </button>
@@ -570,7 +570,7 @@ export const CustomerDashboard: React.FC = () => {
                 </div>
                 <button
                   onClick={() => setIsNewTicketOpen(true)}
-                  className="px-3.5 py-2 rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-slate-950 font-bold text-xs flex items-center gap-1.5 cursor-pointer shadow-md"
+                  className="px-3.5 py-2 rounded-xl bg-[#3b82f6] hover:bg-[#2563eb] text-slate-950 font-bold text-xs flex items-center gap-1.5 cursor-pointer shadow-md"
                 >
                   <Plus className="w-3.5 h-3.5" />
                   <span>Open New Ticket</span>
@@ -578,7 +578,7 @@ export const CustomerDashboard: React.FC = () => {
               </div>
 
               {isNewTicketOpen && (
-                <form onSubmit={handleCreateTicket} className="p-4 rounded-2xl bg-[#070b14] border border-slate-800 space-y-3 text-xs">
+                <form onSubmit={handleCreateTicket} className="p-4 rounded-2xl bg-[#020617] border border-slate-800 space-y-3 text-xs">
                   <div className="flex items-center justify-between border-b border-slate-800 pb-2">
                     <span className="font-bold text-white">Create Support Ticket</span>
                     <button type="button" onClick={() => setIsNewTicketOpen(false)} className="text-slate-400 hover:text-white cursor-pointer">✕</button>
@@ -626,7 +626,7 @@ export const CustomerDashboard: React.FC = () => {
 
                   <button
                     type="submit"
-                    className="w-full py-2.5 rounded-xl bg-[#fcb800] text-slate-950 font-black cursor-pointer shadow-md"
+                    className="w-full py-2.5 rounded-xl bg-[#3b82f6] text-slate-950 font-black cursor-pointer shadow-md"
                   >
                     Submit Ticket
                   </button>
@@ -636,18 +636,18 @@ export const CustomerDashboard: React.FC = () => {
               {/* Tickets List */}
               <div className="space-y-3">
                 {myTickets.length === 0 ? (
-                  <div className="p-8 text-center space-y-2 bg-[#070b14] rounded-2xl border border-slate-800">
+                  <div className="p-8 text-center space-y-2 bg-[#020617] rounded-2xl border border-slate-800">
                     <Headphones className="w-8 h-8 text-slate-600 mx-auto" />
                     <h5 className="font-bold text-white text-xs">No Support Tickets</h5>
                     <p className="text-[11px] text-slate-400">Need help with an activation code or order? Click &quot;Open New Ticket&quot; above.</p>
                   </div>
                 ) : (
                   myTickets.map(ticket => (
-                  <div key={ticket.id} className="p-4 rounded-2xl bg-[#070b14] border border-slate-800 space-y-3">
+                  <div key={ticket.id} className="p-4 rounded-2xl bg-[#020617] border border-slate-800 space-y-3">
                     <div className="flex items-center justify-between text-xs">
                       <div className="space-y-0.5">
                         <div className="flex items-center gap-2">
-                          <span className="font-mono font-bold text-[#fcb800]">{ticket.ticketNumber}</span>
+                          <span className="font-mono font-bold text-[#3b82f6]">{ticket.ticketNumber}</span>
                           <span className="font-bold text-white">{ticket.subject}</span>
                         </div>
                         <span className="text-[10px] text-slate-500">Category: {ticket.category} • Updated: {new Date(ticket.updatedAt).toLocaleDateString()}</span>
@@ -656,7 +656,7 @@ export const CustomerDashboard: React.FC = () => {
                       <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold border ${
                         ticket.status === 'RESOLVED'
                           ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30'
-                          : 'bg-yellow-500/10 text-yellow-400 border-yellow-500/30'
+                          : 'bg-blue-500/10 text-blue-400 border-blue-500/30'
                       }`}>
                         {ticket.status}
                       </span>
@@ -685,11 +685,11 @@ export const CustomerDashboard: React.FC = () => {
                           setSelectedTicketId(ticket.id);
                           setReplyMessage(e.target.value);
                         }}
-                        className="flex-1 px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-[#fcb800]"
+                        className="flex-1 px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-[#3b82f6]"
                       />
                       <button
                         onClick={() => handleSendReply(ticket.id)}
-                        className="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-[#fcb800] text-xs font-bold border border-slate-700 cursor-pointer"
+                        className="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-[#3b82f6] text-xs font-bold border border-slate-700 cursor-pointer"
                       >
                         <Send className="w-3.5 h-3.5" />
                       </button>
@@ -703,7 +703,7 @@ export const CustomerDashboard: React.FC = () => {
           {/* 7. SECURITY & ACTIVITY */}
           {activeTab === 'security' && (
             <div className="space-y-5">
-              <div className="p-5 rounded-2xl bg-[#070b14] border border-slate-800 space-y-4">
+              <div className="p-5 rounded-2xl bg-[#020617] border border-slate-800 space-y-4">
                 <h4 className="font-bold text-white text-xs">Change Password</h4>
                 <div className="space-y-3 text-xs">
                   <div>
@@ -714,13 +714,13 @@ export const CustomerDashboard: React.FC = () => {
                     <label className="block text-slate-300 font-bold mb-1">New Password</label>
                     <input type="password" placeholder="••••••••" className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white" />
                   </div>
-                  <button type="button" className="px-4 py-2 rounded-xl bg-[#fcb800] text-slate-950 font-black text-xs cursor-pointer shadow-md">
+                  <button type="button" className="px-4 py-2 rounded-xl bg-[#3b82f6] text-slate-950 font-black text-xs cursor-pointer shadow-md">
                     Update Password
                   </button>
                 </div>
               </div>
 
-              <div className="p-5 rounded-2xl bg-[#070b14] border border-slate-800 space-y-3">
+              <div className="p-5 rounded-2xl bg-[#020617] border border-slate-800 space-y-3">
                 <h4 className="font-bold text-white text-xs">Recent Login Activity</h4>
                 <div className="space-y-2 text-xs">
                   <div className="p-2.5 rounded-xl bg-slate-900/60 border border-slate-800 flex items-center justify-between">

@@ -124,14 +124,14 @@ export const SubscriptionsView: React.FC = () => {
                   <td className="py-3 px-4 font-mono text-slate-300">
                     {sub.renewalDate}
                   </td>
-                  <td className="py-3 px-4 font-bold text-[#fcb800]">
+                  <td className="py-3 px-4 font-bold text-[#3b82f6]">
                     Rs {sub.pricePKR.toLocaleString()}/mo
                   </td>
                   <td className="py-3 px-4">
                     <span className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold ${
                       sub.status === 'ACTIVE'
                         ? 'bg-emerald-950/50 text-emerald-400 border border-emerald-500/30'
-                        : 'bg-amber-950/50 text-amber-400 border border-amber-500/30'
+                        : 'bg-blue-950/50 text-blue-400 border border-blue-500/30'
                     }`}>
                       {sub.status}
                     </span>

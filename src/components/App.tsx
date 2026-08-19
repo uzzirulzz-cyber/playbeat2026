@@ -135,7 +135,7 @@ export function App() {
   }, [products, selectedCategory, selectedType, searchQuery, sortBy]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#f7f4ee] text-[#10233d] transition-colors duration-300">
+    <div className="min-h-screen flex flex-col bg-[#f3f4f6] text-[#1f2937] transition-colors duration-300">
       {/* Top Main Navigation */}
       <Navbar />
 
@@ -206,14 +206,14 @@ export function App() {
                   ))}
                 </div>
               ) : (
-                <div className="py-12 sm:py-20 text-center space-y-3 p-6 sm:p-8 rounded-3xl bg-white border border-[#ece3d6] shadow-sm">
-                  <div className="w-14 h-14 rounded-full bg-[#fff7e6] border border-[#e4d3a7] flex items-center justify-center mx-auto text-[#d7a53a]">
+                <div className="py-12 sm:py-20 text-center space-y-3 p-6 sm:p-8 rounded-3xl bg-white border border-[#e5e7eb] shadow-sm">
+                  <div className="w-14 h-14 rounded-full bg-[#eff6ff] border border-[#dbeafe] flex items-center justify-center mx-auto text-[#3b82f6]">
                     <AlertCircle className="w-6 h-6" />
                   </div>
-                  <h3 className="font-black text-base sm:text-lg text-[#10233d]">
+                  <h3 className="font-black text-base sm:text-lg text-[#1f2937]">
                     No products found matching your criteria
                   </h3>
-                  <p className="text-xs text-[#58687c] max-w-sm mx-auto">
+                  <p className="text-xs text-[#64748b] max-w-sm mx-auto">
                     Try adjusting your search terms, changing the category
                     filter, or resetting all filters.
                   </p>
@@ -223,7 +223,7 @@ export function App() {
                       setSelectedType('ALL');
                       setSearchQuery('');
                     }}
-                    className="px-5 py-2.5 rounded-xl bg-[#d7a53a] hover:bg-[#c9952a] text-[#10233d] font-bold text-xs cursor-pointer shadow-md"
+                    className="px-5 py-2.5 rounded-xl bg-[#3b82f6] hover:bg-[#2563eb] text-[#1f2937] font-bold text-xs cursor-pointer shadow-md"
                   >
                     Reset All Filters
                   </button>

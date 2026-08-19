@@ -73,14 +73,14 @@ export const LimitedTimeOffersSection: React.FC = () => {
             <div className="p-2.5 rounded-xl bg-[#fff1f1] border border-[#f2b9b9] shadow-[0_12px_24px_rgba(16,35,61,0.04)]">
               <Clock className="w-5 h-5 text-[#d54d4d]" />
             </div>
-            <span className="text-[11px] font-black uppercase tracking-[0.22em] text-[#58687c]">
+            <span className="text-[11px] font-black uppercase tracking-[0.22em] text-[#64748b]">
               Limited
             </span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-black text-[#10233d] tracking-[-0.05em] leading-none">
+          <h2 className="text-3xl sm:text-4xl font-black text-[#1f2937] tracking-[-0.05em] leading-none">
             Limited-Time Offers
           </h2>
-          <p className="text-sm text-[#58687c] max-w-xl">
+          <p className="text-sm text-[#64748b] max-w-xl">
             Flash deals ending soon — grab them before they're gone
           </p>
         </div>
@@ -91,7 +91,7 @@ export const LimitedTimeOffersSection: React.FC = () => {
         {offers.map(offer => (
           <div
             key={offer.id}
-            className="group relative rounded-2xl overflow-hidden border border-[#E2E6EB] hover:border-[#FFD21F] hover:shadow-xl transition-all duration-300 bg-white cursor-pointer"
+            className="group relative rounded-2xl overflow-hidden border border-[#e5e7eb] hover:border-[#3b82f6] hover:shadow-xl transition-all duration-300 bg-white cursor-pointer"
           >
             {/* Image Container */}
             <div className="relative h-48 overflow-hidden bg-[#F4F6F8]">
@@ -109,7 +109,7 @@ export const LimitedTimeOffersSection: React.FC = () => {
               {/* Time Left Badge */}
               <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-2.5 py-1 rounded-lg flex items-center gap-1.5 shadow-md">
                 <Clock className="w-3.5 h-3.5 text-red-500" />
-                <span className="text-xs font-bold text-[#0B1F3A]">
+                <span className="text-xs font-bold text-[#1e293b]">
                   {formatTimeLeft(offer.hoursLeft)}
                 </span>
               </div>
@@ -117,17 +117,17 @@ export const LimitedTimeOffersSection: React.FC = () => {
 
             {/* Content */}
             <div className="p-4 space-y-3">
-              <h3 className="text-sm font-bold text-[#0B1F3A] line-clamp-2 group-hover:text-[#FFD21F] transition-colors">
+              <h3 className="text-sm font-bold text-[#1e293b] line-clamp-2 group-hover:text-[#3b82f6] transition-colors">
                 {offer.title}
               </h3>
 
               {/* Price Section */}
               <div className="space-y-1.5">
                 <div className="flex items-baseline gap-2">
-                  <span className="text-lg font-black text-[#0B1F3A]">
+                  <span className="text-lg font-black text-[#1e293b]">
                     Rs {offer.finalPrice.toLocaleString()}
                   </span>
-                  <span className="text-xs text-[#6B7280] line-through">
+                  <span className="text-xs text-[#64748b] line-through">
                     Rs {offer.originalPrice.toLocaleString()}
                   </span>
                 </div>
@@ -149,7 +149,7 @@ export const LimitedTimeOffersSection: React.FC = () => {
               )}
 
               {/* CTA Button */}
-              <button className="w-full mt-2 py-2.5 rounded-xl bg-gradient-to-r from-[#FFD21F] to-[#FFC400] hover:from-[#FFC400] hover:to-[#FFB300] text-[#0B1F3A] font-bold text-xs transition-all shadow-md hover:shadow-lg cursor-pointer">
+              <button className="w-full mt-2 py-2.5 rounded-xl bg-gradient-to-r from-[#3b82f6] to-[#FFC400] hover:from-[#FFC400] hover:to-[#FFB300] text-[#1e293b] font-bold text-xs transition-all shadow-md hover:shadow-lg cursor-pointer">
                 Buy Now
               </button>
             </div>
@@ -158,7 +158,7 @@ export const LimitedTimeOffersSection: React.FC = () => {
       </div>
 
       {/* Info Banner */}
-      <div className="mt-8 p-4 rounded-2xl bg-[#0B1F3A]/80 border border-red-400/20 flex items-start gap-3">
+      <div className="mt-8 p-4 rounded-2xl bg-[#1e293b]/80 border border-red-400/20 flex items-start gap-3">
         <Clock className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
         <p className="text-xs text-slate-200">
           <span className="font-bold text-white">Flash Sales:</span> These limited-time offers are available only while stock lasts. Prices are subject to change once the countdown expires.

@@ -74,7 +74,7 @@ export const FinanceView: React.FC = () => {
 
         <div className="bg-[#11192e]/90 border border-slate-800/80 p-4 rounded-2xl">
           <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">Vendor Escrow Balance</div>
-          <div className="text-2xl font-black text-[#fcb800] mt-2">Rs {vendorPayouts.toLocaleString()}</div>
+          <div className="text-2xl font-black text-[#3b82f6] mt-2">Rs {vendorPayouts.toLocaleString()}</div>
           <div className="text-[11px] text-slate-400 mt-1 font-mono">Dispatched bi-weekly on Fridays</div>
         </div>
 
@@ -96,7 +96,7 @@ export const FinanceView: React.FC = () => {
               <div className="text-[11px] text-slate-400 font-mono">Bank: Meezan Bank (PK82MEZN009842019482)</div>
             </div>
             <div className="text-right">
-              <div className="font-bold text-[#fcb800] text-xs">Rs 74,999</div>
+              <div className="font-bold text-[#3b82f6] text-xs">Rs 74,999</div>
               <span className="text-[10px] text-emerald-400 font-bold bg-emerald-950/50 px-2 py-0.5 rounded-full border border-emerald-500/30">Cleared</span>
             </div>
           </div>
@@ -107,7 +107,7 @@ export const FinanceView: React.FC = () => {
               <div className="text-[11px] text-slate-400 font-mono">JazzCash Merchant Wallet: 03001234567</div>
             </div>
             <div className="text-right">
-              <div className="font-bold text-[#fcb800] text-xs">Rs 2,512</div>
+              <div className="font-bold text-[#3b82f6] text-xs">Rs 2,512</div>
               <span className="text-[10px] text-purple-400 font-bold bg-purple-950/50 px-2 py-0.5 rounded-full border border-purple-500/30">Pending Batch</span>
             </div>
           </div>

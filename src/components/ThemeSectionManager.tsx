@@ -53,9 +53,9 @@ export const ThemeSectionManager: React.FC = () => {
     {
       id: 'martfury',
       name: 'Martfury Signature',
-      desc: 'Envato Martfury gold-yellow marketplace palette (#fcb800) with deep obsidian contrast',
-      colors: 'from-amber-400 to-yellow-500',
-      bg: 'bg-amber-500'
+      desc: 'Envato Martfury gold-yellow marketplace palette (#3b82f6) with deep obsidian contrast',
+      colors: 'from-blue-400 to-blue-500',
+      bg: 'bg-blue-500'
     },
     {
       id: 'obsidian',
@@ -94,7 +94,7 @@ export const ThemeSectionManager: React.FC = () => {
         onClick={() => setIsOpen(true)}
         className="fixed bottom-20 left-4 z-40 px-3.5 py-2.5 rounded-2xl bg-slate-900/90 hover:bg-slate-800 text-slate-200 border border-slate-700 shadow-2xl backdrop-blur-md flex items-center gap-2 text-xs font-bold transition-all cursor-pointer group hover:border-purple-500"
       >
-        <div className="w-5 h-5 rounded-lg bg-gradient-to-tr from-amber-400 to-purple-600 flex items-center justify-center text-white">
+        <div className="w-5 h-5 rounded-lg bg-gradient-to-tr from-blue-400 to-purple-600 flex items-center justify-center text-white">
           <Palette className="w-3 h-3" />
         </div>
         <span>Theme & Sections</span>
@@ -153,7 +153,7 @@ export const ThemeSectionManager: React.FC = () => {
                           <div className="text-xs font-bold text-white flex items-center gap-2">
                             <span>{t.name}</span>
                             {t.id === 'martfury' && (
-                              <span className="px-1.5 py-0.2 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30 text-[9px] font-mono">
+                              <span className="px-1.5 py-0.2 rounded bg-blue-500/20 text-blue-300 border border-blue-500/30 text-[9px] font-mono">
                                 ENVATO OFFICIAL
                               </span>
                             )}

@@ -158,7 +158,7 @@ export const UsersView: React.FC = () => {
                   </td>
                   <td className="py-3 px-4">
                     {user.role === 'SUPER_ADMIN' ? (
-                      <span className="px-2 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-yellow-400/15 text-[#fcb800] border border-yellow-400/30">
+                      <span className="px-2 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-blue-400/15 text-[#3b82f6] border border-blue-400/30">
                         Sole Super Admin
                       </span>
                     ) : (
@@ -174,7 +174,7 @@ export const UsersView: React.FC = () => {
                   <td className="py-3 px-4 font-mono font-bold text-slate-200">
                     {user.totalOrders} Orders
                   </td>
-                  <td className="py-3 px-4 font-bold text-[#fcb800]">
+                  <td className="py-3 px-4 font-bold text-[#3b82f6]">
                     Rs {user.totalSpentPKR.toLocaleString()}
                   </td>
                   <td className="py-3 px-4">

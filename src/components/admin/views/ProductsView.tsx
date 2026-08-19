@@ -155,7 +155,7 @@ export const ProductsView: React.FC = () => {
       cover: {
         type: 'image' as const,
         image: formImageUrl.trim() || 'https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=800&q=80',
-        colors: ['#0f172a', '#fcb800'],
+        colors: ['#0f172a', '#3b82f6'],
         icon: formType === 'HARDWARE' ? 'Projector' : 'Sparkles'
       },
       tags: [formType === 'HARDWARE' ? 'Projector' : 'Digital', 'ZeroByte', 'Official'],
@@ -201,7 +201,7 @@ export const ProductsView: React.FC = () => {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-[#11192e]/90 border border-slate-800/80 p-4 rounded-2xl shadow-lg">
         <div>
           <div className="flex items-center gap-2">
-            <span className="px-2.5 py-0.5 rounded-full bg-yellow-500/10 text-yellow-400 border border-yellow-500/30 text-[10px] font-bold uppercase tracking-wider">
+            <span className="px-2.5 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/30 text-[10px] font-bold uppercase tracking-wider">
               Product & Catalog Manager
             </span>
             <span className="text-xs text-slate-400 font-mono">
@@ -209,7 +209,7 @@ export const ProductsView: React.FC = () => {
             </span>
           </div>
           <h2 className="text-lg font-black text-white flex items-center gap-2 mt-1">
-            <Package className="w-5 h-5 text-[#fcb800]" />
+            <Package className="w-5 h-5 text-[#3b82f6]" />
             <span>Product Catalog & Cost Manager ({products.length} items)</span>
           </h2>
           <p className="text-xs text-slate-400">
@@ -223,13 +223,13 @@ export const ProductsView: React.FC = () => {
             disabled={syncLoading}
             className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold transition-all border border-slate-700 cursor-pointer disabled:opacity-50"
           >
-            <RefreshCw className={`w-3.5 h-3.5 text-[#fcb800] ${syncLoading ? 'animate-spin' : ''}`} />
+            <RefreshCw className={`w-3.5 h-3.5 text-[#3b82f6] ${syncLoading ? 'animate-spin' : ''}`} />
             <span>Sync MongoDB</span>
           </button>
 
           <button
             onClick={handleOpenCreate}
-            className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-slate-950 text-xs font-black transition-all shadow-lg shadow-yellow-500/20 cursor-pointer"
+            className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#3b82f6] hover:bg-[#2563eb] text-slate-950 text-xs font-black transition-all shadow-lg shadow-blue-500/20 cursor-pointer"
           >
             <Plus className="w-4 h-4 stroke-[2.5]" />
             <span>Add New Product</span>
@@ -253,7 +253,7 @@ export const ProductsView: React.FC = () => {
             placeholder="Search by product name, SKU, or tags..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full pl-9 pr-4 py-2.5 text-xs rounded-xl bg-[#11192e]/90 border border-slate-800 text-slate-200 placeholder-slate-400 focus:outline-none focus:border-[#fcb800]"
+            className="w-full pl-9 pr-4 py-2.5 text-xs rounded-xl bg-[#11192e]/90 border border-slate-800 text-slate-200 placeholder-slate-400 focus:outline-none focus:border-[#3b82f6]"
           />
         </div>
 
@@ -319,7 +319,7 @@ export const ProductsView: React.FC = () => {
                                 href={prod.sourceUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-yellow-400 hover:underline flex items-center gap-0.5"
+                                className="text-blue-400 hover:underline flex items-center gap-0.5"
                               >
                                 <span>ZeroByte</span>
                                 <ExternalLink className="w-2.5 h-2.5" />
@@ -332,14 +332,14 @@ export const ProductsView: React.FC = () => {
                     <td className="py-3 px-4">
                       <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold border ${
                         prod.type === 'HARDWARE'
-                          ? 'bg-yellow-500/10 text-yellow-400 border-yellow-500/30'
+                          ? 'bg-blue-500/10 text-blue-400 border-blue-500/30'
                           : 'bg-slate-800 text-slate-300 border-slate-700'
                       }`}>
                         {prod.type}
                       </span>
                     </td>
                     <td className="py-3 px-4">
-                      <div className="font-bold text-[#fcb800] font-mono">
+                      <div className="font-bold text-[#3b82f6] font-mono">
                         {formatPKR(prod.price)}
                       </div>
                     </td>
@@ -389,7 +389,7 @@ export const ProductsView: React.FC = () => {
             <div className="flex items-start justify-between border-b border-slate-800 pb-3">
               <div>
                 <h3 className="text-base font-black text-white flex items-center gap-2">
-                  <Package className="w-5 h-5 text-[#fcb800]" />
+                  <Package className="w-5 h-5 text-[#3b82f6]" />
                   <span>{editingProduct ? 'Edit Product Details' : 'Add New Catalog Product'}</span>
                 </h3>
                 <p className="text-xs text-slate-400">Configure title, pricing, specifications, cover photo, and profit margin.</p>
@@ -412,7 +412,7 @@ export const ProductsView: React.FC = () => {
                   value={formTitle}
                   onChange={(e) => setFormTitle(e.target.value)}
                   placeholder="e.g. Magcubic HY300Pro Plus Smart Cinema Projector"
-                  className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-[#fcb800]"
+                  className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-[#3b82f6]"
                 />
               </div>
 
@@ -422,7 +422,7 @@ export const ProductsView: React.FC = () => {
                   <select
                     value={formType}
                     onChange={(e) => setFormType(e.target.value as any)}
-                    className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-[#fcb800]"
+                    className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-[#3b82f6]"
                   >
                     <option value="HARDWARE">Hardware Projector</option>
                     <option value="SOFTWARE_LICENSE">Software License</option>
@@ -438,7 +438,7 @@ export const ProductsView: React.FC = () => {
                   <select
                     value={formCategoryId}
                     onChange={(e) => setFormCategoryId(e.target.value)}
-                    className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-[#fcb800]"
+                    className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-[#3b82f6]"
                   >
                     {categories.map(c => (
                       <option key={c.id} value={c.id}>{c.name}</option>
@@ -460,13 +460,13 @@ export const ProductsView: React.FC = () => {
               {/* Financials: Price, Wholesale Cost, Profit */}
               <div className="p-3.5 rounded-2xl bg-slate-950 border border-slate-800 grid grid-cols-1 sm:grid-cols-3 gap-3">
                 <div>
-                  <label className="block text-yellow-400 font-bold mb-1">Selling Price (PKR) *</label>
+                  <label className="block text-blue-400 font-bold mb-1">Selling Price (PKR) *</label>
                   <input
                     type="number"
                     required
                     value={formPrice}
                     onChange={(e) => setFormPrice(Number(e.target.value))}
-                    className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white font-mono font-bold focus:border-[#fcb800]"
+                    className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white font-mono font-bold focus:border-[#3b82f6]"
                   />
                 </div>
 
@@ -516,7 +516,7 @@ export const ProductsView: React.FC = () => {
               {/* Specifications for Hardware */}
               <div className="p-3.5 rounded-2xl bg-slate-950 border border-slate-800 space-y-2.5">
                 <div className="font-bold text-slate-300 uppercase tracking-wider text-[10px] flex items-center gap-1.5">
-                  <Sliders className="w-3.5 h-3.5 text-[#fcb800]" />
+                  <Sliders className="w-3.5 h-3.5 text-[#3b82f6]" />
                   <span>Technical Specifications</span>
                 </div>
 
@@ -588,7 +588,7 @@ export const ProductsView: React.FC = () => {
                 </button>
                 <button
                   type="submit"
-                  className="px-5 py-2 rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-slate-950 font-black flex items-center gap-1.5 shadow-lg shadow-yellow-500/20 cursor-pointer"
+                  className="px-5 py-2 rounded-xl bg-[#3b82f6] hover:bg-[#2563eb] text-slate-950 font-black flex items-center gap-1.5 shadow-lg shadow-blue-500/20 cursor-pointer"
                 >
                   <Check className="w-4 h-4 stroke-[2.5]" />
                   <span>{editingProduct ? 'Update Product' : 'Create Product'}</span>

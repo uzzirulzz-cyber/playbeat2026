@@ -1,0 +1,252 @@
+/home/z/my-project/src/components/InvoiceModal.tsx:27:            <span className="px-2 py-0.5 rounded-full text-[10px] font-mono bg-yellow-400/10 text-[#fcb800] border border-yellow-400/20">
+/home/z/my-project/src/components/InvoiceModal.tsx:35:              className="px-3.5 py-1.5 rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-slate-950 text-xs font-bold flex items-center gap-1.5 cursor-pointer shadow-md"
+/home/z/my-project/src/components/InvoiceModal.tsx:56:                <div className="w-8 h-8 rounded-xl bg-[#fcb800] text-black font-black flex items-center justify-center text-base">
+/home/z/my-project/src/components/InvoiceModal.tsx:72:              <span className="text-2xl font-black text-[#fcb800] print:text-black font-mono">INVOICE</span>
+/home/z/my-project/src/components/InvoiceModal.tsx:177:              <div className="flex justify-between pt-2 border-t border-slate-800 print:border-slate-300 text-sm font-black text-[#fcb800] print:text-black">
+/home/z/my-project/src/components/InvoiceModal.tsx:187:              <ShieldCheck className="w-4 h-4 text-[#fcb800]" />
+/home/z/my-project/src/components/AuthModal.tsx:57:            <div className="w-8 h-8 rounded-xl bg-[#fcb800] text-black font-black flex items-center justify-center text-sm">
+/home/z/my-project/src/components/AuthModal.tsx:79:              mode === 'login' ? 'bg-[#fcb800] text-slate-950 shadow-md' : 'text-slate-400 hover:text-white'
+/home/z/my-project/src/components/AuthModal.tsx:87:              mode === 'register' ? 'bg-[#fcb800] text-slate-950 shadow-md' : 'text-slate-400 hover:text-white'
+/home/z/my-project/src/components/AuthModal.tsx:121:                  className="w-full pl-9 pr-3 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-[#fcb800]"
+/home/z/my-project/src/components/AuthModal.tsx:138:                className="w-full pl-9 pr-3 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-[#fcb800]"
+/home/z/my-project/src/components/AuthModal.tsx:154:                className="w-full pl-9 pr-3 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-[#fcb800]"
+/home/z/my-project/src/components/AuthModal.tsx:161:            className="w-full py-3 rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-slate-950 font-black text-xs flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-yellow-500/20 transition-all"
+/home/z/my-project/src/components/CartDrawer.tsx:123:              <div className="w-8 h-8 rounded-xl bg-yellow-400/10 text-[#fcb800] flex items-center justify-center font-bold border border-yellow-400/20">
+/home/z/my-project/src/components/CartDrawer.tsx:158:                    className="px-4 py-2 rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-slate-950 font-bold text-xs cursor-pointer shadow-md"
+/home/z/my-project/src/components/CartDrawer.tsx:177:                              <Sparkles className="w-5 h-5 text-[#fcb800]" />
+/home/z/my-project/src/components/CartDrawer.tsx:186:                            <div className="text-[#fcb800] font-mono font-bold mt-0.5">
+/home/z/my-project/src/components/CartDrawer.tsx:287:                          ? 'bg-yellow-400/10 border-[#fcb800] text-white shadow-md'
+/home/z/my-project/src/components/CartDrawer.tsx:390:                  <FileText className="w-4 h-4 text-[#fcb800]" />
+/home/z/my-project/src/components/CartDrawer.tsx:437:                  <span className="text-[#fcb800] font-mono">{formatPKR(cartFinalTotalPKR)}</span>
+/home/z/my-project/src/components/CartDrawer.tsx:443:                className="w-full py-3.5 rounded-2xl bg-[#fcb800] hover:bg-[#e5a700] text-slate-950 font-black text-xs flex items-center justify-center gap-2 shadow-lg shadow-yellow-500/20 cursor-pointer transition-all active:scale-95"
+/home/z/my-project/src/components/CartDrawer.tsx:455:                <span className="text-[#fcb800] font-mono">{formatPKR(cartFinalTotalPKR)}</span>
+/home/z/my-project/src/components/CartDrawer.tsx:468:                  className="flex-1 py-3 rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-slate-950 font-black text-xs flex items-center justify-center gap-2 shadow-lg shadow-yellow-500/20 cursor-pointer transition-all active:scale-95"
+/home/z/my-project/src/components/CartDrawer.tsx:487:                className="w-full py-3 rounded-xl bg-[#fcb800] text-slate-950 font-black text-xs cursor-pointer shadow-md"
+/home/z/my-project/src/components/MegaMenu.tsx:65:                  <div className="p-1.5 rounded-lg bg-slate-800 text-[#fcb800] group-hover:bg-[#fcb800] group-hover:text-slate-950 transition-colors">
+/home/z/my-project/src/components/MegaMenu.tsx:68:                  <span className="font-bold text-white text-xs group-hover:text-[#fcb800] transition-colors">
+/home/z/my-project/src/components/MegaMenu.tsx:95:            <span className="px-2.5 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-yellow-400/10 text-[#fcb800] border border-yellow-400/30">
+/home/z/my-project/src/components/MegaMenu.tsx:114:                <span className="font-bold text-[#fcb800] font-mono">{formatPKR(p.discountPrice || p.price)}</span>
+/home/z/my-project/src/components/FooterPremium.tsx:14:            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#FFD21F]/10 border border-[#FFD21F]/30 text-[#FFD21F] text-[10px] font-black uppercase tracking-[0.18em] mb-4">
+/home/z/my-project/src/components/FooterPremium.tsx:30:            <button className="px-6 py-3 bg-[#FFD21F] hover:bg-[#FFC400] text-[#0B1F3A] font-black rounded-xl transition-colors flex items-center gap-2 whitespace-nowrap shadow-lg shadow-[#FFD21F]/20">
+/home/z/my-project/src/components/FooterPremium.tsx:45:              <div className="w-10 h-10 rounded-lg bg-[#FFD21F] flex items-center justify-center">
+/home/z/my-project/src/components/FooterPremium.tsx:57:              <a href="#" className="w-10 h-10 rounded-lg bg-[#1a3351] hover:bg-[#FFD21F] hover:text-[#0B1F3A] flex items-center justify-center transition-colors">
+/home/z/my-project/src/components/FooterPremium.tsx:60:              <a href="#" className="w-10 h-10 rounded-lg bg-[#1a3351] hover:bg-[#FFD21F] hover:text-[#0B1F3A] flex items-center justify-center transition-colors">
+/home/z/my-project/src/components/FooterPremium.tsx:63:              <a href="#" className="w-10 h-10 rounded-lg bg-[#1a3351] hover:bg-[#FFD21F] hover:text-[#0B1F3A] flex items-center justify-center transition-colors">
+/home/z/my-project/src/components/FooterPremium.tsx:66:              <a href="#" className="w-10 h-10 rounded-lg bg-[#1a3351] hover:bg-[#FFD21F] hover:text-[#0B1F3A] flex items-center justify-center transition-colors">
+/home/z/my-project/src/components/FooterPremium.tsx:76:              <li><a href="#" className="hover:text-[#FFD21F] transition-colors">Gaming</a></li>
+/home/z/my-project/src/components/FooterPremium.tsx:77:              <li><a href="#" className="hover:text-[#FFD21F] transition-colors">Software</a></li>
+/home/z/my-project/src/components/FooterPremium.tsx:78:              <li><a href="#" className="hover:text-[#FFD21F] transition-colors">Gift Cards</a></li>
+/home/z/my-project/src/components/FooterPremium.tsx:79:              <li><a href="#" className="hover:text-[#FFD21F] transition-colors">Subscriptions</a></li>
+/home/z/my-project/src/components/FooterPremium.tsx:80:              <li><a href="#" className="hover:text-[#FFD21F] transition-colors">Hosting</a></li>
+/home/z/my-project/src/components/FooterPremium.tsx:88:              <li><a href="#" className="hover:text-[#FFD21F] transition-colors">Help Center</a></li>
+/home/z/my-project/src/components/FooterPremium.tsx:89:              <li><a href="#" className="hover:text-[#FFD21F] transition-colors">Contact Us</a></li>
+/home/z/my-project/src/components/FooterPremium.tsx:90:              <li><a href="#" className="hover:text-[#FFD21F] transition-colors">Track Order</a></li>
+/home/z/my-project/src/components/FooterPremium.tsx:91:              <li><a href="#" className="hover:text-[#FFD21F] transition-colors">FAQs</a></li>
+/home/z/my-project/src/components/FooterPremium.tsx:92:              <li><a href="#" className="hover:text-[#FFD21F] transition-colors">Status</a></li>
+/home/z/my-project/src/components/FooterPremium.tsx:100:              <li><a href="#" className="hover:text-[#FFD21F] transition-colors">About Us</a></li>
+/home/z/my-project/src/components/FooterPremium.tsx:101:              <li><a href="#" className="hover:text-[#FFD21F] transition-colors">Careers</a></li>
+/home/z/my-project/src/components/FooterPremium.tsx:102:              <li><a href="#" className="hover:text-[#FFD21F] transition-colors">Blog</a></li>
+/home/z/my-project/src/components/FooterPremium.tsx:103:              <li><a href="#" className="hover:text-[#FFD21F] transition-colors">Press</a></li>
+/home/z/my-project/src/components/FooterPremium.tsx:104:              <li><a href="#" className="hover:text-[#FFD21F] transition-colors">Partners</a></li>
+/home/z/my-project/src/components/FooterPremium.tsx:112:              <li><a href="#" className="hover:text-[#FFD21F] transition-colors">Privacy</a></li>
+/home/z/my-project/src/components/FooterPremium.tsx:113:              <li><a href="#" className="hover:text-[#FFD21F] transition-colors">Terms</a></li>
+/home/z/my-project/src/components/FooterPremium.tsx:114:              <li><a href="#" className="hover:text-[#FFD21F] transition-colors">Cookies</a></li>
+/home/z/my-project/src/components/FooterPremium.tsx:115:              <li><a href="#" className="hover:text-[#FFD21F] transition-colors">Compliance</a></li>
+/home/z/my-project/src/components/FooterPremium.tsx:124:              <Phone className="w-5 h-5 text-[#FFD21F]" />
+/home/z/my-project/src/components/FooterPremium.tsx:128:              <a href="tel:+923321029333" className="font-bold text-white hover:text-[#FFD21F] transition-colors">
+/home/z/my-project/src/components/FooterPremium.tsx:135:              <Mail className="w-5 h-5 text-[#FFD21F]" />
+/home/z/my-project/src/components/FooterPremium.tsx:139:              <a href="mailto:support@playbeat.digital" className="font-bold text-white hover:text-[#FFD21F] transition-colors break-all">
+/home/z/my-project/src/components/FooterPremium.tsx:146:              <MapPin className="w-5 h-5 text-[#FFD21F]" />
+/home/z/my-project/src/components/WhatsAppFloatingButton.tsx:122:              <Zap className="w-3.5 h-3.5 text-[#fcb800] shrink-0 mt-0.5" />
+/home/z/my-project/src/components/HeroSpotlight.tsx:61:              <span className="flex h-2 w-2 rounded-full bg-[#fcb800] animate-ping" />
+/home/z/my-project/src/components/HeroSpotlight.tsx:62:              <Sparkles className="w-3.5 h-3.5 text-[#fcb800]" />
+/home/z/my-project/src/components/HeroSpotlight.tsx:68:              <span className="text-[#fcb800] drop-shadow-[0_2px_12px_rgba(252,184,0,0.25)]">
+/home/z/my-project/src/components/HeroSpotlight.tsx:97:                <div className="text-lg sm:text-xl font-black text-[#fcb800]">99.98%</div>
+/home/z/my-project/src/components/HeroSpotlight.tsx:123:                      <Flame className="w-3 h-3 fill-[#fcb800]" />
+/home/z/my-project/src/components/HeroSpotlight.tsx:138:                          activeIndex === idx ? 'w-6 bg-[#fcb800]' : 'w-2 bg-slate-700 hover:bg-slate-500'
+/home/z/my-project/src/components/HeroSpotlight.tsx:162:                      <Sparkles className="w-16 h-16 text-[#fcb800]/40" />
+/home/z/my-project/src/components/HeroSpotlight.tsx:172:                      <Zap className="w-3 h-3 text-[#fcb800] fill-[#fcb800]" />
+/home/z/my-project/src/components/HeroSpotlight.tsx:183:                      <Star className="w-3.5 h-3.5 text-[#fcb800] fill-[#fcb800]" />
+/home/z/my-project/src/components/HeroSpotlight.tsx:199:                      <span className="text-xl font-black text-[#fcb800]">
+/home/z/my-project/src/components/HeroSpotlight.tsx:222:                      className="px-4 py-2 rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-black font-extrabold text-xs shadow-md shadow-yellow-500/20 transition-all flex items-center gap-1.5 cursor-pointer"
+/home/z/my-project/src/components/HeroSpotlight.tsx:239:              <Zap className="w-5 h-5 text-[#fcb800]" />
+/home/z/my-project/src/components/HeroSpotlight.tsx:249:              <ShieldCheck className="w-5 h-5 text-[#fcb800]" />
+/home/z/my-project/src/components/HeroSpotlight.tsx:259:              <Lock className="w-5 h-5 text-[#fcb800]" />
+/home/z/my-project/src/components/HeroSpotlight.tsx:269:              <RefreshCw className="w-5 h-5 text-[#fcb800]" />
+/home/z/my-project/src/components/FeaturedCategoriesPremium.tsx:32:            Verified <span className="text-[#d7a53a]">Catalog</span>
+/home/z/my-project/src/components/FeaturedCategoriesPremium.tsx:57:                className="group p-6 sm:p-8 bg-[#102749] rounded-lg border-2 border-white/10 hover:border-[#FFD21F] shadow-sm hover:shadow-lg hover:shadow-[#FFD21F]/20 transition-all duration-300 text-left flex items-center gap-5 sm:gap-6"
+/home/z/my-project/src/components/FeaturedCategoriesPremium.tsx:66:                  <h3 className="font-bold text-white text-lg sm:text-2xl mb-1 group-hover:text-[#FFD21F] transition-colors">
+/home/z/my-project/src/components/FeaturedCategoriesPremium.tsx:75:                <div className="flex items-center gap-1.5 text-[#FFD21F] font-bold text-sm shrink-0">
+/home/z/my-project/src/components/LimitedTimeOffersSection.tsx:94:            className="group relative rounded-2xl overflow-hidden border border-[#E2E6EB] hover:border-[#FFD21F] hover:shadow-xl transition-all duration-300 bg-white cursor-pointer"
+/home/z/my-project/src/components/LimitedTimeOffersSection.tsx:120:              <h3 className="text-sm font-bold text-[#0B1F3A] line-clamp-2 group-hover:text-[#FFD21F] transition-colors">
+/home/z/my-project/src/components/LimitedTimeOffersSection.tsx:152:              <button className="w-full mt-2 py-2.5 rounded-xl bg-gradient-to-r from-[#FFD21F] to-[#FFC400] hover:from-[#FFC400] hover:to-[#FFB300] text-[#0B1F3A] font-bold text-xs transition-all shadow-md hover:shadow-lg cursor-pointer">
+/home/z/my-project/src/components/App.tsx:210:                  <div className="w-14 h-14 rounded-full bg-[#fff7e6] border border-[#e4d3a7] flex items-center justify-center mx-auto text-[#d7a53a]">
+/home/z/my-project/src/components/App.tsx:226:                    className="px-5 py-2.5 rounded-xl bg-[#d7a53a] hover:bg-[#c9952a] text-[#10233d] font-bold text-xs cursor-pointer shadow-md"
+/home/z/my-project/src/components/CustomerDashboard.tsx:154:                <span className="inline-block mt-1 px-2 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wider bg-yellow-400/10 text-[#fcb800] border border-yellow-400/20">
+/home/z/my-project/src/components/CustomerDashboard.tsx:163:                <Wallet className="w-3 h-3 text-[#fcb800]" />
+/home/z/my-project/src/components/CustomerDashboard.tsx:193:                        ? 'bg-[#fcb800] text-slate-950 shadow-md shadow-yellow-500/20'
+/home/z/my-project/src/components/CustomerDashboard.tsx:203:                        isActive ? 'bg-slate-950 text-[#fcb800]' : 'bg-slate-800 text-slate-300'
+/home/z/my-project/src/components/CustomerDashboard.tsx:274:                  <div className="text-xl font-black text-[#fcb800] font-mono">{formatPKR(user.balancePKR || 0)}</div>
+/home/z/my-project/src/components/CustomerDashboard.tsx:282:                    <ShoppingBag className="w-4 h-4 text-[#fcb800]" />
+/home/z/my-project/src/components/CustomerDashboard.tsx:287:                    className="text-xs text-[#fcb800] font-bold hover:underline cursor-pointer"
+/home/z/my-project/src/components/CustomerDashboard.tsx:304:                          <div className="font-bold text-[#fcb800] font-mono">{formatPKR(order.totalAmountPKR)}</div>
+/home/z/my-project/src/components/CustomerDashboard.tsx:348:                          <FileText className="w-3.5 h-3.5 text-[#fcb800]" />
+/home/z/my-project/src/components/CustomerDashboard.tsx:378:                          <div className="font-bold text-[#fcb800] font-mono">
+/home/z/my-project/src/components/CustomerDashboard.tsx:387:                      <span className="text-[#fcb800] font-mono text-sm">{formatPKR(order.totalAmountPKR)}</span>
+/home/z/my-project/src/components/CustomerDashboard.tsx:435:                              <Copy className="w-3 h-3 text-[#fcb800]" />
+/home/z/my-project/src/components/CustomerDashboard.tsx:483:                        <div className="font-bold text-[#fcb800] font-mono">Rs {sub.pricePKR.toLocaleString()}</div>
+/home/z/my-project/src/components/CustomerDashboard.tsx:509:                  <Wallet className="w-5 h-5 text-[#fcb800]" />
+/home/z/my-project/src/components/CustomerDashboard.tsx:536:                          ? 'bg-[#fcb800] text-slate-950 border-[#fcb800]'
+/home/z/my-project/src/components/CustomerDashboard.tsx:550:                    className="flex-1 px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white font-mono text-xs focus:outline-none focus:border-[#fcb800]"
+/home/z/my-project/src/components/CustomerDashboard.tsx:554:                    className="px-5 py-2.5 rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-slate-950 font-black text-xs transition-all shadow-lg shadow-yellow-500/20 cursor-pointer"
+/home/z/my-project/src/components/CustomerDashboard.tsx:573:                  className="px-3.5 py-2 rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-slate-950 font-bold text-xs flex items-center gap-1.5 cursor-pointer shadow-md"
+/home/z/my-project/src/components/CustomerDashboard.tsx:629:                    className="w-full py-2.5 rounded-xl bg-[#fcb800] text-slate-950 font-black cursor-pointer shadow-md"
+/home/z/my-project/src/components/CustomerDashboard.tsx:650:                          <span className="font-mono font-bold text-[#fcb800]">{ticket.ticketNumber}</span>
+/home/z/my-project/src/components/CustomerDashboard.tsx:688:                        className="flex-1 px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-[#fcb800]"
+/home/z/my-project/src/components/CustomerDashboard.tsx:692:                        className="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-[#fcb800] text-xs font-bold border border-slate-700 cursor-pointer"
+/home/z/my-project/src/components/CustomerDashboard.tsx:717:                  <button type="button" className="px-4 py-2 rounded-xl bg-[#fcb800] text-slate-950 font-black text-xs cursor-pointer shadow-md">
+/home/z/my-project/src/components/DealsSection.tsx:82:            <Clock className="w-4 h-4 text-[#fcb800] shrink-0" />
+/home/z/my-project/src/components/DealsSection.tsx:85:              <span className="px-1.5 sm:px-2 py-1 rounded-md sm:rounded-lg bg-slate-900 border border-slate-800 text-[#fcb800]">
+/home/z/my-project/src/components/DealsSection.tsx:89:              <span className="px-1.5 sm:px-2 py-1 rounded-md sm:rounded-lg bg-slate-900 border border-slate-800 text-[#fcb800]">
+/home/z/my-project/src/components/DealsSection.tsx:93:              <span className="px-1.5 sm:px-2 py-1 rounded-md sm:rounded-lg bg-slate-900 border border-slate-800 text-[#fcb800]">
+/home/z/my-project/src/components/DealsSection.tsx:111:                className="bg-[#070b14] border border-slate-800/80 hover:border-[#fcb800]/50 rounded-xl sm:rounded-2xl p-3 sm:p-4 flex flex-col justify-between group transition-all duration-300 shadow-lg hover:shadow-yellow-500/5 relative"
+/home/z/my-project/src/components/DealsSection.tsx:145:                    <Sparkles className="w-6 sm:w-8 h-6 sm:h-8 text-[#fcb800]" />
+/home/z/my-project/src/components/DealsSection.tsx:159:                    className="font-bold text-white text-[11px] sm:text-xs line-clamp-2 hover:text-[#fcb800] transition-colors cursor-pointer min-h-[2.5rem] sm:min-h-[2.75rem]"
+/home/z/my-project/src/components/DealsSection.tsx:166:                    <span className="text-sm sm:text-base font-black text-[#fcb800] font-mono">
+/home/z/my-project/src/components/DealsSection.tsx:181:                    className="flex-1 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-slate-900 hover:bg-[#fcb800] text-slate-200 hover:text-slate-950 border border-slate-700 hover:border-[#fcb800] font-bold text-[10px] sm:text-xs flex items-center justify-center gap-1 sm:gap-1.5 transition-all cursor-pointer"
+/home/z/my-project/src/components/BestSellersSection.tsx:25:              <Crown className="w-5 h-5 text-[#d7a53a]" />
+/home/z/my-project/src/components/BestSellersSection.tsx:69:      <div className="mt-8 p-4 rounded-2xl bg-[#0B1F3A]/80 border border-[#FFD21F]/20 flex items-start gap-3">
+/home/z/my-project/src/components/BestSellersSection.tsx:70:        <Crown className="w-5 h-5 text-[#FFD21F] fill-[#FFD21F] shrink-0 mt-0.5" />
+/home/z/my-project/src/components/SmartProjectorsSection.tsx:60:              <Projector className="w-3 h-3 text-[#fcb800]" />
+/home/z/my-project/src/components/SmartProjectorsSection.tsx:106:                  ? 'bg-[#fcb800] text-black border-[#fcb800] shadow-md shadow-yellow-500/20'
+/home/z/my-project/src/components/SmartProjectorsSection.tsx:236:                    <div className="text-xs sm:text-base font-black text-[#fcb800] font-mono truncate">
+/home/z/my-project/src/components/SmartProjectorsSection.tsx:264:                      className="px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-black text-[10px] sm:text-xs font-black flex items-center gap-1 shadow-md shadow-yellow-500/20 transition-all cursor-pointer active:scale-95"
+/home/z/my-project/src/components/SmartProjectorsSection.tsx:315:                <div className="text-xl font-black text-[#fcb800] font-mono">{formatPKR(comparingProduct.price)}</div>
+/home/z/my-project/src/components/SmartProjectorsSection.tsx:382:                  className="px-5 py-2 rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-black text-xs font-black flex items-center gap-1.5 shadow-lg shadow-yellow-500/20 cursor-pointer"
+/home/z/my-project/src/components/AdminConsole.tsx:101:            <div className="w-14 h-14 rounded-2xl bg-transparent border-2 border-[#fcb800]/60 text-[#fcb800] font-black mx-auto flex items-center justify-center shadow-lg shadow-yellow-500/10 text-2xl">
+/home/z/my-project/src/components/AdminConsole.tsx:105:              PlayBeat <span className="text-[#fcb800]">Digital</span>
+/home/z/my-project/src/components/AdminConsole.tsx:131:                className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-[#fcb800] transition-colors font-mono"
+/home/z/my-project/src/components/AdminConsole.tsx:145:                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-[#fcb800] transition-colors font-mono"
+/home/z/my-project/src/components/AdminConsole.tsx:159:              className="w-full py-3 rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-slate-950 font-black transition-all shadow-lg shadow-yellow-500/20 cursor-pointer flex items-center justify-center gap-2"
+/home/z/my-project/src/components/AdminConsole.tsx:184:        <div className="fixed bottom-6 right-6 z-50 bg-[#fcb800] text-slate-950 px-4 py-3 rounded-2xl shadow-2xl flex items-center gap-3 text-xs font-black animate-in fade-in">
+/home/z/my-project/src/components/ThemeSectionManager.tsx:56:      desc: 'Envato Martfury gold-yellow marketplace palette (#fcb800) with deep obsidian contrast',
+/home/z/my-project/src/components/NavbarPremium.tsx:105:            <a href="tel:+923321029333" className="flex items-center gap-1.5 hover:text-[#d7a53a] transition-colors">
+/home/z/my-project/src/components/NavbarPremium.tsx:109:            <button onClick={() => setIsSupportOpen(true)} className="flex items-center gap-1 hover:text-[#d7a53a] transition-colors">
+/home/z/my-project/src/components/NavbarPremium.tsx:130:            <Zap className="w-6 h-6 text-[#d7a53a]" />
+/home/z/my-project/src/components/NavbarPremium.tsx:186:            <button className="px-4 bg-[#d7a53a] hover:bg-[#c9952a] text-[#10233d] font-bold text-xs transition-colors flex items-center gap-2">
+/home/z/my-project/src/components/NavbarPremium.tsx:209:                      <div className="w-8 h-8 rounded-lg bg-[#FFD21F]/10 flex items-center justify-center text-[#FFD21F] font-bold text-xs shrink-0">
+/home/z/my-project/src/components/NavbarPremium.tsx:213:                        <div className="text-sm font-semibold text-[#0B1F3A] truncate hover:text-[#FFD21F]">
+/home/z/my-project/src/components/NavbarPremium.tsx:220:                      <div className="text-right shrink-0 font-bold text-[#FFD21F]">
+/home/z/my-project/src/components/NavbarPremium.tsx:244:              <span className="text-[#FFD21F]">
+/home/z/my-project/src/components/NavbarPremium.tsx:262:                        ? 'bg-[#FFD21F] text-[#0B1F3A] font-bold'
+/home/z/my-project/src/components/NavbarPremium.tsx:300:                          n.read ? 'bg-[#F4F6F8] text-[#6B7280]' : 'bg-[#FFD21F]/10 text-[#263241]'
+/home/z/my-project/src/components/NavbarPremium.tsx:332:            className="flex items-center gap-2 px-4 py-2 bg-[#FFD21F] hover:bg-[#FFC400] text-[#0B1F3A] font-bold text-sm rounded-lg shadow-md hover:shadow-lg transition-all transform hover:scale-[1.02]"
+/home/z/my-project/src/components/NavbarPremium.tsx:372:                ? 'border-[#FFD21F] text-[#FFD21F]'
+/home/z/my-project/src/components/admin/views/OrdersView.tsx:130:                    <div className="font-bold text-[#fcb800]">
+/home/z/my-project/src/components/admin/views/AuditLogsView.tsx:58:          <Download className="w-4 h-4 text-[#fcb800]" />
+/home/z/my-project/src/components/admin/views/AuditLogsView.tsx:83:                  ? 'bg-[#fcb800] text-slate-950 shadow-md'
+/home/z/my-project/src/components/admin/views/AuditLogsView.tsx:124:                    <span className="px-2 py-0.5 rounded-full text-[10px] font-mono font-bold bg-yellow-400/10 text-[#fcb800] border border-yellow-400/20">
+/home/z/my-project/src/components/admin/views/FinanceView.tsx:77:          <div className="text-2xl font-black text-[#fcb800] mt-2">Rs {vendorPayouts.toLocaleString()}</div>
+/home/z/my-project/src/components/admin/views/FinanceView.tsx:99:              <div className="font-bold text-[#fcb800] text-xs">Rs 74,999</div>
+/home/z/my-project/src/components/admin/views/FinanceView.tsx:110:              <div className="font-bold text-[#fcb800] text-xs">Rs 2,512</div>
+/home/z/my-project/src/components/admin/views/JazzCashView.tsx:140:                <div>Amount: <strong className="text-[#fcb800]">{queryResult.amount}</strong></div>
+/home/z/my-project/src/components/admin/views/DashboardView.tsx:493:                    <td className="py-3 font-bold text-[#fcb800]">
+/home/z/my-project/src/components/admin/views/DashboardView.tsx:528:                  <div className="w-9 h-9 rounded-lg bg-amber-400/10 border border-amber-400/30 flex items-center justify-center text-[#fcb800] font-black text-xs shrink-0">
+/home/z/my-project/src/components/admin/views/DashboardView.tsx:539:                  <div className="text-xs font-black text-[#fcb800]">
+/home/z/my-project/src/components/admin/views/SubscriptionsView.tsx:127:                  <td className="py-3 px-4 font-bold text-[#fcb800]">
+/home/z/my-project/src/components/admin/views/ProductsView.tsx:158:        colors: ['#0f172a', '#fcb800'],
+/home/z/my-project/src/components/admin/views/ProductsView.tsx:212:            <Package className="w-5 h-5 text-[#fcb800]" />
+/home/z/my-project/src/components/admin/views/ProductsView.tsx:226:            <RefreshCw className={`w-3.5 h-3.5 text-[#fcb800] ${syncLoading ? 'animate-spin' : ''}`} />
+/home/z/my-project/src/components/admin/views/ProductsView.tsx:232:            className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-slate-950 text-xs font-black transition-all shadow-lg shadow-yellow-500/20 cursor-pointer"
+/home/z/my-project/src/components/admin/views/ProductsView.tsx:256:            className="w-full pl-9 pr-4 py-2.5 text-xs rounded-xl bg-[#11192e]/90 border border-slate-800 text-slate-200 placeholder-slate-400 focus:outline-none focus:border-[#fcb800]"
+/home/z/my-project/src/components/admin/views/ProductsView.tsx:342:                      <div className="font-bold text-[#fcb800] font-mono">
+/home/z/my-project/src/components/admin/views/ProductsView.tsx:392:                  <Package className="w-5 h-5 text-[#fcb800]" />
+/home/z/my-project/src/components/admin/views/ProductsView.tsx:415:                  className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-[#fcb800]"
+/home/z/my-project/src/components/admin/views/ProductsView.tsx:425:                    className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-[#fcb800]"
+/home/z/my-project/src/components/admin/views/ProductsView.tsx:441:                    className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-[#fcb800]"
+/home/z/my-project/src/components/admin/views/ProductsView.tsx:469:                    className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white font-mono font-bold focus:border-[#fcb800]"
+/home/z/my-project/src/components/admin/views/ProductsView.tsx:519:                  <Sliders className="w-3.5 h-3.5 text-[#fcb800]" />
+/home/z/my-project/src/components/admin/views/ProductsView.tsx:591:                  className="px-5 py-2 rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-slate-950 font-black flex items-center gap-1.5 shadow-lg shadow-yellow-500/20 cursor-pointer"
+/home/z/my-project/src/components/admin/views/WebsiteBuilderView.tsx:50:  const [customCss, setCustomCss] = useState('/* Custom Storefront CSS overrides */\n.theme-martfury { --primary: #fcb800; }');
+/home/z/my-project/src/components/admin/views/WebsiteBuilderView.tsx:84:      colors: ['#070b14', '#0f172a', '#fcb800', '#10b981']
+/home/z/my-project/src/components/admin/views/WebsiteBuilderView.tsx:124:            <Layout className="w-5 h-5 text-[#fcb800]" />
+/home/z/my-project/src/components/admin/views/WebsiteBuilderView.tsx:143:            className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-slate-950 text-xs font-black transition-all shadow-lg shadow-yellow-500/20 cursor-pointer"
+/home/z/my-project/src/components/admin/views/WebsiteBuilderView.tsx:167:                  <Sliders className="w-4 h-4 text-[#fcb800]" />
+/home/z/my-project/src/components/admin/views/WebsiteBuilderView.tsx:199:                      <ToggleRight className="w-8 h-8 text-[#fcb800]" />
+/home/z/my-project/src/components/admin/views/WebsiteBuilderView.tsx:223:                  className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-[#fcb800]"
+/home/z/my-project/src/components/admin/views/WebsiteBuilderView.tsx:234:                    className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-[#fcb800] font-mono font-bold focus:outline-none focus:border-[#fcb800]"
+/home/z/my-project/src/components/admin/views/WebsiteBuilderView.tsx:255:                  className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-[#fcb800]"
+/home/z/my-project/src/components/admin/views/WebsiteBuilderView.tsx:265:                  className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-[#fcb800]"
+/home/z/my-project/src/components/admin/views/WebsiteBuilderView.tsx:276:              <Palette className="w-4 h-4 text-[#fcb800]" />
+/home/z/my-project/src/components/admin/views/WebsiteBuilderView.tsx:287:                      ? 'bg-slate-900 border-[#fcb800] shadow-lg shadow-yellow-500/10'
+/home/z/my-project/src/components/admin/views/WebsiteBuilderView.tsx:306:                      <span className="px-2 py-0.5 rounded-md bg-[#fcb800] text-slate-950 text-[10px] font-black uppercase tracking-wider">
+/home/z/my-project/src/components/admin/views/UsersView.tsx:161:                      <span className="px-2 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-yellow-400/15 text-[#fcb800] border border-yellow-400/30">
+/home/z/my-project/src/components/admin/views/UsersView.tsx:177:                  <td className="py-3 px-4 font-bold text-[#fcb800]">
+/home/z/my-project/src/components/admin/views/TikTokLeadsView.tsx:122:                  <td className="py-3 px-4 font-semibold text-[#fcb800]">
+/home/z/my-project/src/components/admin/views/InventoryView.tsx:87:          className="px-4 py-2.5 rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-slate-950 font-black text-xs flex items-center gap-2 cursor-pointer shadow-lg shadow-yellow-500/20"
+/home/z/my-project/src/components/admin/views/InventoryView.tsx:130:                  ? 'bg-[#fcb800] text-slate-950 shadow-md'
+/home/z/my-project/src/components/admin/views/InventoryView.tsx:236:              className="w-full py-3 rounded-xl bg-[#fcb800] text-slate-950 font-black text-xs cursor-pointer shadow-md"
+/home/z/my-project/src/components/admin/views/PaymentProofView.tsx:124:                <div className="font-bold text-[#fcb800] mt-0.5">Rs {proof.amountPKR.toLocaleString()}</div>
+/home/z/my-project/src/components/admin/AdminSidebar.tsx:124:          <div className="w-8 h-8 rounded-xl bg-[#fcb800] text-slate-950 font-black flex items-center justify-center shadow-lg shadow-yellow-500/20 text-sm">
+/home/z/my-project/src/components/admin/AdminSidebar.tsx:130:              <span className="text-[#fcb800] text-xs font-bold uppercase">Admin</span>
+/home/z/my-project/src/components/admin/AdminSidebar.tsx:153:                          ? 'bg-[#fcb800] text-slate-950 shadow-md font-black'
+/home/z/my-project/src/components/ProductDetailModal.tsx:131:                  <Sparkles className="w-16 h-16 text-[#fcb800] mb-2" />
+/home/z/my-project/src/components/ProductDetailModal.tsx:140:                <span className="px-2.5 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-black/70 backdrop-blur-md text-[#fcb800] border border-yellow-500/30">
+/home/z/my-project/src/components/ProductDetailModal.tsx:149:                <ShieldCheck className="w-4 h-4 text-[#fcb800] shrink-0" />
+/home/z/my-project/src/components/ProductDetailModal.tsx:197:                        ? 'bg-yellow-400/10 border-[#fcb800] text-white shadow-md'
+/home/z/my-project/src/components/ProductDetailModal.tsx:202:                    <div className="text-xs font-mono font-black text-[#fcb800] mt-0.5">
+/home/z/my-project/src/components/ProductDetailModal.tsx:214:                <div className="text-2xl font-black text-[#fcb800] font-mono">
+/home/z/my-project/src/components/ProductDetailModal.tsx:244:                  <ShoppingCart className="w-4 h-4 text-[#fcb800]" />
+/home/z/my-project/src/components/ProductDetailModal.tsx:250:                  className="flex-1 py-3 rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-slate-950 font-black text-xs flex items-center justify-center gap-2 shadow-lg shadow-yellow-500/20 cursor-pointer transition-all active:scale-95"
+/home/z/my-project/src/components/ProductDetailModal.tsx:286:                    ? 'bg-[#fcb800] text-slate-950 font-black'
+/home/z/my-project/src/components/ProductDetailModal.tsx:309:                          <Check className="w-3.5 h-3.5 text-[#fcb800] shrink-0" />
+/home/z/my-project/src/components/ProductDetailModal.tsx:358:                      <HelpCircle className="w-3.5 h-3.5 text-[#fcb800]" />
+/home/z/my-project/src/components/ProductDetailModal.tsx:408:                    className="px-4 py-2 rounded-xl bg-[#fcb800] text-slate-950 font-black text-xs cursor-pointer shadow-md"
+/home/z/my-project/src/components/Footer.tsx:69:              <div className="w-10 h-10 rounded-xl bg-[#fcb800] p-0.5 flex items-center justify-center shadow-lg shadow-[#fcb800]/20">
+/home/z/my-project/src/components/Footer.tsx:90:              <div className="w-11 h-11 rounded-xl bg-[#fcb800]/15 border border-[#fcb800]/30 flex items-center justify-center text-[#fcb800] shrink-0">
+/home/z/my-project/src/components/Footer.tsx:106:              className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-[#fcb800] hover:bg-[#e0a400] text-slate-950 font-black text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-amber-400/20 transition-all cursor-pointer shrink-0"
+/home/z/my-project/src/components/Footer.tsx:124:              <span className="text-xl font-black text-[#fcb800]">.digital</span>
+/home/z/my-project/src/components/Footer.tsx:201:                <Mail className="w-3.5 h-3.5 text-[#fcb800]" />
+/home/z/my-project/src/components/Footer.tsx:237:                className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full"
+/home/z/my-project/src/components/Footer.tsx:245:                className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full"
+/home/z/my-project/src/components/Footer.tsx:253:                className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full text-amber-300 font-semibold"
+/home/z/my-project/src/components/Footer.tsx:261:                className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full text-pink-400 font-semibold"
+/home/z/my-project/src/components/Footer.tsx:278:                className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full"
+/home/z/my-project/src/components/Footer.tsx:286:                className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full text-emerald-400 font-semibold"
+/home/z/my-project/src/components/Footer.tsx:299:              <Sparkles className="w-3.5 h-3.5 text-[#fcb800]" />
+/home/z/my-project/src/components/Footer.tsx:317:                  className="w-full h-9 pl-8 pr-3 rounded-lg bg-slate-900 border border-slate-700 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#fcb800]"
+/home/z/my-project/src/components/Footer.tsx:322:                className="h-9 px-4 rounded-lg bg-[#fcb800] hover:bg-[#e5a700] text-slate-950 font-black text-xs transition-all flex items-center gap-1.5 cursor-pointer shrink-0"
+/home/z/my-project/src/app/globals.css:83:  --pb-yellow: #d7a53a;
+/home/z/my-project/src/app/globals.css:84:  --pb-yellow-bright: #fcb800;
+/home/z/my-project/src/app/globals.css:169:  --accent-yellow: #d7a53a;
+/home/z/my-project/src/app/globals.css:180:  --accent-primary: #d7a53a;
+/home/z/my-project/src/app/globals.css:197:  --accent-primary: #fcb800;
+/home/z/my-project/src/app/globals.css:210:  --accent-primary: #fcb800;
+/home/z/my-project/src/app/globals.css:224:  --accent-secondary: #fcb800;
+/home/z/my-project/src/app/globals.css:259:  background-color: #fcb800;
+/home/z/my-project/src/app/globals.css:262:  color: #fcb800;
+/home/z/my-project/src/app/globals.css:265:  border-color: #fcb800;
+/home/z/my-project/src/app/page.tsx:13:        <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#fcb800] to-yellow-300 text-slate-950 flex items-center justify-center font-black text-lg shadow-lg shadow-yellow-500/20 animate-pulse">
+/home/z/my-project/src/data/initialData.ts:5:  { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', description: 'Magcubic HY300, HY320, HM103-A, HCS350-Pro, HT23, HY7 — verified ZeroByte 4K cinema projectors', icon: 'Projector', color: '#fcb800', productCount: 7 }
+/home/z/my-project/src/data/initialData.ts:41:    category: { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', icon: 'Projector', color: '#fcb800' },
+/home/z/my-project/src/data/initialData.ts:93:    category: { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', icon: 'Projector', color: '#fcb800' },
+/home/z/my-project/src/data/initialData.ts:134:    category: { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', icon: 'Projector', color: '#fcb800' },
+/home/z/my-project/src/data/initialData.ts:180:    category: { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', icon: 'Projector', color: '#fcb800' },
+/home/z/my-project/src/data/initialData.ts:224:    category: { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', icon: 'Projector', color: '#fcb800' },
+/home/z/my-project/src/data/initialData.ts:269:    category: { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', icon: 'Projector', color: '#fcb800' },
+/home/z/my-project/src/data/initialData.ts:315:    category: { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', icon: 'Projector', color: '#fcb800' },
+/home/z/my-project/src/components/Navbar.tsx:120:        preview: 'bg-[#fcb800]',
+/home/z/my-project/src/components/Navbar.tsx:206:                <code className="px-1.5 py-0.5 rounded bg-yellow-400/10 text-[#fcb800] font-mono font-bold border border-yellow-400/20">
+/home/z/my-project/src/components/Navbar.tsx:294:                <span className="font-mono font-bold text-[#fcb800]">
+/home/z/my-project/src/components/Navbar.tsx:328:                <Palette className="w-3 h-3 text-[#fcb800]" />
+/home/z/my-project/src/components/Navbar.tsx:375:              <div className="absolute inset-0 rounded-2xl bg-[#fcb800] blur-md opacity-40 group-hover:opacity-70 transition-opacity" />
+/home/z/my-project/src/components/Navbar.tsx:376:              <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-gradient-to-tr from-[#fcb800] via-yellow-300 to-amber-200 text-slate-950 flex items-center justify-center font-black text-base sm:text-lg shadow-lg shadow-yellow-500/30 group-hover:scale-105 transition-transform ring-1 ring-yellow-400/50">
+/home/z/my-project/src/components/Navbar.tsx:382:                <span className="font-black text-base sm:text-lg tracking-tight text-white group-hover:text-[#fcb800] transition-colors">
+/home/z/my-project/src/components/Navbar.tsx:385:                <span className="px-1.5 py-0.2 rounded bg-yellow-400/10 text-[#fcb800] text-[10px] font-black uppercase border border-yellow-400/30">
+/home/z/my-project/src/components/Navbar.tsx:401:          <div className="relative flex items-center bg-[#070b14] rounded-2xl border border-slate-700/80 focus-within:border-[#fcb800] focus-within:ring-2 focus-within:ring-yellow-500/20 transition-all overflow-hidden">
+/home/z/my-project/src/components/Navbar.tsx:459:                          <Sparkles className="w-4 h-4 text-[#fcb800]" />
+/home/z/my-project/src/components/Navbar.tsx:471:                    <div className="font-mono font-bold text-xs text-[#fcb800] shrink-0 ml-2">
+/home/z/my-project/src/components/Navbar.tsx:497:            <ShoppingBag className="w-3.5 h-3.5 text-[#fcb800]" />
+/home/z/my-project/src/components/Navbar.tsx:513:            <UserIcon className="w-4 h-4 text-[#fcb800]" />
+
+[Showing results with pagination = limit: 250]

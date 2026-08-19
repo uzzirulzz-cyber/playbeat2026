@@ -325,7 +325,7 @@ export const DashboardView: React.FC = () => {
                 <span className="text-white font-mono font-bold">6% (172)</span>
               </div>
               <div className="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
-                <div className="h-full bg-amber-500 rounded-full w-[6%]" />
+                <div className="h-full bg-blue-500 rounded-full w-[6%]" />
               </div>
             </div>
           </div>
@@ -490,7 +490,7 @@ export const DashboardView: React.FC = () => {
                       <div className="font-semibold text-slate-200">{order.customerName}</div>
                       <div className="text-[10px] text-slate-400">{order.customerEmail}</div>
                     </td>
-                    <td className="py-3 font-bold text-[#fcb800]">
+                    <td className="py-3 font-bold text-[#3b82f6]">
                       Rs {(order.totalAmountPKR || order.total || 0).toLocaleString()}
                     </td>
                     <td className="py-3 uppercase text-[11px] font-mono text-slate-300">
@@ -525,7 +525,7 @@ export const DashboardView: React.FC = () => {
             {products.slice(0, 5).map((prod) => (
               <div key={prod.id} className="flex items-center justify-between p-2.5 rounded-xl bg-slate-900/50 border border-slate-800/70 hover:border-slate-700 transition-colors">
                 <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-lg bg-amber-400/10 border border-amber-400/30 flex items-center justify-center text-[#fcb800] font-black text-xs shrink-0">
+                  <div className="w-9 h-9 rounded-lg bg-blue-400/10 border border-blue-400/30 flex items-center justify-center text-[#3b82f6] font-black text-xs shrink-0">
                     {prod.type === 'HARDWARE' ? '4K' : prod.type === 'STREAMING' ? 'TV' : 'AI'}
                   </div>
                   <div>
@@ -536,7 +536,7 @@ export const DashboardView: React.FC = () => {
                   </div>
                 </div>
                 <div className="text-right shrink-0">
-                  <div className="text-xs font-black text-[#fcb800]">
+                  <div className="text-xs font-black text-[#3b82f6]">
                     Rs {(prod.discountPrice || prod.price).toLocaleString()}
                   </div>
                   <div className="text-[10px] text-emerald-400 font-semibold">

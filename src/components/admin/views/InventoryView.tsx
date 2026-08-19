@@ -84,7 +84,7 @@ export const InventoryView: React.FC = () => {
 
         <button
           onClick={() => setIsAddModalOpen(true)}
-          className="px-4 py-2.5 rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-slate-950 font-black text-xs flex items-center gap-2 cursor-pointer shadow-lg shadow-yellow-500/20"
+          className="px-4 py-2.5 rounded-xl bg-[#3b82f6] hover:bg-[#2563eb] text-slate-950 font-black text-xs flex items-center gap-2 cursor-pointer shadow-lg shadow-blue-500/20"
         >
           <Plus className="w-4 h-4" />
           <span>Add / Bulk Upload Keys</span>
@@ -93,22 +93,22 @@ export const InventoryView: React.FC = () => {
 
       {/* KPI Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <div className="p-4 rounded-2xl bg-[#070b14] border border-slate-800 space-y-1">
+        <div className="p-4 rounded-2xl bg-[#020617] border border-slate-800 space-y-1">
           <span className="text-[10px] text-slate-500 uppercase tracking-wider font-bold">Total Keys Pool</span>
           <div className="text-2xl font-black text-white font-mono">{inventoryKeys.length}</div>
         </div>
-        <div className="p-4 rounded-2xl bg-[#070b14] border border-slate-800 space-y-1">
+        <div className="p-4 rounded-2xl bg-[#020617] border border-slate-800 space-y-1">
           <span className="text-[10px] text-slate-500 uppercase tracking-wider font-bold">Available for Instant Fulfillment</span>
           <div className="text-2xl font-black text-emerald-400 font-mono">{availableCount}</div>
         </div>
-        <div className="p-4 rounded-2xl bg-[#070b14] border border-slate-800 space-y-1">
+        <div className="p-4 rounded-2xl bg-[#020617] border border-slate-800 space-y-1">
           <span className="text-[10px] text-slate-500 uppercase tracking-wider font-bold">Delivered / Assigned</span>
           <div className="text-2xl font-black text-purple-400 font-mono">{usedCount}</div>
         </div>
       </div>
 
       {/* Filters Bar */}
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-3 bg-[#070b14] p-3 rounded-2xl border border-slate-800 text-xs">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-3 bg-[#020617] p-3 rounded-2xl border border-slate-800 text-xs">
         <div className="flex items-center gap-2 w-full sm:w-80 bg-slate-900 px-3 py-2 rounded-xl border border-slate-700">
           <Search className="w-4 h-4 text-slate-400" />
           <input
@@ -127,7 +127,7 @@ export const InventoryView: React.FC = () => {
               onClick={() => setStatusFilter(s)}
               className={`px-3 py-1.5 rounded-xl font-bold transition-all cursor-pointer ${
                 statusFilter === s
-                  ? 'bg-[#fcb800] text-slate-950 shadow-md'
+                  ? 'bg-[#3b82f6] text-slate-950 shadow-md'
                   : 'bg-slate-900 text-slate-400 hover:text-white border border-slate-800'
               }`}
             >
@@ -138,7 +138,7 @@ export const InventoryView: React.FC = () => {
       </div>
 
       {/* Inventory Table */}
-      <div className="border border-slate-800 rounded-2xl overflow-hidden bg-[#070b14]">
+      <div className="border border-slate-800 rounded-2xl overflow-hidden bg-[#020617]">
         <table className="w-full text-left text-xs">
           <thead className="bg-slate-950 text-slate-400 font-bold border-b border-slate-800">
             <tr>
@@ -161,7 +161,7 @@ export const InventoryView: React.FC = () => {
               filteredKeys.map(k => (
                 <tr key={k.id} className="hover:bg-slate-900/40">
                   <td className="p-3.5 font-bold text-white max-w-[220px] truncate">{k.productTitle}</td>
-                  <td className="p-3.5 font-mono text-yellow-300">
+                  <td className="p-3.5 font-mono text-blue-300">
                     <div className="flex items-center gap-1.5">
                       <span>{k.key}</span>
                       <button onClick={() => handleCopy(k.key)} className="text-slate-500 hover:text-white cursor-pointer">
@@ -198,7 +198,7 @@ export const InventoryView: React.FC = () => {
       {/* Add / Bulk Upload Modal */}
       {isAddModalOpen && (
         <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
-          <form onSubmit={handleAddBatch} className="bg-[#0b1120] border border-slate-800 rounded-3xl w-full max-w-lg p-6 space-y-4 shadow-2xl text-xs">
+          <form onSubmit={handleAddBatch} className="bg-[#0f172a] border border-slate-800 rounded-3xl w-full max-w-lg p-6 space-y-4 shadow-2xl text-xs">
             <div className="flex items-center justify-between border-b border-slate-800 pb-3">
               <h3 className="font-bold text-white text-sm">Bulk Add License Keys</h3>
               <button type="button" onClick={() => setIsAddModalOpen(false)} className="text-slate-400 hover:text-white">✕</button>
@@ -233,7 +233,7 @@ export const InventoryView: React.FC = () => {
 
             <button
               type="submit"
-              className="w-full py-3 rounded-xl bg-[#fcb800] text-slate-950 font-black text-xs cursor-pointer shadow-md"
+              className="w-full py-3 rounded-xl bg-[#3b82f6] text-slate-950 font-black text-xs cursor-pointer shadow-md"
             >
               Deposit Keys into Vault
             </button>

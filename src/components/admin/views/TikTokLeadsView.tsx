@@ -119,7 +119,7 @@ export const TikTokLeadsView: React.FC = () => {
                     <div className="text-slate-200">{lead.phone}</div>
                     <div className="text-[10px] text-slate-400 font-mono">{lead.email}</div>
                   </td>
-                  <td className="py-3 px-4 font-semibold text-[#fcb800]">
+                  <td className="py-3 px-4 font-semibold text-[#3b82f6]">
                     {lead.productInterest}
                   </td>
                   <td className="py-3 px-4 font-mono text-[11px] text-slate-400">

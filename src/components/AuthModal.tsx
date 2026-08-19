@@ -49,12 +49,12 @@ export const AuthModal: React.FC = () => {
 
   return (
     <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
-      <div className="bg-[#0b1120] border border-slate-800 rounded-3xl w-full max-w-md overflow-hidden shadow-2xl">
+      <div className="bg-[#0f172a] border border-slate-800 rounded-3xl w-full max-w-md overflow-hidden shadow-2xl">
         
         {/* Header */}
-        <div className="p-6 bg-[#070b14] border-b border-slate-800 flex items-center justify-between">
+        <div className="p-6 bg-[#020617] border-b border-slate-800 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-xl bg-[#fcb800] text-black font-black flex items-center justify-center text-sm">
+            <div className="w-8 h-8 rounded-xl bg-[#3b82f6] text-black font-black flex items-center justify-center text-sm">
               PB
             </div>
             <div>
@@ -76,7 +76,7 @@ export const AuthModal: React.FC = () => {
           <button
             onClick={() => { setMode('login'); setError(null); }}
             className={`py-2 rounded-xl transition-all cursor-pointer ${
-              mode === 'login' ? 'bg-[#fcb800] text-slate-950 shadow-md' : 'text-slate-400 hover:text-white'
+              mode === 'login' ? 'bg-[#3b82f6] text-slate-950 shadow-md' : 'text-slate-400 hover:text-white'
             }`}
           >
             Sign In
@@ -84,7 +84,7 @@ export const AuthModal: React.FC = () => {
           <button
             onClick={() => { setMode('register'); setError(null); }}
             className={`py-2 rounded-xl transition-all cursor-pointer ${
-              mode === 'register' ? 'bg-[#fcb800] text-slate-950 shadow-md' : 'text-slate-400 hover:text-white'
+              mode === 'register' ? 'bg-[#3b82f6] text-slate-950 shadow-md' : 'text-slate-400 hover:text-white'
             }`}
           >
             Register New Account
@@ -118,7 +118,7 @@ export const AuthModal: React.FC = () => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Ali Khan"
-                  className="w-full pl-9 pr-3 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-[#fcb800]"
+                  className="w-full pl-9 pr-3 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-[#3b82f6]"
                 />
               </div>
             </div>
@@ -135,7 +135,7 @@ export const AuthModal: React.FC = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="customer@playbeat.digital"
-                className="w-full pl-9 pr-3 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-[#fcb800]"
+                className="w-full pl-9 pr-3 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-[#3b82f6]"
               />
             </div>
           </div>
@@ -151,14 +151,14 @@ export const AuthModal: React.FC = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="••••••••"
-                className="w-full pl-9 pr-3 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-[#fcb800]"
+                className="w-full pl-9 pr-3 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-[#3b82f6]"
               />
             </div>
           </div>
 
           <button
             type="submit"
-            className="w-full py-3 rounded-xl bg-[#fcb800] hover:bg-[#e5a700] text-slate-950 font-black text-xs flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-yellow-500/20 transition-all"
+            className="w-full py-3 rounded-xl bg-[#3b82f6] hover:bg-[#2563eb] text-slate-950 font-black text-xs flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-blue-500/20 transition-all"
           >
             <span>
               {mode === 'login' ? 'Sign In to Customer Account' : 'Create Free Customer Account'}

@@ -1,8 +1,10 @@
 import { Product, Category, Coupon, NotificationItem, User } from '../types';
 
 export const INITIAL_CATEGORIES: Category[] = [
-  { id: 'cat-all', name: 'All Products', slug: 'all', description: 'Browse our entire verified catalog of ZeroByte smart projectors', icon: 'Grid', color: '#6366f1', productCount: 7 },
-  { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', description: 'Magcubic HY300, HY320, HM103-A, HCS350-Pro, HT23, HY7 — verified ZeroByte 4K cinema projectors', icon: 'Projector', color: '#fcb800', productCount: 7 }
+  { id: 'cat-all', name: 'All Products', slug: 'all', description: 'Browse our entire verified catalog — smart projectors, game top-ups, and gift cards', icon: 'Grid', color: '#6366f1', productCount: 31 },
+  { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', description: 'Magcubic HY300, HM103-A, HCS350-Pro, HT23, HY7 — verified ZeroByte 4K cinema projectors', icon: 'Projector', color: '#3b82f6', productCount: 7 },
+  { id: 'cat-games', name: 'Games & Top-Ups', slug: 'games', description: 'PUBG UC, Valorant Points, Genshin Crystals, LoL RP — instant recharge', icon: 'Gamepad2', color: '#f97316', productCount: 18 },
+  { id: 'cat-giftcards', name: 'Gift Cards', slug: 'gift-cards', description: 'Razer Gold (RBL) top-ups with instant digital delivery', icon: 'Gift', color: '#ef4444', productCount: 6 }
 ];
 
 export const INITIAL_PRODUCTS: Product[] = [
@@ -328,7 +330,1044 @@ export const INITIAL_PRODUCTS: Product[] = [
       '180-degree rotation bracket for ceiling projection anywhere'
     ],
     deliveryType: 'POSTAL_SHIPPING'
+  },
+  // =================================================================
+  // GAME TOP-UPS + GIFT CARDS (sourced from g2g.com — prices +10% profit margin)
+  // Source URL shows playbeat.digital only (g2g slug stripped per catalog owner)
+  // =================================================================
+  {
+    id: 'prod-pubg-mobile-uc-top-up-8100-uc',
+    title: "8100 UC \u2014 PUBG Mobile UC Top-Up",
+    slug: '8100-uc-pubg-mobile-uc-top-up',
+    shortDescription: "Official PUBG Mobile UC Top-Up \u2014 instant delivery of 8100 UC directly to your account.",
+    description: "Verified PUBG Mobile UC Top-Up top-up with instant direct recharge to your Player ID. Secure payment via JazzCash, EasyPaisa, Raast, or wallet balance. Receive exactly 8100 UC credited to your account within minutes.",
+    type: 'GAME',
+    status: 'PUBLISHED',
+    price: 24350,
+    currency: 'PKR',
+    sku: 'PROD-PUBG-MOBILE-UC-TOP-UP-810',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Gamepad2'
+    },
+    tags: ["UC", "PUBG Mobile UC", "Instant Top-Up", "Direct Recharge"],
+    licenseType: 'Instant Digital Delivery',
+    version: 'UC Recharge',
+    featured: false,
+    rating: 4.83,
+    reviewCount: 65,
+    salesCount: 326,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-games', name: 'Games & Top-Ups', slug: 'games', icon: 'Gamepad2', color: '#f97316' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Amount': '8100 UC',
+      'Delivery': 'Instant Direct Top-Up',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant direct recharge to your Player ID',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global account top-up — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'INSTANT_KEY'
+  },
+  {
+    id: 'prod-pubg-mobile-uc-top-up-4000-uc',
+    title: "4000 UC \u2014 PUBG Mobile UC Top-Up",
+    slug: '4000-uc-pubg-mobile-uc-top-up',
+    shortDescription: "Official PUBG Mobile UC Top-Up \u2014 instant delivery of 4000 UC directly to your account.",
+    description: "Verified PUBG Mobile UC Top-Up top-up with instant direct recharge to your Player ID. Secure payment via JazzCash, EasyPaisa, Raast, or wallet balance. Receive exactly 4000 UC credited to your account within minutes.",
+    type: 'GAME',
+    status: 'PUBLISHED',
+    price: 14600,
+    currency: 'PKR',
+    sku: 'PROD-PUBG-MOBILE-UC-TOP-UP-400',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Gamepad2'
+    },
+    tags: ["UC", "PUBG Mobile UC", "Instant Top-Up", "Direct Recharge"],
+    licenseType: 'Instant Digital Delivery',
+    version: 'UC Recharge',
+    featured: false,
+    rating: 4.59,
+    reviewCount: 17,
+    salesCount: 87,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-games', name: 'Games & Top-Ups', slug: 'games', icon: 'Gamepad2', color: '#f97316' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Amount': '4000 UC',
+      'Delivery': 'Instant Direct Top-Up',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant direct recharge to your Player ID',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global account top-up — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'INSTANT_KEY'
+  },
+  {
+    id: 'prod-pubg-mobile-uc-top-up-9375-uc',
+    title: "9375 UC \u2014 PUBG Mobile UC Top-Up",
+    slug: '9375-uc-pubg-mobile-uc-top-up',
+    shortDescription: "Official PUBG Mobile UC Top-Up \u2014 instant delivery of 9375 UC directly to your account.",
+    description: "Verified PUBG Mobile UC Top-Up top-up with instant direct recharge to your Player ID. Secure payment via JazzCash, EasyPaisa, Raast, or wallet balance. Receive exactly 9375 UC credited to your account within minutes.",
+    type: 'GAME',
+    status: 'PUBLISHED',
+    price: 18500,
+    currency: 'PKR',
+    sku: 'PROD-PUBG-MOBILE-UC-TOP-UP-937',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Gamepad2'
+    },
+    tags: ["UC", "PUBG Mobile UC", "Instant Top-Up", "Direct Recharge"],
+    licenseType: 'Instant Digital Delivery',
+    version: 'UC Recharge',
+    featured: false,
+    rating: 4.58,
+    reviewCount: 16,
+    salesCount: 83,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-games', name: 'Games & Top-Ups', slug: 'games', icon: 'Gamepad2', color: '#f97316' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Amount': '9375 UC',
+      'Delivery': 'Instant Direct Top-Up',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant direct recharge to your Player ID',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global account top-up — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'INSTANT_KEY'
+  },
+  {
+    id: 'prod-pubg-mobile-uc-top-up-3850-uc',
+    title: "3850 UC \u2014 PUBG Mobile UC Top-Up",
+    slug: '3850-uc-pubg-mobile-uc-top-up',
+    shortDescription: "Official PUBG Mobile UC Top-Up \u2014 instant delivery of 3850 UC directly to your account.",
+    description: "Verified PUBG Mobile UC Top-Up top-up with instant direct recharge to your Player ID. Secure payment via JazzCash, EasyPaisa, Raast, or wallet balance. Receive exactly 3850 UC credited to your account within minutes.",
+    type: 'GAME',
+    status: 'PUBLISHED',
+    price: 13500,
+    currency: 'PKR',
+    sku: 'PROD-PUBG-MOBILE-UC-TOP-UP-385',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Gamepad2'
+    },
+    tags: ["UC", "PUBG Mobile UC", "Instant Top-Up", "Direct Recharge"],
+    licenseType: 'Instant Digital Delivery',
+    version: 'UC Recharge',
+    featured: false,
+    rating: 4.69,
+    reviewCount: 38,
+    salesCount: 190,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-games', name: 'Games & Top-Ups', slug: 'games', icon: 'Gamepad2', color: '#f97316' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Amount': '3850 UC',
+      'Delivery': 'Instant Direct Top-Up',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant direct recharge to your Player ID',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global account top-up — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'INSTANT_KEY'
+  },
+  {
+    id: 'prod-pubg-mobile-uc-top-up-1800-uc',
+    title: "1800 UC \u2014 PUBG Mobile UC Top-Up",
+    slug: '1800-uc-pubg-mobile-uc-top-up',
+    shortDescription: "Official PUBG Mobile UC Top-Up \u2014 instant delivery of 1800 UC directly to your account.",
+    description: "Verified PUBG Mobile UC Top-Up top-up with instant direct recharge to your Player ID. Secure payment via JazzCash, EasyPaisa, Raast, or wallet balance. Receive exactly 1800 UC credited to your account within minutes.",
+    type: 'GAME',
+    status: 'PUBLISHED',
+    price: 6800,
+    currency: 'PKR',
+    sku: 'PROD-PUBG-MOBILE-UC-TOP-UP-180',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Gamepad2'
+    },
+    tags: ["UC", "PUBG Mobile UC", "Instant Top-Up", "Direct Recharge"],
+    licenseType: 'Instant Digital Delivery',
+    version: 'UC Recharge',
+    featured: false,
+    rating: 4.8,
+    reviewCount: 59,
+    salesCount: 297,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-games', name: 'Games & Top-Ups', slug: 'games', icon: 'Gamepad2', color: '#f97316' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Amount': '1800 UC',
+      'Delivery': 'Instant Direct Top-Up',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant direct recharge to your Player ID',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global account top-up — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'INSTANT_KEY'
+  },
+  {
+    id: 'prod-pubg-mobile-uc-top-up-6000-uc',
+    title: "6000 UC \u2014 PUBG Mobile UC Top-Up",
+    slug: '6000-uc-pubg-mobile-uc-top-up',
+    shortDescription: "Official PUBG Mobile UC Top-Up \u2014 instant delivery of 6000 UC directly to your account.",
+    description: "Verified PUBG Mobile UC Top-Up top-up with instant direct recharge to your Player ID. Secure payment via JazzCash, EasyPaisa, Raast, or wallet balance. Receive exactly 6000 UC credited to your account within minutes.",
+    type: 'GAME',
+    status: 'PUBLISHED',
+    price: 300,
+    currency: 'PKR',
+    sku: 'PROD-PUBG-MOBILE-UC-TOP-UP-600',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Gamepad2'
+    },
+    tags: ["UC", "PUBG Mobile UC", "Instant Top-Up", "Direct Recharge"],
+    licenseType: 'Instant Digital Delivery',
+    version: 'UC Recharge',
+    featured: false,
+    rating: 4.54,
+    reviewCount: 10,
+    salesCount: 40,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-games', name: 'Games & Top-Ups', slug: 'games', icon: 'Gamepad2', color: '#f97316' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Amount': '6000 UC',
+      'Delivery': 'Instant Direct Top-Up',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant direct recharge to your Player ID',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global account top-up — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'INSTANT_KEY'
+  },
+  {
+    id: 'prod-valorant-points-top-up-475-points',
+    title: "475 Points \u2014 Valorant Points Top-Up",
+    slug: '475-points-valorant-points-top-up',
+    shortDescription: "Official Valorant Points Top-Up \u2014 instant delivery of 475 Points directly to your account.",
+    description: "Verified Valorant Points Top-Up top-up with instant direct recharge to your Player ID. Secure payment via JazzCash, EasyPaisa, Raast, or wallet balance. Receive exactly 475 Points credited to your account within minutes.",
+    type: 'GAME',
+    status: 'PUBLISHED',
+    price: 950,
+    currency: 'PKR',
+    sku: 'PROD-VALORANT-POINTS-TOP-UP-47',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Gamepad2'
+    },
+    tags: ["Points", "Valorant Points", "Instant Top-Up", "Direct Recharge"],
+    licenseType: 'Instant Digital Delivery',
+    version: 'Points Recharge',
+    featured: false,
+    rating: 5.0,
+    reviewCount: 133,
+    salesCount: 668,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-games', name: 'Games & Top-Ups', slug: 'games', icon: 'Gamepad2', color: '#f97316' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Amount': '475 Points',
+      'Delivery': 'Instant Direct Top-Up',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant direct recharge to your Player ID',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global account top-up — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'INSTANT_KEY'
+  },
+  {
+    id: 'prod-genshin-impact-crystals-top-up-2200-crystals',
+    title: "2200 Crystals \u2014 Genshin Impact Crystals Top-Up",
+    slug: '2200-crystals-genshin-impact-crystals-top-up',
+    shortDescription: "Official Genshin Impact Crystals Top-Up \u2014 instant delivery of 2200 Crystals directly to your account.",
+    description: "Verified Genshin Impact Crystals Top-Up top-up with instant direct recharge to your Player ID. Secure payment via JazzCash, EasyPaisa, Raast, or wallet balance. Receive exactly 2200 Crystals credited to your account within minutes.",
+    type: 'GAME',
+    status: 'PUBLISHED',
+    price: 21500,
+    currency: 'PKR',
+    sku: 'PROD-GENSHIN-IMPACT-CRYSTALS-T',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Gamepad2'
+    },
+    tags: ["Crystals", "Genshin Impact Crystals", "Instant Top-Up", "Direct Recharge"],
+    licenseType: 'Instant Digital Delivery',
+    version: 'Crystals Recharge',
+    featured: false,
+    rating: 4.71,
+    reviewCount: 43,
+    salesCount: 215,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-games', name: 'Games & Top-Ups', slug: 'games', icon: 'Gamepad2', color: '#f97316' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Amount': '2200 Crystals',
+      'Delivery': 'Instant Direct Top-Up',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant direct recharge to your Player ID',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global account top-up — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'INSTANT_KEY'
+  },
+  {
+    id: 'prod-genshin-impact-crystals-top-up-260-crystals',
+    title: "260 Crystals \u2014 Genshin Impact Crystals Top-Up",
+    slug: '260-crystals-genshin-impact-crystals-top-up',
+    shortDescription: "Official Genshin Impact Crystals Top-Up \u2014 instant delivery of 260 Crystals directly to your account.",
+    description: "Verified Genshin Impact Crystals Top-Up top-up with instant direct recharge to your Player ID. Secure payment via JazzCash, EasyPaisa, Raast, or wallet balance. Receive exactly 260 Crystals credited to your account within minutes.",
+    type: 'GAME',
+    status: 'PUBLISHED',
+    price: 6350,
+    currency: 'PKR',
+    sku: 'PROD-GENSHIN-IMPACT-CRYSTALS-T',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Gamepad2'
+    },
+    tags: ["Crystals", "Genshin Impact Crystals", "Instant Top-Up", "Direct Recharge"],
+    licenseType: 'Instant Digital Delivery',
+    version: 'Crystals Recharge',
+    featured: false,
+    rating: 5.0,
+    reviewCount: 140,
+    salesCount: 701,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-games', name: 'Games & Top-Ups', slug: 'games', icon: 'Gamepad2', color: '#f97316' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Amount': '260 Crystals',
+      'Delivery': 'Instant Direct Top-Up',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant direct recharge to your Player ID',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global account top-up — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'INSTANT_KEY'
+  },
+  {
+    id: 'prod-genshin-impact-crystals-top-up-140-crystals',
+    title: "140 Crystals \u2014 Genshin Impact Crystals Top-Up",
+    slug: '140-crystals-genshin-impact-crystals-top-up',
+    shortDescription: "Official Genshin Impact Crystals Top-Up \u2014 instant delivery of 140 Crystals directly to your account.",
+    description: "Verified Genshin Impact Crystals Top-Up top-up with instant direct recharge to your Player ID. Secure payment via JazzCash, EasyPaisa, Raast, or wallet balance. Receive exactly 140 Crystals credited to your account within minutes.",
+    type: 'GAME',
+    status: 'PUBLISHED',
+    price: 6050,
+    currency: 'PKR',
+    sku: 'PROD-GENSHIN-IMPACT-CRYSTALS-T',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Gamepad2'
+    },
+    tags: ["Crystals", "Genshin Impact Crystals", "Instant Top-Up", "Direct Recharge"],
+    licenseType: 'Instant Digital Delivery',
+    version: 'Crystals Recharge',
+    featured: false,
+    rating: 4.85,
+    reviewCount: 70,
+    salesCount: 353,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-games', name: 'Games & Top-Ups', slug: 'games', icon: 'Gamepad2', color: '#f97316' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Amount': '140 Crystals',
+      'Delivery': 'Instant Direct Top-Up',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant direct recharge to your Player ID',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global account top-up — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'INSTANT_KEY'
+  },
+  {
+    id: 'prod-genshin-impact-crystals-top-up-30-crystals',
+    title: "30 Crystals \u2014 Genshin Impact Crystals Top-Up",
+    slug: '30-crystals-genshin-impact-crystals-top-up',
+    shortDescription: "Official Genshin Impact Crystals Top-Up \u2014 instant delivery of 30 Crystals directly to your account.",
+    description: "Verified Genshin Impact Crystals Top-Up top-up with instant direct recharge to your Player ID. Secure payment via JazzCash, EasyPaisa, Raast, or wallet balance. Receive exactly 30 Crystals credited to your account within minutes.",
+    type: 'GAME',
+    status: 'PUBLISHED',
+    price: 1150,
+    currency: 'PKR',
+    sku: 'PROD-GENSHIN-IMPACT-CRYSTALS-T',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Gamepad2'
+    },
+    tags: ["Crystals", "Genshin Impact Crystals", "Instant Top-Up", "Direct Recharge"],
+    licenseType: 'Instant Digital Delivery',
+    version: 'Crystals Recharge',
+    featured: false,
+    rating: 5.0,
+    reviewCount: 116,
+    salesCount: 583,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-games', name: 'Games & Top-Ups', slug: 'games', icon: 'Gamepad2', color: '#f97316' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Amount': '30 Crystals',
+      'Delivery': 'Instant Direct Top-Up',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant direct recharge to your Player ID',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global account top-up — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'INSTANT_KEY'
+  },
+  {
+    id: 'prod-genshin-impact-crystals-top-up-710-crystals',
+    title: "710 Crystals \u2014 Genshin Impact Crystals Top-Up",
+    slug: '710-crystals-genshin-impact-crystals-top-up',
+    shortDescription: "Official Genshin Impact Crystals Top-Up \u2014 instant delivery of 710 Crystals directly to your account.",
+    description: "Verified Genshin Impact Crystals Top-Up top-up with instant direct recharge to your Player ID. Secure payment via JazzCash, EasyPaisa, Raast, or wallet balance. Receive exactly 710 Crystals credited to your account within minutes.",
+    type: 'GAME',
+    status: 'PUBLISHED',
+    price: 13500,
+    currency: 'PKR',
+    sku: 'PROD-GENSHIN-IMPACT-CRYSTALS-T',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Gamepad2'
+    },
+    tags: ["Crystals", "Genshin Impact Crystals", "Instant Top-Up", "Direct Recharge"],
+    licenseType: 'Instant Digital Delivery',
+    version: 'Crystals Recharge',
+    featured: false,
+    rating: 4.71,
+    reviewCount: 42,
+    salesCount: 211,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-games', name: 'Games & Top-Ups', slug: 'games', icon: 'Gamepad2', color: '#f97316' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Amount': '710 Crystals',
+      'Delivery': 'Instant Direct Top-Up',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant direct recharge to your Player ID',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global account top-up — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'INSTANT_KEY'
+  },
+  {
+    id: 'prod-league-of-legends-rp-top-up-10040-rp',
+    title: "10040 RP \u2014 League of Legends RP Top-Up",
+    slug: '10040-rp-league-of-legends-rp-top-up',
+    shortDescription: "Official League of Legends RP Top-Up \u2014 instant delivery of 10040 RP directly to your account.",
+    description: "Verified League of Legends RP Top-Up top-up with instant direct recharge to your Player ID. Secure payment via JazzCash, EasyPaisa, Raast, or wallet balance. Receive exactly 10040 RP credited to your account within minutes.",
+    type: 'GAME',
+    status: 'PUBLISHED',
+    price: 22500,
+    currency: 'PKR',
+    sku: 'PROD-LEAGUE-OF-LEGENDS-RP-TOP-',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Gamepad2'
+    },
+    tags: ["RP", "League of Legends RP", "Instant Top-Up", "Direct Recharge"],
+    licenseType: 'Instant Digital Delivery',
+    version: 'RP Recharge',
+    featured: false,
+    rating: 4.5,
+    reviewCount: 10,
+    salesCount: 0,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-games', name: 'Games & Top-Ups', slug: 'games', icon: 'Gamepad2', color: '#f97316' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Amount': '10040 RP',
+      'Delivery': 'Instant Direct Top-Up',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant direct recharge to your Player ID',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global account top-up — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'INSTANT_KEY'
+  },
+  {
+    id: 'prod-league-of-legends-rp-top-up-4500-rp',
+    title: "4500 RP \u2014 League of Legends RP Top-Up",
+    slug: '4500-rp-league-of-legends-rp-top-up',
+    shortDescription: "Official League of Legends RP Top-Up \u2014 instant delivery of 4500 RP directly to your account.",
+    description: "Verified League of Legends RP Top-Up top-up with instant direct recharge to your Player ID. Secure payment via JazzCash, EasyPaisa, Raast, or wallet balance. Receive exactly 4500 RP credited to your account within minutes.",
+    type: 'GAME',
+    status: 'PUBLISHED',
+    price: 10550,
+    currency: 'PKR',
+    sku: 'PROD-LEAGUE-OF-LEGENDS-RP-TOP-',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Gamepad2'
+    },
+    tags: ["RP", "League of Legends RP", "Instant Top-Up", "Direct Recharge"],
+    licenseType: 'Instant Digital Delivery',
+    version: 'RP Recharge',
+    featured: false,
+    rating: 4.5,
+    reviewCount: 10,
+    salesCount: 0,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-games', name: 'Games & Top-Ups', slug: 'games', icon: 'Gamepad2', color: '#f97316' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Amount': '4500 RP',
+      'Delivery': 'Instant Direct Top-Up',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant direct recharge to your Player ID',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global account top-up — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'INSTANT_KEY'
+  },
+  {
+    id: 'prod-league-of-legends-rp-top-up-1380-rp',
+    title: "1380 RP \u2014 League of Legends RP Top-Up",
+    slug: '1380-rp-league-of-legends-rp-top-up',
+    shortDescription: "Official League of Legends RP Top-Up \u2014 instant delivery of 1380 RP directly to your account.",
+    description: "Verified League of Legends RP Top-Up top-up with instant direct recharge to your Player ID. Secure payment via JazzCash, EasyPaisa, Raast, or wallet balance. Receive exactly 1380 RP credited to your account within minutes.",
+    type: 'GAME',
+    status: 'PUBLISHED',
+    price: 2700,
+    currency: 'PKR',
+    sku: 'PROD-LEAGUE-OF-LEGENDS-RP-TOP-',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Gamepad2'
+    },
+    tags: ["RP", "League of Legends RP", "Instant Top-Up", "Direct Recharge"],
+    licenseType: 'Instant Digital Delivery',
+    version: 'RP Recharge',
+    featured: false,
+    rating: 4.5,
+    reviewCount: 10,
+    salesCount: 0,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-games', name: 'Games & Top-Ups', slug: 'games', icon: 'Gamepad2', color: '#f97316' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Amount': '1380 RP',
+      'Delivery': 'Instant Direct Top-Up',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant direct recharge to your Player ID',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global account top-up — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'INSTANT_KEY'
+  },
+  {
+    id: 'prod-league-of-legends-rp-top-up-5020-rp',
+    title: "5020 RP \u2014 League of Legends RP Top-Up",
+    slug: '5020-rp-league-of-legends-rp-top-up',
+    shortDescription: "Official League of Legends RP Top-Up \u2014 instant delivery of 5020 RP directly to your account.",
+    description: "Verified League of Legends RP Top-Up top-up with instant direct recharge to your Player ID. Secure payment via JazzCash, EasyPaisa, Raast, or wallet balance. Receive exactly 5020 RP credited to your account within minutes.",
+    type: 'GAME',
+    status: 'PUBLISHED',
+    price: 11400,
+    currency: 'PKR',
+    sku: 'PROD-LEAGUE-OF-LEGENDS-RP-TOP-',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Gamepad2'
+    },
+    tags: ["RP", "League of Legends RP", "Instant Top-Up", "Direct Recharge"],
+    licenseType: 'Instant Digital Delivery',
+    version: 'RP Recharge',
+    featured: false,
+    rating: 4.5,
+    reviewCount: 10,
+    salesCount: 0,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-games', name: 'Games & Top-Ups', slug: 'games', icon: 'Gamepad2', color: '#f97316' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Amount': '5020 RP',
+      'Delivery': 'Instant Direct Top-Up',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant direct recharge to your Player ID',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global account top-up — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'INSTANT_KEY'
+  },
+  {
+    id: 'prod-league-of-legends-rp-top-up-1380-rp',
+    title: "1380 RP \u2014 League of Legends RP Top-Up",
+    slug: '1380-rp-league-of-legends-rp-top-up',
+    shortDescription: "Official League of Legends RP Top-Up \u2014 instant delivery of 1380 RP directly to your account.",
+    description: "Verified League of Legends RP Top-Up top-up with instant direct recharge to your Player ID. Secure payment via JazzCash, EasyPaisa, Raast, or wallet balance. Receive exactly 1380 RP credited to your account within minutes.",
+    type: 'GAME',
+    status: 'PUBLISHED',
+    price: 2700,
+    currency: 'PKR',
+    sku: 'PROD-LEAGUE-OF-LEGENDS-RP-TOP-',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Gamepad2'
+    },
+    tags: ["RP", "League of Legends RP", "Instant Top-Up", "Direct Recharge"],
+    licenseType: 'Instant Digital Delivery',
+    version: 'RP Recharge',
+    featured: false,
+    rating: 4.5,
+    reviewCount: 10,
+    salesCount: 0,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-games', name: 'Games & Top-Ups', slug: 'games', icon: 'Gamepad2', color: '#f97316' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Amount': '1380 RP',
+      'Delivery': 'Instant Direct Top-Up',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant direct recharge to your Player ID',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global account top-up — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'INSTANT_KEY'
+  },
+  {
+    id: 'prod-league-of-legends-rp-top-up-1380-rp',
+    title: "1380 RP \u2014 League of Legends RP Top-Up",
+    slug: '1380-rp-league-of-legends-rp-top-up',
+    shortDescription: "Official League of Legends RP Top-Up \u2014 instant delivery of 1380 RP directly to your account.",
+    description: "Verified League of Legends RP Top-Up top-up with instant direct recharge to your Player ID. Secure payment via JazzCash, EasyPaisa, Raast, or wallet balance. Receive exactly 1380 RP credited to your account within minutes.",
+    type: 'GAME',
+    status: 'PUBLISHED',
+    price: 3350,
+    currency: 'PKR',
+    sku: 'PROD-LEAGUE-OF-LEGENDS-RP-TOP-',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Gamepad2'
+    },
+    tags: ["RP", "League of Legends RP", "Instant Top-Up", "Direct Recharge"],
+    licenseType: 'Instant Digital Delivery',
+    version: 'RP Recharge',
+    featured: false,
+    rating: 4.5,
+    reviewCount: 10,
+    salesCount: 0,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-games', name: 'Games & Top-Ups', slug: 'games', icon: 'Gamepad2', color: '#f97316' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Amount': '1380 RP',
+      'Delivery': 'Instant Direct Top-Up',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant direct recharge to your Player ID',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global account top-up — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'INSTANT_KEY'
+  },
+  {
+    id: 'prod-razer-gold-top-up-22500-rbx',
+    title: "22500 Rbx \u2014 Razer Gold Top-Up",
+    slug: '22500-rbx-razer-gold-top-up',
+    shortDescription: "Official Razer Gold Top-Up \u2014 instant delivery of 22500 Rbx directly to your account.",
+    description: "Verified Razer Gold Top-Up top-up with instant direct recharge to your Player ID. Secure payment via JazzCash, EasyPaisa, Raast, or wallet balance. Receive exactly 22500 Rbx credited to your account within minutes.",
+    type: 'GIFT_CARD',
+    status: 'PUBLISHED',
+    price: 25600,
+    currency: 'PKR',
+    sku: 'PROD-RAZER-GOLD-TOP-UP-22500-R',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Gamepad2'
+    },
+    tags: ["Rbx", "Razer Gold", "Instant Top-Up", "Direct Recharge"],
+    licenseType: 'Instant Digital Delivery',
+    version: 'Rbx Recharge',
+    featured: false,
+    rating: 4.85,
+    reviewCount: 70,
+    salesCount: 354,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-giftcards', name: 'Gift Cards', slug: 'gift-cards', icon: 'Gift', color: '#ef4444' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Amount': '22500 Rbx',
+      'Delivery': 'Instant Direct Top-Up',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant direct recharge to your Player ID',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global account top-up — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'INSTANT_KEY'
+  },
+  {
+    id: 'prod-razer-gold-top-up-32500-rbx',
+    title: "32500 Rbx \u2014 Razer Gold Top-Up",
+    slug: '32500-rbx-razer-gold-top-up',
+    shortDescription: "Official Razer Gold Top-Up \u2014 instant delivery of 32500 Rbx directly to your account.",
+    description: "Verified Razer Gold Top-Up top-up with instant direct recharge to your Player ID. Secure payment via JazzCash, EasyPaisa, Raast, or wallet balance. Receive exactly 32500 Rbx credited to your account within minutes.",
+    type: 'GIFT_CARD',
+    status: 'PUBLISHED',
+    price: 35200,
+    currency: 'PKR',
+    sku: 'PROD-RAZER-GOLD-TOP-UP-32500-R',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Gamepad2'
+    },
+    tags: ["Rbx", "Razer Gold", "Instant Top-Up", "Direct Recharge"],
+    licenseType: 'Instant Digital Delivery',
+    version: 'Rbx Recharge',
+    featured: false,
+    rating: 4.66,
+    reviewCount: 31,
+    salesCount: 159,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-giftcards', name: 'Gift Cards', slug: 'gift-cards', icon: 'Gift', color: '#ef4444' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Amount': '32500 Rbx',
+      'Delivery': 'Instant Direct Top-Up',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant direct recharge to your Player ID',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global account top-up — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'INSTANT_KEY'
+  },
+  {
+    id: 'prod-razer-gold-top-up-10000-rbx',
+    title: "10000 Rbx \u2014 Razer Gold Top-Up",
+    slug: '10000-rbx-razer-gold-top-up',
+    shortDescription: "Official Razer Gold Top-Up \u2014 instant delivery of 10000 Rbx directly to your account.",
+    description: "Verified Razer Gold Top-Up top-up with instant direct recharge to your Player ID. Secure payment via JazzCash, EasyPaisa, Raast, or wallet balance. Receive exactly 10000 Rbx credited to your account within minutes.",
+    type: 'GIFT_CARD',
+    status: 'PUBLISHED',
+    price: 5700,
+    currency: 'PKR',
+    sku: 'PROD-RAZER-GOLD-TOP-UP-10000-R',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Gamepad2'
+    },
+    tags: ["Rbx", "Razer Gold", "Instant Top-Up", "Direct Recharge"],
+    licenseType: 'Instant Digital Delivery',
+    version: 'Rbx Recharge',
+    featured: false,
+    rating: 5.0,
+    reviewCount: 132,
+    salesCount: 664,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-giftcards', name: 'Gift Cards', slug: 'gift-cards', icon: 'Gift', color: '#ef4444' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Amount': '10000 Rbx',
+      'Delivery': 'Instant Direct Top-Up',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant direct recharge to your Player ID',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global account top-up — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'INSTANT_KEY'
+  },
+  {
+    id: 'prod-razer-gold-top-up-4500-rbx',
+    title: "4500 Rbx \u2014 Razer Gold Top-Up",
+    slug: '4500-rbx-razer-gold-top-up',
+    shortDescription: "Official Razer Gold Top-Up \u2014 instant delivery of 4500 Rbx directly to your account.",
+    description: "Verified Razer Gold Top-Up top-up with instant direct recharge to your Player ID. Secure payment via JazzCash, EasyPaisa, Raast, or wallet balance. Receive exactly 4500 Rbx credited to your account within minutes.",
+    type: 'GIFT_CARD',
+    status: 'PUBLISHED',
+    price: 4250,
+    currency: 'PKR',
+    sku: 'PROD-RAZER-GOLD-TOP-UP-4500-RB',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Gamepad2'
+    },
+    tags: ["Rbx", "Razer Gold", "Instant Top-Up", "Direct Recharge"],
+    licenseType: 'Instant Digital Delivery',
+    version: 'Rbx Recharge',
+    featured: false,
+    rating: 5.0,
+    reviewCount: 166,
+    salesCount: 830,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-giftcards', name: 'Gift Cards', slug: 'gift-cards', icon: 'Gift', color: '#ef4444' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Amount': '4500 Rbx',
+      'Delivery': 'Instant Direct Top-Up',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant direct recharge to your Player ID',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global account top-up — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'INSTANT_KEY'
+  },
+  {
+    id: 'prod-razer-gold-top-up-3700-rbx',
+    title: "3700 Rbx \u2014 Razer Gold Top-Up",
+    slug: '3700-rbx-razer-gold-top-up',
+    shortDescription: "Official Razer Gold Top-Up \u2014 instant delivery of 3700 Rbx directly to your account.",
+    description: "Verified Razer Gold Top-Up top-up with instant direct recharge to your Player ID. Secure payment via JazzCash, EasyPaisa, Raast, or wallet balance. Receive exactly 3700 Rbx credited to your account within minutes.",
+    type: 'GIFT_CARD',
+    status: 'PUBLISHED',
+    price: 5700,
+    currency: 'PKR',
+    sku: 'PROD-RAZER-GOLD-TOP-UP-3700-RB',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Gamepad2'
+    },
+    tags: ["Rbx", "Razer Gold", "Instant Top-Up", "Direct Recharge"],
+    licenseType: 'Instant Digital Delivery',
+    version: 'Rbx Recharge',
+    featured: false,
+    rating: 4.64,
+    reviewCount: 28,
+    salesCount: 142,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-giftcards', name: 'Gift Cards', slug: 'gift-cards', icon: 'Gift', color: '#ef4444' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Amount': '3700 Rbx',
+      'Delivery': 'Instant Direct Top-Up',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant direct recharge to your Player ID',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global account top-up — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'INSTANT_KEY'
+  },
+  {
+    id: 'prod-razer-gold-top-up-3400-rbx',
+    title: "3400 Rbx \u2014 Razer Gold Top-Up",
+    slug: '3400-rbx-razer-gold-top-up',
+    shortDescription: "Official Razer Gold Top-Up \u2014 instant delivery of 3400 Rbx directly to your account.",
+    description: "Verified Razer Gold Top-Up top-up with instant direct recharge to your Player ID. Secure payment via JazzCash, EasyPaisa, Raast, or wallet balance. Receive exactly 3400 Rbx credited to your account within minutes.",
+    type: 'GIFT_CARD',
+    status: 'PUBLISHED',
+    price: 6150,
+    currency: 'PKR',
+    sku: 'PROD-RAZER-GOLD-TOP-UP-3400-RB',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Gamepad2'
+    },
+    tags: ["Rbx", "Razer Gold", "Instant Top-Up", "Direct Recharge"],
+    licenseType: 'Instant Digital Delivery',
+    version: 'Rbx Recharge',
+    featured: false,
+    rating: 4.54,
+    reviewCount: 10,
+    salesCount: 41,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-giftcards', name: 'Gift Cards', slug: 'gift-cards', icon: 'Gift', color: '#ef4444' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Amount': '3400 Rbx',
+      'Delivery': 'Instant Direct Top-Up',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant direct recharge to your Player ID',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global account top-up — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'INSTANT_KEY'
   }
+
 ];
 
 export const INITIAL_COUPONS: Coupon[] = [

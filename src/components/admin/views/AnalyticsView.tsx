@@ -93,7 +93,7 @@ export const AnalyticsView: React.FC = () => {
         <div className="bg-[#11192e]/90 border border-slate-800/80 p-4 rounded-2xl">
           <div className="flex items-center justify-between text-slate-400 text-xs font-semibold">
             <span>Refund / Dispute Rate</span>
-            <PieChart className="w-4 h-4 text-amber-400" />
+            <PieChart className="w-4 h-4 text-blue-400" />
           </div>
           <div className="text-2xl font-black text-white mt-2">0.00%</div>
           <div className="flex items-center gap-1 text-[11px] text-emerald-400 font-semibold mt-1">
