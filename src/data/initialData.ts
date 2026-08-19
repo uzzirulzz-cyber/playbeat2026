@@ -26,7 +26,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     stock: 35,
     cover: {
       type: 'image',
-      image: 'https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=1000&q=80',
+      image: 'https://www.zerobyte.store/cdn/shop/files/S9fbe418fb0084a9a927f28e16a51bd25a.jpg?v=1770615428&width=1946',
       colors: ['#0f172a', '#1e293b'],
       icon: 'Projector'
     },
@@ -78,7 +78,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     stock: 22,
     cover: {
       type: 'image',
-      image: 'https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=1000&q=80',
+      image: 'https://www.zerobyte.store/cdn/shop/files/Se6ca806a4e03461fb8748fff3d1c187eI.webp?v=1745826564&width=1946',
       colors: ['#0f172a', '#1e293b'],
       icon: 'Projector'
     },
@@ -119,7 +119,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     stock: 28,
     cover: {
       type: 'image',
-      image: 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1000&q=80',
+      image: 'https://www.zerobyte.store/cdn/shop/files/S6002d940582649c9be0292811be6b4e5I.jpg?v=1770636107&width=1946',
       colors: ['#0f172a', '#1e293b'],
       icon: 'Projector'
     },
@@ -165,7 +165,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     stock: 18,
     cover: {
       type: 'image',
-      image: 'https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=1000&q=80',
+      image: 'https://www.zerobyte.store/cdn/shop/files/preview_images/1_d88162d0-7eb3-4d29-b282-3c3163dbfc89.png?v=1747500176&width=1946',
       colors: ['#0f172a', '#1e293b'],
       icon: 'Projector'
     },
@@ -209,7 +209,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     stock: 20,
     cover: {
       type: 'image',
-      image: 'https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1000&q=80',
+      image: 'https://www.zerobyte.store/cdn/shop/files/HCS350_PRO_WHITE.png?v=1747890095&width=1946',
       colors: ['#0f172a', '#1e293b'],
       icon: 'Projector'
     },
@@ -254,7 +254,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     stock: 14,
     cover: {
       type: 'image',
-      image: 'https://images.unsplash.com/photo-1595769816263-9b910be24d5f?auto=format&fit=crop&w=1000&q=80',
+      image: 'https://www.zerobyte.store/cdn/shop/files/preview_images/WHITE.png?v=1747500464&width=1946',
       colors: ['#0f172a', '#1e293b'],
       icon: 'Projector'
     },
@@ -300,7 +300,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     stock: 16,
     cover: {
       type: 'image',
-      image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1000&q=80',
+      image: 'https://www.zerobyte.store/cdn/shop/files/S9b7d3e654ba04d26b500c9268f4fa0008.webp?v=1745468010&width=1946',
       colors: ['#0f172a', '#1e293b'],
       icon: 'Projector'
     },
