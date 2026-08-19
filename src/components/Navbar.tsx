@@ -23,6 +23,7 @@ import {
   Flame,
   Sparkle,
   Tv,
+  Gamepad2,
   Send,
   MessageCircle,
   Truck,
@@ -184,13 +185,13 @@ export const Navbar: React.FC = () => {
 
   return (
     <header
-      className={`sticky top-0 z-40 w-full backdrop-blur-xl bg-[#0f172a]/95 border-b border-slate-800 shadow-xl transition-all duration-300 ${
+      className={`sticky top-0 z-40 w-full backdrop-blur-xl bg-[#0a1929]/95 border-b border-slate-800 shadow-xl transition-all duration-300 ${
         isScrolled ? 'shadow-2xl shadow-black/40' : ''
       }`}
     >
       {/* 1. Top micro-announcement bar — collapses on scroll */}
       <div
-        className={`w-full bg-[#020617] border-b border-slate-800/80 px-3 sm:px-4 text-xs text-slate-300 overflow-hidden transition-all duration-300 ${
+        className={`w-full bg-[#0a1929] border-b border-slate-800/80 px-3 sm:px-4 text-xs text-slate-300 overflow-hidden transition-all duration-300 ${
           isScrolled ? 'max-h-0 py-0 opacity-0' : 'max-h-12 py-1.5 opacity-100'
         }`}
       >
@@ -403,7 +404,7 @@ export const Navbar: React.FC = () => {
             <input
               ref={searchInputRef}
               type="text"
-              placeholder="Search Magcubic HY300, HM103-A, HY7 Battery..."
+              placeholder="Search projectors, Netflix, ChatGPT, PUBG UC..."
               value={searchQuery}
               onChange={(e) => {
                 setSearchQuery(e.target.value);
@@ -558,7 +559,7 @@ export const Navbar: React.FC = () => {
       </div>
 
       {/* 3. Secondary Navigation & Mega Menu Bar with Trust Badges */}
-      <div className="w-full bg-[#020617] border-t border-slate-800/80 px-3 sm:px-4 py-2 relative hidden lg:block">
+      <div className="w-full bg-[#0a1929] border-t border-slate-800/80 px-3 sm:px-4 py-2 relative hidden lg:block">
         <div className="max-w-7xl mx-auto flex items-center justify-between text-xs gap-4">
           <div className="flex items-center gap-4 sm:gap-6 overflow-x-auto no-scrollbar py-1">
             {/* Mega Menu Toggle — gradient pill */}
@@ -576,13 +577,12 @@ export const Navbar: React.FC = () => {
               />
             </button>
 
-            {/* Quick Category links — only Smart Projectors is in the verified catalog */}
+            {/* Quick Category links — main catalog categories */}
             {[
-              {
-                label: 'Smart Projectors',
-                slug: 'smart-projectors',
-                icon: Tv,
-              },
+              { label: 'Smart Projectors', slug: 'smart-projectors', icon: Tv },
+              { label: 'Video Streaming', slug: 'streaming', icon: Sparkles },
+              { label: 'AI Tools', slug: 'ai-tools', icon: Sparkle },
+              { label: 'Games Top-Up', slug: 'games', icon: Gamepad2 },
             ].map((item) => (
               <button
                 key={item.slug}
@@ -612,7 +612,7 @@ export const Navbar: React.FC = () => {
             </span>
             <span className="hidden xl:flex items-center gap-1.5 text-slate-400 font-semibold shrink-0">
               <Award className="w-3.5 h-3.5 text-blue-400" />
-              <span>Verified ZeroByte</span>
+              <span>Verified PlayBeat</span>
             </span>
           </div>
 
@@ -789,7 +789,7 @@ export const Navbar: React.FC = () => {
                 </span>
                 <span className="flex items-center gap-1 px-2 py-0.5 rounded-md bg-blue-950/40 border border-blue-500/30 text-blue-400 font-semibold">
                   <Award className="w-3 h-3" />
-                  <span>Verified ZeroByte</span>
+                  <span>Verified PlayBeat</span>
                 </span>
               </div>
             </div>
@@ -836,6 +836,9 @@ export const Navbar: React.FC = () => {
               </div>
               {[
                 { label: 'Smart Projectors', slug: 'smart-projectors', icon: Tv },
+                { label: 'Video Streaming', slug: 'streaming', icon: Sparkles },
+                { label: 'AI Tools', slug: 'ai-tools', icon: Sparkle },
+                { label: 'Games Top-Up', slug: 'games', icon: Gamepad2 },
               ].map((item) => {
                 const Icon = item.icon;
                 return (

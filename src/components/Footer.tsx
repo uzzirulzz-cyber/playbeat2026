@@ -249,18 +249,34 @@ export const Footer: React.FC = () => {
             </li>
             <li>
               <button
-                onClick={() => handleQuickLink('storefront', 'smart-projectors', 'HARDWARE')}
-                className="hover:text-[#3b82f6] transition-colors cursor-pointer text-left w-full text-blue-300 font-semibold"
+                onClick={() => handleQuickLink('storefront', 'streaming', 'STREAMING')}
+                className="hover:text-[#3b82f6] transition-colors cursor-pointer text-left w-full"
               >
-                Best Value
+                Video Streaming
               </button>
             </li>
             <li>
               <button
-                onClick={() => handleQuickLink('storefront', 'all')}
-                className="hover:text-[#3b82f6] transition-colors cursor-pointer text-left w-full text-pink-400 font-semibold"
+                onClick={() => handleQuickLink('storefront', 'ai-tools', 'AI_TOOL')}
+                className="hover:text-[#3b82f6] transition-colors cursor-pointer text-left w-full"
               >
-                Trending
+                AI Tools
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => handleQuickLink('storefront', 'games', 'GAME')}
+                className="hover:text-[#3b82f6] transition-colors cursor-pointer text-left w-full"
+              >
+                Games Top-Up
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => handleQuickLink('storefront', 'gift-cards', 'GIFT_CARD')}
+                className="hover:text-[#3b82f6] transition-colors cursor-pointer text-left w-full"
+              >
+                Gift Cards
               </button>
             </li>
           </ul>
@@ -282,10 +298,34 @@ export const Footer: React.FC = () => {
             </li>
             <li>
               <button
-                onClick={() => handleQuickLink('storefront', 'smart-projectors')}
-                className="hover:text-[#3b82f6] transition-colors cursor-pointer text-left w-full text-emerald-400 font-semibold"
+                onClick={() => handleQuickLink('storefront', 'streaming')}
+                className="hover:text-[#3b82f6] transition-colors cursor-pointer text-left w-full"
               >
-                All Verified Catalog
+                Video Streaming
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => handleQuickLink('storefront', 'ai-tools')}
+                className="hover:text-[#3b82f6] transition-colors cursor-pointer text-left w-full"
+              >
+                AI Tools
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => handleQuickLink('storefront', 'games')}
+                className="hover:text-[#3b82f6] transition-colors cursor-pointer text-left w-full"
+              >
+                Games Top-Up
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => handleQuickLink('storefront', 'gift-cards')}
+                className="hover:text-[#3b82f6] transition-colors cursor-pointer text-left w-full"
+              >
+                Gift Cards
               </button>
             </li>
           </ul>

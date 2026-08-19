@@ -63,7 +63,7 @@ export const HeroSectionPremium: React.FC = () => {
               </h1>
               <p className="text-sm sm:text-lg text-[#64748b] leading-relaxed max-w-xl">
                 Discover verified Magcubic smart projectors, 4K cinema hardware,
-                and ZeroByte official accessories from PlayBeat Digital. Real
+                and PlayBeat official accessories from PlayBeat Digital. Real
                 prices, instant TCS courier dispatch, and a 1-year replacement
                 warranty on every unit.
               </p>
@@ -74,7 +74,7 @@ export const HeroSectionPremium: React.FC = () => {
               <div className="flex-1 flex items-center rounded-xl overflow-hidden border border-[#e5e7eb] bg-white shadow-[0_12px_28px_rgba(16,35,61,0.08)]">
                 <input
                   type="text"
-                  placeholder="Search Magcubic HY300, HM103-A, HY7 Battery..."
+                  placeholder="Search projectors, Netflix, ChatGPT, PUBG UC..."
                   value={searchInput}
                   onChange={(e) => setSearchInput(e.target.value)}
                   onKeyDown={(e) => e.key === 'Enter' && handleSearch()}

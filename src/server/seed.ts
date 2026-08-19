@@ -2,7 +2,7 @@ import { ProductModel, CategoryModel, CouponModel } from './models';
 import { INITIAL_PRODUCTS, INITIAL_CATEGORIES, INITIAL_COUPONS } from '../data/initialData';
 
 /**
- * Re-seeds the MongoDB catalog with the verified ZeroByte / PlayBeat Digital
+ * Re-seeds the MongoDB catalog with the verified PlayBeat Digital
  * product list. Drops ALL existing products and categories first so the
  * database only contains the 7 verified smart projectors.
  *
@@ -65,7 +65,7 @@ export async function seedDatabaseIfEmpty() {
     }
 
     console.log(
-      '[MongoDB] Database synchronized with verified PlayBeat / ZeroByte catalog (7 projectors only).',
+      '[MongoDB] Database synchronized with verified PlayBeat catalog (7 projectors only).',
     );
   } catch (error) {
     console.error('[MongoDB Seed Error]:', error);

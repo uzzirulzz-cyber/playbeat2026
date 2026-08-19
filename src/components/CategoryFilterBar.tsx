@@ -51,6 +51,10 @@ export const CategoryFilterBar: React.FC = () => {
   const productTypes = [
     { value: 'ALL', label: 'All Product Types' },
     { value: 'HARDWARE', label: 'Smart Projectors & Cinema' },
+    { value: 'STREAMING', label: 'Video Streaming Subscriptions' },
+    { value: 'AI_TOOL', label: 'AI Tools & SaaS' },
+    { value: 'GAME', label: 'Game Top-Ups' },
+    { value: 'GIFT_CARD', label: 'Gift Cards' },
   ];
 
   const sortOptions = [

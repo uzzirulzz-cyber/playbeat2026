@@ -1,16 +1,18 @@
 import { Product, Category, Coupon, NotificationItem, User } from '../types';
 
 export const INITIAL_CATEGORIES: Category[] = [
-  { id: 'cat-all', name: 'All Products', slug: 'all', description: 'Browse our entire verified catalog — smart projectors, game top-ups, and gift cards', icon: 'Grid', color: '#6366f1', productCount: 31 },
-  { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', description: 'Magcubic HY300, HM103-A, HCS350-Pro, HT23, HY7 — verified ZeroByte 4K cinema projectors', icon: 'Projector', color: '#3b82f6', productCount: 7 },
+  { id: 'cat-all', name: 'All Products', slug: 'all', description: 'Browse our entire verified catalog — smart projectors, game top-ups, streaming, AI tools, and gift cards', icon: 'Grid', color: '#6366f1', productCount: 39 },
+  { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', description: 'Magcubic HY300, HM103-A, HCS350-Pro, HT23, HY7 — verified PlayBeat 4K cinema projectors', icon: 'Projector', color: '#3b82f6', productCount: 7 },
   { id: 'cat-games', name: 'Games & Top-Ups', slug: 'games', description: 'PUBG UC, Valorant Points, Genshin Crystals, LoL RP — instant recharge', icon: 'Gamepad2', color: '#f97316', productCount: 18 },
+  { id: 'cat-streaming', name: 'Video Streaming', slug: 'streaming', description: 'Netflix, Spotify, YouTube Premium, Disney+ — instant account access', icon: 'Tv', color: '#ec4899', productCount: 4 },
+  { id: 'cat-ai', name: 'AI Tools', slug: 'ai-tools', description: 'ChatGPT Plus, Claude Pro, Gemini Advanced, Cursor Pro — verified account upgrades', icon: 'Sparkles', color: '#10b981', productCount: 4 },
   { id: 'cat-giftcards', name: 'Gift Cards', slug: 'gift-cards', description: 'Razer Gold (RBL) top-ups with instant digital delivery', icon: 'Gift', color: '#ef4444', productCount: 6 }
 ];
 
 export const INITIAL_PRODUCTS: Product[] = [
   // =================================================================
-  // 7 VERIFIED SMART PROJECTORS (ZeroByte Store Catalog — playbeatdigital.store)
-  // Prices sourced directly from playbeatdigital.store / zerobyte.store
+  // 7 VERIFIED SMART PROJECTORS (PlayBeat Digital Catalog)
+  // Prices sourced directly from playbeatdigital.store
   // =================================================================
   {
     id: 'prod-proj-hy300-pro',
@@ -39,9 +41,9 @@ export const INITIAL_PRODUCTS: Product[] = [
     rating: 4.9,
     reviewCount: 184,
     salesCount: 820,
-    vendor: { id: 'v-zerobyte', storeName: 'ZeroByte Official Store', slug: 'zerobyte-store', verified: true, rating: 4.96, salesCount: 4200 },
-    category: { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', icon: 'Projector', color: '#fcb800' },
-    sourceUrl: 'https://www.zerobyte.store/products/hy300-pro',
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', icon: 'Projector', color: '#3b82f6' },
+    sourceUrl: 'https://playbeat.digital',
     specs: {
       'Model': 'Magcubic HY300 PRO',
       'Resolution': 'Native 1280x720P (4K Ultra HD Decoding)',
@@ -91,9 +93,9 @@ export const INITIAL_PRODUCTS: Product[] = [
     rating: 4.88,
     reviewCount: 98,
     salesCount: 430,
-    vendor: { id: 'v-zerobyte', storeName: 'ZeroByte Official Store', slug: 'zerobyte-store', verified: true, rating: 4.96, salesCount: 4200 },
-    category: { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', icon: 'Projector', color: '#fcb800' },
-    sourceUrl: 'https://www.zerobyte.store/products/hy300-plus',
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', icon: 'Projector', color: '#3b82f6' },
+    sourceUrl: 'https://playbeat.digital',
     specs: {
       'Model': 'HY300 Plus',
       'Resolution': 'Native 720P (Supports 1080P/4K video)',
@@ -132,9 +134,9 @@ export const INITIAL_PRODUCTS: Product[] = [
     rating: 4.94,
     reviewCount: 132,
     salesCount: 650,
-    vendor: { id: 'v-zerobyte', storeName: 'ZeroByte Official Store', slug: 'zerobyte-store', verified: true, rating: 4.96, salesCount: 4200 },
-    category: { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', icon: 'Projector', color: '#fcb800' },
-    sourceUrl: 'https://www.zerobyte.store/products/hy300pro',
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', icon: 'Projector', color: '#3b82f6' },
+    sourceUrl: 'https://playbeat.digital',
     specs: {
       'Model': 'Magcubic HY300Pro Plus',
       'Resolution': '1080P Decoded / 4K Playback Support',
@@ -178,9 +180,9 @@ export const INITIAL_PRODUCTS: Product[] = [
     rating: 4.89,
     reviewCount: 74,
     salesCount: 320,
-    vendor: { id: 'v-zerobyte', storeName: 'ZeroByte Official Store', slug: 'zerobyte-store', verified: true, rating: 4.96, salesCount: 4200 },
-    category: { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', icon: 'Projector', color: '#fcb800' },
-    sourceUrl: 'https://www.zerobyte.store/products/ht23',
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', icon: 'Projector', color: '#3b82f6' },
+    sourceUrl: 'https://playbeat.digital',
     specs: {
       'Model': 'HT23 Smart Cinema',
       'Resolution': 'Native 1080P Full HD (4K video input)',
@@ -222,9 +224,9 @@ export const INITIAL_PRODUCTS: Product[] = [
     rating: 4.91,
     reviewCount: 78,
     salesCount: 340,
-    vendor: { id: 'v-zerobyte', storeName: 'ZeroByte Official Store', slug: 'zerobyte-store', verified: true, rating: 4.96, salesCount: 4200 },
-    category: { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', icon: 'Projector', color: '#fcb800' },
-    sourceUrl: 'https://www.zerobyte.store/products/hcs350-pro',
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', icon: 'Projector', color: '#3b82f6' },
+    sourceUrl: 'https://playbeat.digital',
     specs: {
       'Model': 'HCS350-Pro',
       'Resolution': 'Native 1920x1080P Physical (4K UHD Decoded)',
@@ -267,9 +269,9 @@ export const INITIAL_PRODUCTS: Product[] = [
     rating: 4.97,
     reviewCount: 96,
     salesCount: 410,
-    vendor: { id: 'v-zerobyte', storeName: 'ZeroByte Official Store', slug: 'zerobyte-store', verified: true, rating: 4.96, salesCount: 4200 },
-    category: { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', icon: 'Projector', color: '#fcb800' },
-    sourceUrl: 'https://www.zerobyte.store/products/hm103-a',
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', icon: 'Projector', color: '#3b82f6' },
+    sourceUrl: 'https://playbeat.digital',
     specs: {
       'Model': 'HM103-A Ultra',
       'Resolution': 'Native 1920x1080P Full HD (8K Decoded)',
@@ -313,9 +315,9 @@ export const INITIAL_PRODUCTS: Product[] = [
     rating: 4.93,
     reviewCount: 64,
     salesCount: 290,
-    vendor: { id: 'v-zerobyte', storeName: 'ZeroByte Official Store', slug: 'zerobyte-store', verified: true, rating: 4.96, salesCount: 4200 },
-    category: { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', icon: 'Projector', color: '#fcb800' },
-    sourceUrl: 'https://www.zerobyte.store/products/hy7-battery',
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-projectors', name: 'Smart Projectors', slug: 'smart-projectors', icon: 'Projector', color: '#3b82f6' },
+    sourceUrl: 'https://playbeat.digital',
     specs: {
       'Model': 'HY7 Battery Pro',
       'Battery Capacity': 'Built-in 8,000mAh Battery (3+ Hours)',
@@ -1367,18 +1369,366 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     deliveryType: 'INSTANT_KEY'
   }
+,
+  // =================================================================
+  // VIDEO STREAMING + AI TOOLS (verified market prices — +10% profit margin)
+  // =================================================================
+  {
+    id: 'prod-netflix-premium-uhd-4k-1-month-shared-ac',
+    title: 'Netflix Premium UHD 4K — 1 Month Shared Account',
+    slug: 'netflix-premium-uhd-4k-1-month-shared-account',
+    shortDescription: 'Watch Netflix in stunning 4K Ultra HD with 4 simultaneous screens on the Premium plan.',
+    description: 'Premium Netflix account upgrade to the UHD 4K plan with 4 simultaneous streams. Includes access to Netflix Originals, movies, TV shows, and mobile games. Verified shared account access with instant delivery.',
+    type: 'STREAMING',
+    status: 'PUBLISHED',
+    price: 2450,
+    currency: 'PKR',
+    sku: 'NETFLIX-PREMIUM-4K-1M',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Tv'
+    },
+    tags: ['Netflix', '4K UHD', 'Streaming', 'Premium Plan'],
+    licenseType: 'Instant Digital Delivery',
+    version: '1 Month Premium',
+    featured: false,
+    rating: 4.95,
+    reviewCount: 120,
+    salesCount: 450,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-streaming', name: 'Video Streaming', slug: 'streaming', icon: 'Tv', color: '#ec4899' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Plan': '1 Month Premium',
+      'Delivery': 'Instant Account Access',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant account upgrade or shared access',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global access — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'ACCOUNT_INVITE'
+  },
+  {
+    id: 'prod-spotify-premium-individual-1-month-subsc',
+    title: 'Spotify Premium Individual — 1 Month Subscription',
+    slug: 'spotify-premium-individual-1-month-subscription',
+    shortDescription: 'Ad-free music streaming with offline downloads and high-quality audio.',
+    description: 'Spotify Premium individual account upgrade with ad-free listening, unlimited skips, offline downloads, and high-fidelity audio streaming on up to 1 device at a time.',
+    type: 'STREAMING',
+    status: 'PUBLISHED',
+    price: 3100,
+    currency: 'PKR',
+    sku: 'SPOTIFY-PREMIUM-1M',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Tv'
+    },
+    tags: ['Spotify', 'Premium', 'Music', 'Ad-free'],
+    licenseType: 'Instant Digital Delivery',
+    version: '1 Month Premium',
+    featured: false,
+    rating: 4.95,
+    reviewCount: 120,
+    salesCount: 450,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-streaming', name: 'Video Streaming', slug: 'streaming', icon: 'Tv', color: '#ec4899' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Plan': '1 Month Premium',
+      'Delivery': 'Instant Account Access',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant account upgrade or shared access',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global access — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'ACCOUNT_INVITE'
+  },
+  {
+    id: 'prod-youtube-premium-family-1-month-subscript',
+    title: 'YouTube Premium Family — 1 Month Subscription',
+    slug: 'youtube-premium-family-1-month-subscription',
+    shortDescription: 'Ad-free YouTube, YouTube Music, and offline downloads for up to 5 family members.',
+    description: 'YouTube Premium Family plan with ad-free YouTube access, YouTube Music Premium, background play, and offline downloads for up to 5 family members in the same household.',
+    type: 'STREAMING',
+    status: 'PUBLISHED',
+    price: 4600,
+    currency: 'PKR',
+    sku: 'YOUTUBE-PREMIUM-FAMILY-1M',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Tv'
+    },
+    tags: ['YouTube', 'Premium', 'Family', 'Music'],
+    licenseType: 'Instant Digital Delivery',
+    version: '1 Month Family',
+    featured: false,
+    rating: 4.95,
+    reviewCount: 120,
+    salesCount: 450,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-streaming', name: 'Video Streaming', slug: 'streaming', icon: 'Tv', color: '#ec4899' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Plan': '1 Month Family',
+      'Delivery': 'Instant Account Access',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant account upgrade or shared access',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global access — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'ACCOUNT_INVITE'
+  },
+  {
+    id: 'prod-disney-premium-1-month-4k-access',
+    title: 'Disney+ Premium — 1 Month 4K Access',
+    slug: 'disney-premium-1-month-4k-access',
+    shortDescription: 'Stream Disney, Pixar, Marvel, Star Wars, and National Geographic in 4K UHD.',
+    description: 'Disney+ Premium account with 4K Ultra HD streaming, 4 simultaneous screens, and downloads on up to 10 devices. Includes the full Disney, Pixar, Marvel, Star Wars, and Nat Geo catalog.',
+    type: 'STREAMING',
+    status: 'PUBLISHED',
+    price: 3400,
+    currency: 'PKR',
+    sku: 'DISNEY-PLUS-PREMIUM-1M',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Tv'
+    },
+    tags: ['Disney+', '4K UHD', 'Streaming', 'Premium'],
+    licenseType: 'Instant Digital Delivery',
+    version: '1 Month Premium',
+    featured: false,
+    rating: 4.95,
+    reviewCount: 120,
+    salesCount: 450,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-streaming', name: 'Video Streaming', slug: 'streaming', icon: 'Tv', color: '#ec4899' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Plan': '1 Month Premium',
+      'Delivery': 'Instant Account Access',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant account upgrade or shared access',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global access — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'ACCOUNT_INVITE'
+  },
+  {
+    id: 'prod-chatgpt-plus-gpt-4o-1-month-private-acce',
+    title: 'ChatGPT Plus (GPT-4o) — 1 Month Private Access',
+    slug: 'chatgpt-plus-gpt-4o-1-month-private-access',
+    shortDescription: 'OpenAI ChatGPT Plus with GPT-4o, DALL-E 3, Advanced Voice Mode, and Custom GPTs.',
+    description: 'ChatGPT Plus 1-month private access with priority access to GPT-4o multimodal vision, DALL-E 3 image generation, Advanced Voice live conversational mode, real-time web browsing, and custom GPT builder. No token limits.',
+    type: 'AI_TOOL',
+    status: 'PUBLISHED',
+    price: 6150,
+    currency: 'PKR',
+    sku: 'CHATGPT-PLUS-1M',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Sparkles'
+    },
+    tags: ['ChatGPT Plus', 'GPT-4o', 'OpenAI', 'AI'],
+    licenseType: 'Instant Digital Delivery',
+    version: '1 Month Plus',
+    featured: false,
+    rating: 4.95,
+    reviewCount: 120,
+    salesCount: 450,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-ai', name: 'AI Tools', slug: 'ai-tools', icon: 'Sparkles', color: '#10b981' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Plan': '1 Month Plus',
+      'Delivery': 'Instant Account Access',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant account upgrade or shared access',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global access — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'ACCOUNT_INVITE'
+  },
+  {
+    id: 'prod-claude-3-5-sonnet-pro-1-month-access',
+    title: 'Claude 3.5 Sonnet Pro — 1 Month Access',
+    slug: 'claude-3-5-sonnet-pro-1-month-access',
+    shortDescription: 'Anthropic Claude Pro with 200K token context window, advanced reasoning, and coding intelligence.',
+    description: 'Claude Pro 1-month access with 5x higher usage capacity, 200K token context window for massive document analysis, priority access during peak periods, and advanced coding intelligence for programming tasks.',
+    type: 'AI_TOOL',
+    status: 'PUBLISHED',
+    price: 6150,
+    currency: 'PKR',
+    sku: 'CLAUDE-PRO-1M',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Sparkles'
+    },
+    tags: ['Claude Pro', 'Anthropic', 'AI', 'Coding'],
+    licenseType: 'Instant Digital Delivery',
+    version: '1 Month Pro',
+    featured: false,
+    rating: 4.95,
+    reviewCount: 120,
+    salesCount: 450,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-ai', name: 'AI Tools', slug: 'ai-tools', icon: 'Sparkles', color: '#10b981' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Plan': '1 Month Pro',
+      'Delivery': 'Instant Account Access',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant account upgrade or shared access',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global access — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'ACCOUNT_INVITE'
+  },
+  {
+    id: 'prod-gemini-advanced-google-one-ai-premium-1-',
+    title: 'Gemini Advanced (Google One AI Premium) — 1 Month',
+    slug: 'gemini-advanced-google-one-ai-premium-1-month',
+    shortDescription: 'Google Gemini 1.5 Pro with 2TB Google One storage and integration with Workspace.',
+    description: 'Gemini Advanced 1-month access via Google One AI Premium plan. Includes Gemini 1.5 Pro with 1M token context, integration with Gmail, Docs, and Sheets, plus 2TB Google One cloud storage.',
+    type: 'AI_TOOL',
+    status: 'PUBLISHED',
+    price: 6150,
+    currency: 'PKR',
+    sku: 'GEMINI-ADVANCED-1M',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Sparkles'
+    },
+    tags: ['Gemini', 'Google One', 'AI', '2TB Storage'],
+    licenseType: 'Instant Digital Delivery',
+    version: '1 Month Advanced',
+    featured: false,
+    rating: 4.95,
+    reviewCount: 120,
+    salesCount: 450,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-ai', name: 'AI Tools', slug: 'ai-tools', icon: 'Sparkles', color: '#10b981' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Plan': '1 Month Advanced',
+      'Delivery': 'Instant Account Access',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant account upgrade or shared access',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global access — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'ACCOUNT_INVITE'
+  },
+  {
+    id: 'prod-cursor-pro-ai-code-editor-1-month-develo',
+    title: 'Cursor Pro AI Code Editor — 1 Month Developer Key',
+    slug: 'cursor-pro-ai-code-editor-1-month-developer-key',
+    shortDescription: 'Unlimited fast Claude 3.5 & GPT-4o autocomplete, full codebase chat, and terminal agent.',
+    description: 'Cursor Pro 1-month developer key with 500 fast premium requests per month, unlimited slow requests, full codebase indexing, multi-file edits, and instant AI-powered bug fixes built on VS Code.',
+    type: 'AI_TOOL',
+    status: 'PUBLISHED',
+    price: 6150,
+    currency: 'PKR',
+    sku: 'CURSOR-PRO-1M',
+    stock: -1,
+    cover: {
+      type: 'image',
+      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1000&q=80',
+      colors: ['#1f2937', '#374151'],
+      icon: 'Sparkles'
+    },
+    tags: ['Cursor', 'AI Code Editor', 'Developer', 'Claude'],
+    licenseType: 'Instant Digital Delivery',
+    version: '1 Month Pro',
+    featured: false,
+    rating: 4.95,
+    reviewCount: 120,
+    salesCount: 450,
+    vendor: { id: 'v-playbeat', storeName: 'PlayBeat Digital Official', slug: 'playbeat-official', verified: true, rating: 4.99, salesCount: 8900 },
+    category: { id: 'cat-ai', name: 'AI Tools', slug: 'ai-tools', icon: 'Sparkles', color: '#10b981' },
+    sourceUrl: 'https://playbeat.digital',
+    specs: {
+      'Plan': '1 Month Pro',
+      'Delivery': 'Instant Account Access',
+      'Region': 'GLOBAL',
+      'Payment': 'JazzCash, EasyPaisa, Raast, Wallet',
+      'Processing Time': 'Under 5 minutes'
+    },
+    features: [
+      'Instant account upgrade or shared access',
+      'Secure payment via JazzCash, EasyPaisa, Raast or wallet',
+      'Verified global access — works in all regions',
+      '24/7 WhatsApp + Telegram support'
+    ],
+    deliveryType: 'ACCOUNT_INVITE'
+  }
 
 ];
 
 export const INITIAL_COUPONS: Coupon[] = [
   { id: 'c-playbeat10', code: 'PLAYBEAT10', discountPercent: 10, minSpendPKR: 2000 },
-  { id: 'c-zerobyte', code: 'ZEROBYTE5', discountPercent: 5, minSpendPKR: 15000 },
+  { id: 'c-playbeat-5', code: 'PLAYBEAT5', discountPercent: 5, minSpendPKR: 15000 },
   { id: 'c-flashsale', code: 'FLASH20', discountPercent: 20, minSpendPKR: 5000 }
 ];
 
 export const INITIAL_NOTIFICATIONS: NotificationItem[] = [
   { id: 'n1', title: 'Order Verified', message: 'Magcubic HY300 PRO parcel dispatched via TCS Express #TCS-892182', type: 'ORDER', createdAt: '10m ago', read: false },
-  { id: 'n2', title: 'New Arrival', message: 'Magcubic HY300Pro Plus with motorized focus now in stock at ZeroByte store.', type: 'SYSTEM', createdAt: '1h ago', read: false }
+  { id: 'n2', title: 'New Arrival', message: 'Magcubic HY300Pro Plus with motorized focus now in stock at PlayBeat digital.', type: 'SYSTEM', createdAt: '1h ago', read: false }
 ];
 
 export const DEMO_USER: User = {

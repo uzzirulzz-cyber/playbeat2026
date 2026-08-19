@@ -138,7 +138,7 @@ export const ProductDetailModal: React.FC = () => {
               {/* Status Badge */}
               <div className="absolute top-3 left-3">
                 <span className="px-2.5 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-black/70 backdrop-blur-md text-[#3b82f6] border border-blue-500/30">
-                  {isHardware ? 'ZeroByte 4K Projector' : 'Instant Key Delivery'}
+                  {isHardware ? 'PlayBeat 4K Projector' : 'Instant Key Delivery'}
                 </span>
               </div>
             </div>
@@ -350,7 +350,7 @@ export const ProductDetailModal: React.FC = () => {
                   },
                   {
                     q: 'How does the hardware projector warranty work?',
-                    a: 'All ZeroByte Smart Cinema Projectors come with an official 1-Year PlayBeat replacement warranty and free courier dispatch across all major cities in Pakistan.'
+                    a: 'All PlayBeat Smart Cinema Projectors come with an official 1-Year PlayBeat replacement warranty and free courier dispatch across all major cities in Pakistan.'
                   }
                 ].map((item, idx) => (
                   <div key={idx} className="p-3.5 rounded-xl bg-[#020617] border border-slate-800 space-y-1">

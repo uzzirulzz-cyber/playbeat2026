@@ -57,7 +57,7 @@ export const ProductsView: React.FC = () => {
   const [formStock, setFormStock] = useState(25);
   const [formSku, setFormSku] = useState('PB-HY300-PLUS');
   const [formImageUrl, setFormImageUrl] = useState('https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=800&q=80');
-  const [formSourceUrl, setFormSourceUrl] = useState('https://www.zerobyte.store/products/hy300-plus');
+  const [formSourceUrl, setFormSourceUrl] = useState('https://playbeat.digital');
   
   // Specs form
   const [formResolution, setFormResolution] = useState('Native 720P / 4K Decoded');
@@ -105,7 +105,7 @@ export const ProductsView: React.FC = () => {
     setFormStock(25);
     setFormSku(`PB-${Date.now().toString().slice(-6)}`);
     setFormImageUrl('https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=800&q=80');
-    setFormSourceUrl('https://www.zerobyte.store/products/');
+    setFormSourceUrl('https://playbeat.digital');
     setIsAddModalOpen(true);
   };
 
@@ -140,7 +140,7 @@ export const ProductsView: React.FC = () => {
     const productPayload = {
       title: formTitle.trim(),
       slug: formTitle.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
-      shortDescription: formShortDesc || 'Verified genuine hardware & digital product from ZeroByte / PlayBeat.',
+      shortDescription: formShortDesc || 'Verified genuine hardware & digital product from PlayBeat.',
       description: `${formTitle.trim()} - Premium quality, 1-year replacement warranty, with fast nationwide delivery in Pakistan.`,
       type: formType,
       status: 'PUBLISHED' as const,
@@ -158,7 +158,7 @@ export const ProductsView: React.FC = () => {
         colors: ['#0f172a', '#3b82f6'],
         icon: formType === 'HARDWARE' ? 'Projector' : 'Sparkles'
       },
-      tags: [formType === 'HARDWARE' ? 'Projector' : 'Digital', 'ZeroByte', 'Official'],
+      tags: [formType === 'HARDWARE' ? 'Projector' : 'Digital', 'PlayBeat', 'Official'],
       licenseType: formType === 'HARDWARE' ? 'Pakistan Physical Courier Delivery' : 'Instant Automated Key Vault Dispatch',
       version: 'v2026.1',
       featured: true,
@@ -170,9 +170,9 @@ export const ProductsView: React.FC = () => {
         'Warranty': formWarranty
       },
       vendor: {
-        id: 'v-zerobyte',
-        storeName: 'ZeroByte / PlayBeat Store',
-        slug: 'zerobyte-store',
+        id: 'v-playbeat',
+        storeName: 'PlayBeat Digital Store',
+        slug: 'playbeat-official',
         verified: true,
         rating: 5.0,
         salesCount: 1420
@@ -213,7 +213,7 @@ export const ProductsView: React.FC = () => {
             <span>Product Catalog & Cost Manager ({products.length} items)</span>
           </h2>
           <p className="text-xs text-slate-400">
-            Manage ZeroByte cinema projectors, software licenses, wholesale cost prices, images, and live store inventory.
+            Manage PlayBeat cinema projectors, software licenses, wholesale cost prices, images, and live store inventory.
           </p>
         </div>
 
@@ -321,7 +321,7 @@ export const ProductsView: React.FC = () => {
                                 rel="noopener noreferrer"
                                 className="text-blue-400 hover:underline flex items-center gap-0.5"
                               >
-                                <span>ZeroByte</span>
+                                <span>PlayBeat</span>
                                 <ExternalLink className="w-2.5 h-2.5" />
                               </a>
                             )}
@@ -502,12 +502,12 @@ export const ProductsView: React.FC = () => {
                 </div>
 
                 <div>
-                  <label className="block text-slate-300 font-bold mb-1">Source URL (zerobyte.store)</label>
+                  <label className="block text-slate-300 font-bold mb-1">Source URL (playbeat.digital)</label>
                   <input
                     type="url"
                     value={formSourceUrl}
                     onChange={(e) => setFormSourceUrl(e.target.value)}
-                    placeholder="https://www.zerobyte.store/products/..."
+                    placeholder="https://playbeat.digital"
                     className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500"
                   />
                 </div>

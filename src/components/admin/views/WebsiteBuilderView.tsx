@@ -45,7 +45,7 @@ export const WebsiteBuilderView: React.FC = () => {
   const [announcementText, setAnnouncementText] = useState('Welcome to PlayBeat Digital (playbeat.digital) — Instant Delivery');
   const [promoCode, setPromoCode] = useState('PLAYBEAT20');
   const [heroHeading, setHeroHeading] = useState('Next-Gen Digital Goods & 4K Cinema Projectors');
-  const [heroSubheading, setHeroSubheading] = useState('Buy official Windows 11 Pro, Office 2024, ChatGPT Plus, IPTV 4K passes, and ZeroByte Android 11 smart projectors with instant dispatch across Pakistan.');
+  const [heroSubheading, setHeroSubheading] = useState('Buy official Windows 11 Pro, Office 2024, ChatGPT Plus, IPTV 4K passes, and Magcubic Android 11 smart projectors with instant dispatch across Pakistan.');
   const [whatsappPhone, setWhatsappPhone] = useState('+923321029333');
   const [customCss, setCustomCss] = useState('/* Custom Storefront CSS overrides */\n.theme-martfury { --primary: #3b82f6; }');
   const [saveSuccess, setSaveSuccess] = useState(false);
@@ -175,7 +175,7 @@ export const WebsiteBuilderView: React.FC = () => {
               {[
                 { key: 'announcementBar' as const, label: 'Top Announcement & Micro-Utility Bar', desc: 'Promo coupon alerts, currency switcher, and phone badge' },
                 { key: 'heroSpotlight' as const, label: 'Dynamic Hero Showcase & Search Spotlight', desc: 'Main headline, quick tag filters, and value proposition' },
-                { key: 'smartProjectors' as const, label: 'ZeroByte 4K Cinema Projectors Showcase', desc: '8 verified cinema projectors with wholesale cost & retail pricing' },
+                { key: 'smartProjectors' as const, label: 'PlayBeat 4K Cinema Projectors Showcase', desc: '8 verified cinema projectors with wholesale cost & retail pricing' },
                 { key: 'categoryFilterBar' as const, label: 'Category Slider & Marketplace Filters', desc: 'Interactive category selector, type badges, and sorting pills' },
                 { key: 'trustBadges' as const, label: 'Trust & Verification Guarantee Badges', desc: '24/7 delivery, replacement warranty, and official licensing chips' },
                 { key: 'whatsappWidget' as const, label: 'Floating WhatsApp Direct Support Widget', desc: 'Interactive floating chat button (+923321029333)' },

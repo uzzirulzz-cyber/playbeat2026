@@ -154,7 +154,7 @@ const INITIAL_AUDIT_LOGS: AuditLog[] = [
     action: 'CATALOG_SYNC',
     targetType: 'PRODUCT',
     targetId: 'MongoDB Atlas',
-    details: 'Synchronized 8 ZeroByte verified cinema projectors and software keys.',
+    details: 'Synchronized verified PlayBeat cinema projectors and digital products.',
     timestamp: '2026-08-18T12:00:00Z',
     ipAddress: '127.0.0.1'
   }
@@ -674,7 +674,7 @@ export const StoreProvider: React.FC<{ children: ReactNode }> = ({ children }) =
         unitPrice: item.selectedVariant?.price ?? item.product.discountPrice ?? item.product.price,
         licenseKeys: keys,
         instructions: isHW 
-          ? 'ZeroByte projector dispatched via TCS courier in 24-48 hours with official 1-year warranty card.' 
+          ? 'PlayBeat projector dispatched via TCS courier in 24-48 hours with official 1-year warranty card.' 
           : 'Instant automated license activation. Enter this code into your official software/streaming portal.'
       };
     });

@@ -46,7 +46,7 @@ export const SmartProjectorsSection: React.FC = () => {
   });
 
   const getWhatsAppLink = (prod: Product) => {
-    const text = encodeURIComponent(`Hi PlayBeat / ZeroByte, I am interested in purchasing the "${prod.title}" (Price: Rs ${prod.price.toLocaleString()}). Is it available for delivery?`);
+    const text = encodeURIComponent(`Hi PlayBeat Digital, I am interested in purchasing the "${prod.title}" (Price: Rs ${prod.price.toLocaleString()}). Is it available for delivery?`);
     return `https://wa.me/923321029333?text=${text}`;
   };
 
@@ -58,7 +58,7 @@ export const SmartProjectorsSection: React.FC = () => {
           <div className="flex items-center gap-2 mb-1.5">
             <span className="px-2.5 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/30 text-[11px] font-bold flex items-center gap-1">
               <Projector className="w-3 h-3 text-[#3b82f6]" />
-              ZeroByte Official Projector Lineup
+              PlayBeat Official Projector Lineup
             </span>
             <span className="hidden sm:inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[11px] font-medium">
               <Truck className="w-3 h-3" />
@@ -113,7 +113,7 @@ export const SmartProjectorsSection: React.FC = () => {
         </div>
 
         <div className="text-xs text-slate-400 font-mono">
-          Catalog: <span className="text-white font-bold">{filteredProjectors.length}</span> Verified ZeroByte Hardware Models
+          Catalog: <span className="text-white font-bold">{filteredProjectors.length}</span> Verified PlayBeat Hardware Models
         </div>
       </div>
 
@@ -177,7 +177,7 @@ export const SmartProjectorsSection: React.FC = () => {
                 {/* Rating badge */}
                 <div className="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-[11px] font-bold text-slate-300 font-mono">
                   <span className="bg-slate-900/90 px-2 py-0.5 rounded-md border border-slate-700/60 truncate max-w-[160px] text-blue-400">
-                    {prod.specs?.['Model'] || 'ZeroByte Edition'}
+                    {prod.specs?.['Model'] || 'PlayBeat Edition'}
                   </span>
                   <span className="flex items-center gap-1 text-blue-400 bg-slate-900/90 px-1.5 py-0.5 rounded-md border border-slate-700/60">
                     <Star className="w-3 h-3 fill-blue-400" />
@@ -191,7 +191,7 @@ export const SmartProjectorsSection: React.FC = () => {
                 <div className="space-y-1 sm:space-y-1.5">
                   <div className="flex items-center justify-between text-[10px] sm:text-[11px]">
                     <span className="text-blue-400 font-bold uppercase tracking-wider truncate">
-                      ZeroByte Official
+                      PlayBeat Official
                     </span>
                     {prod.sourceUrl && (
                       <a
@@ -201,7 +201,7 @@ export const SmartProjectorsSection: React.FC = () => {
                         onClick={(e) => e.stopPropagation()}
                         className="text-slate-400 hover:text-white items-center gap-1 text-[10px] hidden sm:flex shrink-0"
                       >
-                        <span>zerobyte.store</span>
+                        <span>playbeat.digital</span>
                         <ExternalLink className="w-2.5 h-2.5" />
                       </a>
                     )}
@@ -293,7 +293,7 @@ export const SmartProjectorsSection: React.FC = () => {
                       rel="noopener noreferrer"
                       className="text-blue-400 hover:underline flex items-center gap-1"
                     >
-                      <span>View on zerobyte.store</span>
+                      <span>View on playbeat.digital</span>
                       <ExternalLink className="w-3 h-3" />
                     </a>
                   )}

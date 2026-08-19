@@ -73,7 +73,7 @@ export const DealsSection: React.FC = () => {
               </h2>
             </div>
             <p className="text-xs text-slate-400">
-              Limited-time discounts on genuine software licenses and ZeroByte 4K cinema projectors.
+              Limited-time discounts on genuine smart projectors, streaming passes, AI tools, and game top-ups.
             </p>
           </div>
 

@@ -27,7 +27,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "PlayBeat Digital — Verified Smart Projectors & 4K Cinema Marketplace",
   description:
-    "PlayBeat Digital (playbeat.digital) — Pakistan's premier marketplace for verified Magcubic smart projectors, 4K cinema hardware, and ZeroByte official accessories. Real prices, TCS courier dispatch, 1-year replacement warranty.",
+    "PlayBeat Digital (playbeat.digital) — Pakistan's premier marketplace for verified Magcubic smart projectors, 4K cinema hardware, and PlayBeat official accessories. Real prices, TCS courier dispatch, 1-year replacement warranty.",
   keywords: [
     "PlayBeat Digital",
     "playbeat.digital",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     "HCS350-Pro",
     "HT23 projector",
     "HY7 battery projector",
-    "ZeroByte store",
+    "PlayBeat digital store",
     "4K cinema projector",
     "Pakistan projector store",
   ],
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "PlayBeat Digital — Verified Smart Projectors & 4K Cinema Marketplace",
     description:
-      "Verified Magcubic smart projectors, 4K cinema hardware, and ZeroByte official accessories with TCS courier dispatch across Pakistan.",
+      "Verified Magcubic smart projectors, 4K cinema hardware, and PlayBeat official accessories with TCS courier dispatch across Pakistan.",
     siteName: "PlayBeat Digital",
     type: "website",
   },

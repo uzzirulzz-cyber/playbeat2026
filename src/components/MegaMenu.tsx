@@ -30,15 +30,39 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ isOpen, onClose }) => {
 
   const featuredProducts = products.filter(p => p.featured || p.salesCount > 5).slice(0, 3);
 
-  // Only the verified Smart Projectors category remains in the catalog.
+  // All main catalog categories shown in the mega-menu
   const megaCategories = [
     {
       id: 'cat-projectors',
       slug: 'smart-projectors',
       name: 'Smart Projectors',
       icon: Tv,
-      badge: 'ZeroByte 4K',
+      badge: '4K Cinema',
       sub: ['Magcubic HY300 PRO', 'HY300 Plus', 'Magcubic HY300Pro Plus', 'HT23 Smart Cinema', 'HCS350-Pro Laser', 'HM103-A Ultra', 'HY7 Battery Portable']
+    },
+    {
+      id: 'cat-streaming',
+      slug: 'streaming',
+      name: 'Video Streaming',
+      icon: Sparkles,
+      badge: 'Instant Access',
+      sub: ['Netflix Premium UHD 4K', 'Spotify Premium Individual', 'YouTube Premium Family', 'Disney+ Premium 4K']
+    },
+    {
+      id: 'cat-ai',
+      slug: 'ai-tools',
+      name: 'AI Tools',
+      icon: Cpu,
+      badge: 'GPT-4o & Claude',
+      sub: ['ChatGPT Plus (GPT-4o)', 'Claude 3.5 Sonnet Pro', 'Gemini Advanced (Google One)', 'Cursor Pro AI Code Editor']
+    },
+    {
+      id: 'cat-games',
+      slug: 'games',
+      name: 'Games Top-Up',
+      icon: Gamepad2,
+      badge: 'Instant Recharge',
+      sub: ['PUBG Mobile UC', 'Valorant Points (VP)', 'Genshin Impact Crystals', 'League of Legends RP']
     },
   ];
 
@@ -96,7 +120,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ isOpen, onClose }) => {
               Featured Deals
             </span>
             <span className="text-xs text-slate-300">
-              ZeroByte Cinema Smart Projectors with 1-Year TCS Courier Dispatch Guarantee
+              PlayBeat Cinema Smart Projectors with 1-Year TCS Courier Dispatch Guarantee
             </span>
           </div>
 
