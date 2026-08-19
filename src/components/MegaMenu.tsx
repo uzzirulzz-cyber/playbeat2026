@@ -30,6 +30,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ isOpen, onClose }) => {
 
   const featuredProducts = products.filter(p => p.featured || p.salesCount > 5).slice(0, 3);
 
+  // Only the verified Smart Projectors category remains in the catalog.
   const megaCategories = [
     {
       id: 'cat-projectors',
@@ -37,40 +38,8 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ isOpen, onClose }) => {
       name: 'Smart Projectors',
       icon: Tv,
       badge: 'ZeroByte 4K',
-      sub: ['Magcubic HY300 Pro', 'Magcubic HY300 PRO Plus', 'Magcubic HY320 Mini', 'Magcubic HY350 Max 4K', 'ZeroByte HM103-A']
+      sub: ['Magcubic HY300 PRO', 'HY300 Plus', 'Magcubic HY300Pro Plus', 'HT23 Smart Cinema', 'HCS350-Pro Laser', 'HM103-A Ultra', 'HY7 Battery Portable']
     },
-    {
-      id: 'cat-software',
-      slug: 'software-licenses',
-      name: 'Software Licenses',
-      icon: Key,
-      badge: 'Genuine Keys',
-      sub: ['Windows 11 Pro Retail', 'MS Office 2024 Pro Plus', 'Internet Download Manager (IDM)', 'Visual Studio Enterprise']
-    },
-    {
-      id: 'cat-streaming',
-      slug: 'streaming',
-      name: 'IPTV & Streaming Passes',
-      icon: Sparkles,
-      badge: 'Instant Pass',
-      sub: ['IPTV 4K Ultra VIP 10,000+ Channels', 'Netflix UHD 4K Pass', 'YouTube Premium Family', 'Spotify Lossless']
-    },
-    {
-      id: 'cat-ai',
-      slug: 'ai-tools',
-      name: 'AI Tools & SaaS',
-      icon: Cpu,
-      badge: 'GPT-4o & Claude',
-      sub: ['ChatGPT Plus Shared VIP', 'Claude 3.5 Sonnet Pro', 'Midjourney v6 Fast', 'Perplexity Pro AI']
-    },
-    {
-      id: 'cat-gaming',
-      slug: 'games',
-      name: 'Gaming & Gift Cards',
-      icon: Gamepad2,
-      badge: 'Steam / PSN',
-      sub: ['Steam Wallet Global Codes', 'PlayStation Network PSN', 'Xbox Game Pass Ultimate', 'Apple App Store Gift']
-    }
   ];
 
   return (

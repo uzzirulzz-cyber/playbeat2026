@@ -25,33 +25,34 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PlayBeat Digital — Premium Digital Goods Marketplace",
+  title: "PlayBeat Digital — Verified Smart Projectors & 4K Cinema Marketplace",
   description:
-    "PlayBeat Digital (playbeat.digital) — Premium Martfury marketplace for verified software keys, streaming passes, AI suites, smart projectors, game keys, gift cards and digital products. Instant delivery, secure payments.",
+    "PlayBeat Digital (playbeat.digital) — Pakistan's premier marketplace for verified Magcubic smart projectors, 4K cinema hardware, and ZeroByte official accessories. Real prices, TCS courier dispatch, 1-year replacement warranty.",
   keywords: [
     "PlayBeat Digital",
     "playbeat.digital",
-    "digital marketplace",
-    "software keys",
-    "IPTV 4K",
-    "AI tools",
     "smart projectors",
-    "game keys",
-    "gift cards",
-    "Pakistan digital store",
+    "Magcubic HY300",
+    "HM103-A",
+    "HCS350-Pro",
+    "HT23 projector",
+    "HY7 battery projector",
+    "ZeroByte store",
+    "4K cinema projector",
+    "Pakistan projector store",
   ],
   authors: [{ name: "PlayBeat Digital" }],
   openGraph: {
-    title: "PlayBeat Digital — Premium Digital Goods Marketplace",
+    title: "PlayBeat Digital — Verified Smart Projectors & 4K Cinema Marketplace",
     description:
-      "Verified software keys, streaming passes, AI suites, smart projectors, game keys, and gift cards. Instant delivery across Pakistan.",
+      "Verified Magcubic smart projectors, 4K cinema hardware, and ZeroByte official accessories with TCS courier dispatch across Pakistan.",
     siteName: "PlayBeat Digital",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "PlayBeat Digital",
-    description: "Premium digital goods marketplace with instant delivery.",
+    title: "PlayBeat Digital — Smart Projectors",
+    description: "Verified Magcubic smart projectors and 4K cinema hardware with TCS courier dispatch.",
   },
 };
 

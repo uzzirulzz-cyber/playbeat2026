@@ -74,3 +74,6 @@ prompt
 
 # Examples folder (websocket demo from scaffold — keep as reference)
 # /examples/
+
+# Local utility scripts
+/scripts/

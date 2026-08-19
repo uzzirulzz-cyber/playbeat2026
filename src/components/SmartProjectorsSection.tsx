@@ -32,7 +32,7 @@ export const SmartProjectorsSection: React.FC = () => {
 
   const [activeFilter, setActiveFilter] = useState<'ALL' | 'MAGCUBIC' | 'FLAGSHIP' | 'BATTERY' | 'BUDGET'>('ALL');
   const [comparingProduct, setComparingProduct] = useState<Product | null>(null);
-  const [showCostPricing, setShowCostPricing] = useState(false);
+  // Cost pricing is always visible per the catalog owner's request — no toggle.
 
   // Filter projector catalog
   const allProjectors = products.filter(p => p.category.slug === 'smart-projectors' || p.tags.includes('Projector') || p.tags.includes('Magcubic'));
@@ -73,19 +73,8 @@ export const SmartProjectorsSection: React.FC = () => {
           </p>
         </div>
 
-        {/* Pricing Mode Toggle */}
+        {/* WhatsApp inquiry button only — cost pricing always shown inline */}
         <div className="flex items-center gap-2 shrink-0">
-          <button
-            onClick={() => setShowCostPricing(!showCostPricing)}
-            className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all border cursor-pointer flex items-center gap-1.5 ${
-              showCostPricing 
-                ? 'bg-yellow-500/20 text-yellow-400 border-yellow-500/40 shadow-lg shadow-yellow-500/10' 
-                : 'bg-[#0f172a] text-slate-300 border-slate-700 hover:text-white hover:bg-slate-800'
-            }`}
-          >
-            <span>{showCostPricing ? 'Showing Cost Pricing' : 'View Cost Breakdown'}</span>
-          </button>
-          
           <a
             href="https://wa.me/923321029333?text=Hi%20PlayBeat%2C%20I%20want%20to%20inquire%20about%20smart%20projectors"
             target="_blank"
@@ -103,8 +92,8 @@ export const SmartProjectorsSection: React.FC = () => {
       <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
         <div className="flex items-center gap-2 overflow-x-auto pb-1 max-w-full">
           {[
-            { id: 'ALL', label: `All 8 Projectors (${allProjectors.length})` },
-            { id: 'MAGCUBIC', label: 'Magcubic HY300 & HY320 Series' },
+            { id: 'ALL', label: `All ${allProjectors.length} Projectors (${allProjectors.length})` },
+            { id: 'MAGCUBIC', label: 'Magcubic HY300 Series' },
             { id: 'FLAGSHIP', label: 'High Brightness & HM103-A' },
             { id: 'BATTERY', label: 'HY7 Battery & Portable' },
             { id: 'BUDGET', label: 'Under Rs 30,000' },
@@ -240,19 +229,17 @@ export const SmartProjectorsSection: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Cost Pricing Information */}
-                {showCostPricing && (
-                  <div className="p-2.5 rounded-xl bg-slate-950 border border-yellow-500/30 text-[11px] space-y-1">
-                    <div className="flex items-center justify-between text-slate-400">
-                      <span>Wholesale Cost:</span>
-                      <span className="font-mono font-bold text-slate-200">Rs {prod.costPrice?.toLocaleString() || '18,500'}</span>
-                    </div>
-                    <div className="flex items-center justify-between text-yellow-400 font-bold">
-                      <span>Retail Margin:</span>
-                      <span className="font-mono">Rs {prod.profit?.toLocaleString() || '4,000'}</span>
-                    </div>
+                {/* Cost Pricing Information — always visible per catalog owner's request */}
+                <div className="p-2.5 rounded-xl bg-slate-950 border border-yellow-500/30 text-[11px] space-y-1">
+                  <div className="flex items-center justify-between text-slate-400">
+                    <span>Wholesale Cost:</span>
+                    <span className="font-mono font-bold text-slate-200">Rs {prod.costPrice?.toLocaleString() || 'N/A'}</span>
                   </div>
-                )}
+                  <div className="flex items-center justify-between text-yellow-400 font-bold">
+                    <span>Retail Margin:</span>
+                    <span className="font-mono">Rs {prod.profit?.toLocaleString() || 'N/A'}</span>
+                  </div>
+                </div>
 
                 {/* Price & Action Section */}
                 <div className="pt-1.5 sm:pt-2 border-t border-slate-800 flex items-center justify-between gap-1.5 sm:gap-2">

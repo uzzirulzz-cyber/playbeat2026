@@ -62,9 +62,10 @@ export const HeroSectionPremium: React.FC = () => {
                 <span className="text-[#d7a53a]"> Marketplace</span>
               </h1>
               <p className="text-sm sm:text-lg text-[#58687c] leading-relaxed max-w-xl">
-                Discover premium gaming, software, subscriptions, gift cards,
-                hosting, marketing tools and digital services from PlayBeat
-                Digital. Instant delivery, secure payments, verified products.
+                Discover verified Magcubic smart projectors, 4K cinema hardware,
+                and ZeroByte official accessories from PlayBeat Digital. Real
+                prices, instant TCS courier dispatch, and a 1-year replacement
+                warranty on every unit.
               </p>
             </div>
 
@@ -73,7 +74,7 @@ export const HeroSectionPremium: React.FC = () => {
               <div className="flex-1 flex items-center rounded-xl overflow-hidden border border-[#dfe4eb] bg-white shadow-[0_12px_28px_rgba(16,35,61,0.08)]">
                 <input
                   type="text"
-                  placeholder="Search products, games, software..."
+                  placeholder="Search Magcubic HY300, HM103-A, HY7 Battery..."
                   value={searchInput}
                   onChange={(e) => setSearchInput(e.target.value)}
                   onKeyDown={(e) => e.key === 'Enter' && handleSearch()}

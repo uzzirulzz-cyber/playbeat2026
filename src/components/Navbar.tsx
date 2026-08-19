@@ -375,7 +375,7 @@ export const Navbar: React.FC = () => {
             <input
               ref={searchInputRef}
               type="text"
-              placeholder="Search 4K Projectors, Windows 11, IPTV, ChatGPT Plus, Game Keys..."
+              placeholder="Search Magcubic HY300, HM103-A, HY7 Battery..."
               value={searchQuery}
               onChange={(e) => {
                 setSearchQuery(e.target.value);
@@ -535,32 +535,12 @@ export const Navbar: React.FC = () => {
               <ChevronDown className="w-3 h-3" />
             </button>
 
-            {/* Quick Category links */}
+            {/* Quick Category links — only Smart Projectors is in the verified catalog */}
             {[
               {
                 label: 'Smart Projectors',
                 slug: 'smart-projectors',
                 icon: Tv,
-              },
-              {
-                label: 'Software Licenses',
-                slug: 'software-licenses',
-                icon: Key,
-              },
-              {
-                label: 'IPTV 4K Ultra',
-                slug: 'streaming',
-                icon: Sparkles,
-              },
-              {
-                label: 'AI Tools & SaaS',
-                slug: 'ai-tools',
-                icon: Sparkle,
-              },
-              {
-                label: 'Gaming & Gift Cards',
-                slug: 'games',
-                icon: Flame,
               },
             ].map((item) => (
               <button
@@ -772,22 +752,6 @@ export const Navbar: React.FC = () => {
               </div>
               {[
                 { label: 'Smart Projectors', slug: 'smart-projectors', icon: Tv },
-                {
-                  label: 'Software Licenses',
-                  slug: 'software-licenses',
-                  icon: Key,
-                },
-                {
-                  label: 'IPTV 4K Ultra',
-                  slug: 'streaming',
-                  icon: Sparkles,
-                },
-                { label: 'AI Tools & SaaS', slug: 'ai-tools', icon: Sparkle },
-                {
-                  label: 'Gaming & Gift Cards',
-                  slug: 'games',
-                  icon: Flame,
-                },
               ].map((item) => {
                 const Icon = item.icon;
                 return (

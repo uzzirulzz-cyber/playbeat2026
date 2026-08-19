@@ -51,13 +51,6 @@ export const CategoryFilterBar: React.FC = () => {
   const productTypes = [
     { value: 'ALL', label: 'All Product Types' },
     { value: 'HARDWARE', label: 'Smart Projectors & Cinema' },
-    { value: 'STREAMING', label: 'Streaming Passes' },
-    { value: 'AI_TOOL', label: 'AI Tools & Suites' },
-    { value: 'SOFTWARE_LICENSE', label: 'Software Licenses' },
-    { value: 'SAAS_SUBSCRIPTION', label: 'SaaS Subscriptions' },
-    { value: 'GAME', label: 'Games & Steam Keys' },
-    { value: 'GIFT_CARD', label: 'Digital Gift Cards' },
-    { value: 'TEMPLATE', label: 'Templates & Code' },
   ];
 
   const sortOptions = [

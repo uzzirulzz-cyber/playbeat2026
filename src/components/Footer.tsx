@@ -232,7 +232,7 @@ export const Footer: React.FC = () => {
           </h4>
           <ul className="space-y-2 text-xs">
             <li>
-              <button 
+              <button
                 onClick={() => handleQuickLink('storefront', 'all')}
                 className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full"
               >
@@ -240,47 +240,15 @@ export const Footer: React.FC = () => {
               </button>
             </li>
             <li>
-              <button 
-                onClick={() => handleQuickLink('storefront', 'games', 'GAME')}
+              <button
+                onClick={() => handleQuickLink('storefront', 'smart-projectors', 'HARDWARE')}
                 className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full"
               >
-                Games
+                Smart Projectors
               </button>
             </li>
             <li>
-              <button 
-                onClick={() => handleQuickLink('storefront', 'gift-cards', 'GIFT_CARD')}
-                className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full"
-              >
-                Gift Cards
-              </button>
-            </li>
-            <li>
-              <button 
-                onClick={() => handleQuickLink('storefront', 'software-licenses', 'SOFTWARE_LICENSE')}
-                className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full"
-              >
-                Software
-              </button>
-            </li>
-            <li>
-              <button 
-                onClick={() => handleQuickLink('storefront', 'ai-tools', 'AI_TOOL')}
-                className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full"
-              >
-                AI Tools
-              </button>
-            </li>
-            <li>
-              <button 
-                onClick={() => handleQuickLink('storefront', 'streaming', 'STREAMING')}
-                className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full"
-              >
-                Subscriptions
-              </button>
-            </li>
-            <li>
-              <button 
+              <button
                 onClick={() => handleQuickLink('storefront', 'smart-projectors', 'HARDWARE')}
                 className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full text-amber-300 font-semibold"
               >
@@ -288,7 +256,7 @@ export const Footer: React.FC = () => {
               </button>
             </li>
             <li>
-              <button 
+              <button
                 onClick={() => handleQuickLink('storefront', 'all')}
                 className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full text-pink-400 font-semibold"
               >
@@ -305,51 +273,19 @@ export const Footer: React.FC = () => {
           </h4>
           <ul className="space-y-2 text-xs">
             <li>
-              <button 
-                onClick={() => handleQuickLink('storefront', 'games')}
+              <button
+                onClick={() => handleQuickLink('storefront', 'smart-projectors')}
                 className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full"
               >
-                Games
+                Smart Projectors
               </button>
             </li>
             <li>
-              <button 
-                onClick={() => handleQuickLink('storefront', 'gift-cards')}
-                className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full"
-              >
-                Gift Cards
-              </button>
-            </li>
-            <li>
-              <button 
-                onClick={() => handleQuickLink('storefront', 'software-licenses')}
-                className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full"
-              >
-                Software
-              </button>
-            </li>
-            <li>
-              <button 
-                onClick={() => handleQuickLink('storefront', 'ai-tools')}
-                className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full"
-              >
-                AI Tools
-              </button>
-            </li>
-            <li>
-              <button 
-                onClick={() => handleQuickLink('storefront', 'streaming')}
-                className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full"
-              >
-                Subscriptions
-              </button>
-            </li>
-            <li>
-              <button 
-                onClick={() => handleQuickLink('storefront', 'all')}
+              <button
+                onClick={() => handleQuickLink('storefront', 'smart-projectors')}
                 className="hover:text-[#fcb800] transition-colors cursor-pointer text-left w-full text-emerald-400 font-semibold"
               >
-                Top-Up
+                All Verified Catalog
               </button>
             </li>
           </ul>
