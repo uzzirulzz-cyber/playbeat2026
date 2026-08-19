@@ -229,18 +229,6 @@ export const SmartProjectorsSection: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Cost Pricing Information — always visible per catalog owner's request */}
-                <div className="p-2.5 rounded-xl bg-slate-950 border border-yellow-500/30 text-[11px] space-y-1">
-                  <div className="flex items-center justify-between text-slate-400">
-                    <span>Wholesale Cost:</span>
-                    <span className="font-mono font-bold text-slate-200">Rs {prod.costPrice?.toLocaleString() || 'N/A'}</span>
-                  </div>
-                  <div className="flex items-center justify-between text-yellow-400 font-bold">
-                    <span>Retail Margin:</span>
-                    <span className="font-mono">Rs {prod.profit?.toLocaleString() || 'N/A'}</span>
-                  </div>
-                </div>
-
                 {/* Price & Action Section */}
                 <div className="pt-1.5 sm:pt-2 border-t border-slate-800 flex items-center justify-between gap-1.5 sm:gap-2">
                   <div className="min-w-0">
@@ -325,9 +313,6 @@ export const SmartProjectorsSection: React.FC = () => {
               <div>
                 <div className="text-xs text-slate-400 font-medium">Selling Price</div>
                 <div className="text-xl font-black text-[#fcb800] font-mono">{formatPKR(comparingProduct.price)}</div>
-                {comparingProduct.costPrice && (
-                  <div className="text-[11px] text-slate-400 font-mono">Wholesale Cost: Rs {comparingProduct.costPrice.toLocaleString()}</div>
-                )}
               </div>
               <div className="text-right text-xs">
                 <div className="text-emerald-400 font-bold flex items-center gap-1 justify-end">
