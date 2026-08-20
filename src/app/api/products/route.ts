@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { connectDB, ensureDB } from '@/lib/mongodb';
 import { ProductModel } from '@/server/models';
 import { INITIAL_PRODUCTS } from '@/data/initialData';
+import { applyG2GImages } from '@/lib/g2g-images';
 
 export const dynamic = 'force-dynamic';
 export const runtime = 'nodejs';
@@ -34,7 +35,7 @@ export async function GET(req: NextRequest) {
 
   const { ok } = await ensureDB();
   if (!ok) {
-    return NextResponse.json(INITIAL_PRODUCTS);
+    return NextResponse.json(applyG2GImages(INITIAL_PRODUCTS));
   }
 
   try {
@@ -42,10 +43,10 @@ export async function GET(req: NextRequest) {
     if (!products || products.length === 0) {
       products = INITIAL_PRODUCTS as any;
     }
-    return NextResponse.json(products);
+    return NextResponse.json(applyG2GImages(products as any));
   } catch (err: any) {
     console.error('[API /products error]:', err);
-    return NextResponse.json(INITIAL_PRODUCTS);
+    return NextResponse.json(applyG2GImages(INITIAL_PRODUCTS));
   }
 }
 
