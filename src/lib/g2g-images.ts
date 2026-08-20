@@ -35,7 +35,7 @@ const G2G_IMAGE_RULES: Array<{ matches: string[]; image: string }> = [
   },
   {
     matches: ['cursor'],
-    image: 'https://assets.g2g.com/img/offer/kr_f6a1aba5-473-4044-8368-96ac181d9e92_lgc_game_27301.webp',
+    image: 'https://assets.g2g.com/img/offer/kr_f6a1aba5-473a-4044-836a-8968bbab16d7_4d95bdaf-0799-4260-aa35-df50f98c4149.webp',
   },
 ];
 
