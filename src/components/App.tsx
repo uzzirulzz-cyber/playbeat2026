@@ -5,7 +5,6 @@ import { useStore } from '../store/useStore';
 import { Navbar } from './Navbar';
 import { HeroSectionPremium } from './HeroSectionPremium';
 import { FeaturedCategoriesPremium } from './FeaturedCategoriesPremium';
-import { SmartProjectorsSection } from './SmartProjectorsSection';
 import { DealsSection } from './DealsSection';
 import { LimitedTimeOffersSection } from './LimitedTimeOffersSection';
 import { TrendingProductsSection } from './TrendingProductsSection';
@@ -42,7 +41,6 @@ export function App() {
   } = useStore();
 
   const [sectionConfig, setSectionConfig] = useState({
-    smartProjectors: true,
     heroSpotlight: true,
     dealsSection: true,
     categoryFilter: true,
@@ -154,13 +152,6 @@ export function App() {
             <div id="categories">
               <FeaturedCategoriesPremium />
             </div>
-
-            {/* Pinned Smart Projectors Showcase Section */}
-            {sectionConfig.smartProjectors && (
-              <div id="projectors" className="max-w-7xl mx-auto px-4 sm:px-6">
-                <SmartProjectorsSection />
-              </div>
-            )}
 
             {/* Flash Deals Countdown Banner */}
             {sectionConfig.dealsSection && (
